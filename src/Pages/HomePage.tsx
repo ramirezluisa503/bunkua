@@ -1,5 +1,6 @@
 import ProvicionalHomePage from '../assets/Images/ProvicionalHomePage.webp';
 import { Layout } from '../components/Layout/Layout';
+import { Layout } from '../components/Layout/Layout';
 
 function HomePage() {
   return (
