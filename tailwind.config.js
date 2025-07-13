@@ -1,4 +1,5 @@
-/** @type {import('tailwindcss').Config} */
+import('tailwindcss').Config; 
+
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
@@ -6,10 +7,19 @@ module.exports = {
   theme: {
     extend: { 
       backgroundImage: {
-        'portadaHomePage': "url('/src/assets/Images/ProvisionalPortadaHomePage.webp')",
+        portadaHomePage: url('/public/Images/ProvicionalPortadaHomePage.webp'),
       },
+
+    
       
     },
+
+
+
+
+
+
+
   },
   plugins: [],
 }
