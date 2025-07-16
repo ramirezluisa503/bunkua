@@ -1,31 +1,37 @@
 @import 'tailwindcss';
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Archivo, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   /* color-scheme: light dark; */
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
-@theme{
 
-  --color-brown : #825534;
+@font-face {
+  font-family: 'Archivo';
+  src: url('./assets/font/Archivo-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Archivo-Bold';
+  src: url('./assets/font/Archivo-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --color-brown: #825534;
   --color-grey: #8c8d8b;
-  --color-green : #445737;
+  --color-green: #445737;
   --color-grayLight: #f7f7f7;
   --color-borderGrey: #ebebea;
-  
-
+  --color-bk-hover: #445737;
 }
 
-.cards{
-  @apply bg-white border border-borderGrey shadow-md rounded-[8px] p-6 flex flex-col items-center justify-between h-full text-center text-balance
+.cards {
+  @apply bg-white border border-borderGrey shadow-md rounded-[8px] p-6 flex flex-col items-center justify-between h-full text-center text-balance;
 }
-
-
-
-
