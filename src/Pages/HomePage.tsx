@@ -1,19 +1,11 @@
-import ProvicionalHomePage from '../assets/Images/ProvicionalHomePage.webp';
+import HomePageImage2 from '../assets/Images/ProvicionalHomePage.webp';
 import { Layout } from '../components/Layout/Layout';
 
 function HomePage() {
   return (
     <Layout>
       <article>
-        <section
-          className="
-        relative
-        bg-cover
-        bg-center
-        min-h-screen
-        flex items-center justify-center
-        py-16 px-4"
-        >
+        <section className="relative bg-cover bg-center min-h-screen flex items-center justify-center py-16 px-4">
           <div className="text-center mx-11">
             <h1 className="text-black text-5xl box-content mb-6 font-bold leading-none text-balance">
               Knowledge that brings order to chaos.
@@ -27,8 +19,10 @@ function HomePage() {
               insights, driving prosperity and productivity for entrepreneurs
               through cutting-edge technology.
             </p>
+            <button className="bg-green text-white mt-7 mb-0.5 w-fit h-9 px-3 rounded-[6px]">
+              Request a Free Consultation
+            </button>
           </div>
-          <button></button>
         </section>
 
         <section>
@@ -58,7 +52,7 @@ function HomePage() {
             <div className="mt-5 max-w-full h-auto mx-auto my-auto size-72 text-3xl box-content sm:size-fit sm:col-span-1 sm:px-3 sm:mt-0">
               <img
                 className="rounded-xl "
-                src={ProvicionalHomePage}
+                src={HomePageImage2}
                 alt="Image"
               />
             </div>
@@ -165,7 +159,9 @@ function HomePage() {
               </div>
               {/*CARD 6*/}
               <div className="border border-b-gray-500 shadow-md rounded-xl p-6 flex flex-col items-center justify-between h-full text-center text-balance">
-                <h3>Innovation & R&D</h3>
+                <h3 className="text-xl font-semibold mb-2 text-gray-800">
+                  Innovation & R&D
+                </h3>
                 <p className="text-grey text-sm mb-4 leading-relaxed text-center">
                   Driving future growth by exploring emerging technologies and
                   developing innovative solutions for competitive advantage.
@@ -297,7 +293,7 @@ function HomePage() {
               Connect with BUNKUA today to discover how our data analysis and AI
               services can unlock new potentials for your company.
             </p>
-            <button className="bg-white mt-7 mb-0.5 w-48 h-9 rounded-[6px]">
+            <button className="bg-white mt-7 mb-0.5 w-48 h-9 rounded-[6px] text-green">
               Get Started Now
             </button>
           </div>
