@@ -19,12 +19,15 @@
   --color-grayLight: #f7f7f7;
   --color-borderGrey: #ebebea;
   
+  
 
 }
 
 .cards{
   @apply bg-white border border-borderGrey shadow-md rounded-[8px] p-6 flex flex-col items-center justify-between h-full text-center text-balance
 }
+
+
 
 
 

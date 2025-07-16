@@ -16,7 +16,10 @@ export const NavBar = () => {
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center">
               <div className="w-8 h-8 mr-3">
-                <img src={logo} alt="logoBunkua" />
+                <img
+                  src={logo}
+                  alt="logoBunkua"
+                />
               </div>
               <span className="text-xl font-semibold text-gray-800">
                 BUNKUA
@@ -38,12 +41,12 @@ export const NavBar = () => {
             >
               Servicios
             </NavLink>
-            <a
-              href="#"
+            <NavLink
+              to={'/AboutUs'}
               className="text-gray-700 hover:text-green-600 px-3 py-2 text-sm font-medium transition-colors duration-200"
             >
               Acerca de nostros
-            </a>
+            </NavLink>
             <a
               href="#"
               className="text-gray-700 hover:text-green-600 px-3 py-2 text-sm font-medium transition-colors duration-200"
@@ -68,9 +71,15 @@ export const NavBar = () => {
               className="text-gray-700 hover:text-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
             >
               {isMenuOpen ? (
-                <img src={logo} className="w-6 h-6" />
+                <img
+                  src={logo}
+                  className="w-6 h-6"
+                />
               ) : (
-                <img src={logo} className="w-6 h-6" />
+                <img
+                  src={logo}
+                  className="w-6 h-6"
+                />
               )}
             </button>
           </div>

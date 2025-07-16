@@ -9,17 +9,7 @@ module.exports = {
       backgroundImage: {
         portadaHomePage: url('/public/Images/ProvicionalPortadaHomePage.webp'),
       },
-
-    
-      
     },
-
-
-
-
-
-
-
   },
   plugins: [],
 }
