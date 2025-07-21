@@ -16,8 +16,10 @@ export const AboutUs = () => {
   return (
     <Layout>
       <article>
+
+        {/*ABOUT BUNKUA */}
         <section>
-          <div className="sm:grid-cols-2 sm:gap-7 sm:py-20 gap-10 grid grid-cols-1 p-16 items-center  ">
+          <div className="sm:grid-cols-2 sm:gap-15 sm:py-20 gap-10 grid grid-cols-1 p-16 items-center  ">
             <div className="sm:col-span-1 sm:text-left sm:pl-36 text-center  box-content ">
               <h1 className="text-black text-6xl box-content mb-6 font-bold leading-none ">
                 About BUNKUA
@@ -36,7 +38,7 @@ export const AboutUs = () => {
             </div>
           </div>
         </section>
-
+        {/*OUR STORY */}
         <section>
           <div className="sm:grid-cols-2 sm:gap-15 sm:py-20 gap-10 grid grid-cols-1 p-16 items-center  ">
             <div className="sm:col-span-1 sm:text-left text-center  box-content">
@@ -64,7 +66,7 @@ export const AboutUs = () => {
             </div>
           </div>
         </section>
-
+        {/*OUR MISSION */}
         <section>
           <div className="sm:p-8 sm:max-w-2xl sm:mx-auto sm:mt-10 sm:mb-36 mx-20 p-8 bg-white rounded-xl shadow-sm  text-center">
             <p className="sm:text-4xl sm:mb-6 italic font-bold text-gray-900 leading-normal ">
@@ -75,7 +77,7 @@ export const AboutUs = () => {
             <p className="text-base text-grey">— BUNKUA Leadership</p>
           </div>
         </section>
-
+        {/*OUR CORE VALUE CARDS */}
         <section>
           <div className="mt-28 mb-20">
             <h1 className="text-black text-3xl text-center box-content mb-14 mx-11 font-bold leading-none text-balance">
@@ -147,15 +149,13 @@ export const AboutUs = () => {
           </div>
         </section>
 
-
-
+        {/* MEET OUR VISIONARIES*/}
         <section>
           <div className="mt-50 mb-25">
-            <h1 className="text-black text-3xl text-center box-content mb-14 mx-11 font-bold leading-none text-balance">
+            <h1 className="text-black text-3xl text-center box-content mb-10 mx-11 font-bold leading-none text-balance">
               Meet Our Visionaries
             </h1>
-            {/* MEET OUR VISIONARIES*/}
-            <div className="sm:flex sm:justify-center sm:items-center  sm:gap-6 m-8    ">
+            <div className="sm:flex-row sm:justify-center sm:items-center sm:gap-6 flex flex-col items-center">
               {/*CARD 1*/}
               <div className=" border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-between   text-center mb-8 w-3xs ">
                 <img src={Visionaries1} alt="Visionary" className='rounded-full h-auto w-40'/>
@@ -201,10 +201,6 @@ export const AboutUs = () => {
             </div>
           </div>
         </section>        
-
-
-
-
 
         {/*SECCION LINEA DE TIEMPO */}
         <section className="py-20 bg-white">
@@ -310,6 +306,7 @@ export const AboutUs = () => {
           </div>
         </section>
 
+        {/*BAR */}
         <section>
           <div className='m-20'>
             <h2 className="sm:mx-15 mb-10 text-3xl font-bold text-center text-black ">
@@ -326,9 +323,7 @@ export const AboutUs = () => {
           </div>
         </section>
 
-
-
-
+        {/*READY FOR A NEW CHALLENGE*/}
         <section>
           <div className="sm:flex sm:mx-24  mt-40 mb-20 mx-10 p-10  text-left bg-green rounded-xl items-center justify-between overflow-hidden">
             <div className="sm:w-1/2">

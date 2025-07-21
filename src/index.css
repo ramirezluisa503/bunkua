@@ -30,8 +30,17 @@
   --color-grayLight: #f7f7f7;
   --color-borderGrey: #ebebea;
   --color-bk-hover: #445737;
+  --color-cs-beige: #ecedea;
+  --color-cs-card:#eceeeb;
+  
 }
 
 .cards {
   @apply bg-white border border-borderGrey shadow-md rounded-[8px] p-6 flex flex-col items-center justify-between h-full text-center text-balance;
 }
+
+.bar {
+  @apply p-4 border border-borderGrey rounded-[6px] size-fit sm:hover:bg-green sm:hover:text-white hover:bg-green hover:text-white
+}
+
+
