@@ -15,31 +15,26 @@ import icono5 from '../assets/Images/HP5.webp';
 import icono6 from '../assets/Images/HP6.webp';
 import icono7 from '../assets/Images/HP7.webp';
 
-
-
-
-
-
 function HomePage() {
   return (
     <Layout>
       <article>
-
         {/*PORTADA */}
-        <section className="relative  bg-cover bg-center  min-h-screen flex items-center justify-center px-4"
-         style={{ backgroundImage: `url(${PortadaHomaPage})` }} 
-          >
+        <section
+          className="relative  bg-cover bg-center  min-h-screen flex items-center justify-center px-4"
+          style={{ backgroundImage: `url(${PortadaHomaPage})` }}
+        >
           <div
             className="absolute inset-0 z-0"
-              style={{
-              backgroundImage: 'linear-gradient(to top, rgba(255,255,255,1) 5%, rgba(255,255,255,0) 120%)'
-          // De abajo (0%) hacia arriba (to top):
-          // - rgba(255,255,255,0.7) al 0% (abajo del todo, 70% opacidad blanca)
-          // - rgba(255,255,255,0) al 10% (al 10% de la altura, completamente transparente)
-                }}
+            style={{
+              backgroundImage:
+                'linear-gradient(to top, rgba(255,255,255,1) 5%, rgba(255,255,255,0) 120%)',
+              // De abajo (0%) hacia arriba (to top):
+              // - rgba(255,255,255,0.7) al 0% (abajo del todo, 70% opacidad blanca)
+              // - rgba(255,255,255,0) al 10% (al 10% de la altura, completamente transparente)
+            }}
           ></div>
-          
-          
+
           <div className="flex flex-col justify-center items-center mx-11 relative z-10">
             <h1 className="text-black text-7xl max-w-3xl mx-auto  font-bold leading-none text-center">
               Knowledge that brings order to chaos.
@@ -217,7 +212,6 @@ function HomePage() {
         <section>
           <div className="mt-28 mb-20 bg-grayLight py-14">
             <div className="text-center mx-11">
-              
               <h1 className="text-black text-5xl box-content mb-6 font-bold leading-none text-balance">
                 What Our Clients Say
               </h1>
@@ -230,20 +224,20 @@ function HomePage() {
             <div className="sm:grid sm:grid-cols-3 sm:gap-6 grid grid-cols-1 gap-6 m-11 ">
               {/*CARD 1*/}
               <div className="cards">
-              
                 <p className="text-lg italic p-5  leading-relaxed text-center">
                   BUNKUA transformed our chaotic data into clear, actionable
                   strategies. Their AI implementation boosted our efficiency by
                   30%.
                 </p>
-                <img className='rounded-full w-auto h-22 ' src={HPClients1} alt="Alice Chen" />
+                <img
+                  className="rounded-full w-auto h-22 "
+                  src={HPClients1}
+                  alt="Alice Chen"
+                />
                 <p className="font-semibold text-gray-900 text-lg mt-auto">
-                    Alice Chen
-                </p>                
-                <p className="text-grey text-sm">
-                    CEO, InnovateTech
+                  Alice Chen
                 </p>
-                
+                <p className="text-grey text-sm">CEO, InnovateTech</p>
               </div>
               {/*CARD 2*/}
               <div className="cards">
@@ -252,14 +246,17 @@ function HomePage() {
                   significant cost savings and improved decision-making across
                   our departments.
                 </p>
-                <img className='rounded-full w-auto h-20' src={HPClients2} alt="Robert Garcia" />
+                <img
+                  className="rounded-full w-auto h-20"
+                  src={HPClients2}
+                  alt="Robert Garcia"
+                />
                 <p className="font-semibold text-gray-900 text-lg mt-auto">
-                    Robert Garcia
-                </p>                
-                <p className="text-grey text-sm">
-                    Director of Operations, Global Logistics
+                  Robert Garcia
                 </p>
-                
+                <p className="text-grey text-sm">
+                  Director of Operations, Global Logistics
+                </p>
               </div>
               {/*CARD 3*/}
               <div className="cards">
@@ -267,14 +264,15 @@ function HomePage() {
                   Their institutional diagnosis was thorough and precise. We now
                   have a clear roadmap for digital transformation.
                 </p>
-                <img className='rounded-full w-auto h-20 ' src={HPClients3} alt="Sarah Kim" />
+                <img
+                  className="rounded-full w-auto h-20 "
+                  src={HPClients3}
+                  alt="Sarah Kim"
+                />
                 <p className="font-semibold text-gray-900 text-lg mt-auto">
-                    Sarah Kim
-                </p>               
-                <p className="text-grey text-sm">
-                    Founder, EcoSolutions
+                  Sarah Kim
                 </p>
-                
+                <p className="text-grey text-sm">Founder, EcoSolutions</p>
               </div>
               {/*CARD 4*/}
               <div className="cards">
@@ -283,14 +281,15 @@ function HomePage() {
                   existing infrastructure, proving their expertise and
                   adaptability.
                 </p>
-                <img className='rounded-full w-auto h-20 ' src={HPClients4} alt="David Lee" />
+                <img
+                  className="rounded-full w-auto h-20 "
+                  src={HPClients4}
+                  alt="David Lee"
+                />
                 <p className="font-semibold text-gray-900 text-lg mt-auto">
-                    David Lee
-                </p>                
-                <p className="text-grey text-sm">
-                    CTO, NexGen Robotics
+                  David Lee
                 </p>
-                
+                <p className="text-grey text-sm">CTO, NexGen Robotics</p>
               </div>
               {/*CARD 5*/}
               <div className="cards">
@@ -298,14 +297,17 @@ function HomePage() {
                   Exceptional service and deep understanding of AI. BUNKUA is
                   truly a leader in bringing order to complex data environments.
                 </p>
-                <img className='rounded-full w-auto h-20 ' src={HPClients5} alt="Maria Rodriguez" />
+                <img
+                  className="rounded-full w-auto h-20 "
+                  src={HPClients5}
+                  alt="Maria Rodriguez"
+                />
                 <p className="font-semibold text-gray-900 text-lg mt-auto">
-                    Maria Rodriguez
-                </p>                
-                <p className="text-grey text-sm">
-                    Head of Data Science, Quantum Analytics
+                  Maria Rodriguez
                 </p>
-                
+                <p className="text-grey text-sm">
+                  Head of Data Science, Quantum Analytics
+                </p>
               </div>
               {/*CARD 6*/}
               <div className="cards">
@@ -314,14 +316,15 @@ function HomePage() {
                   BUNKUA's strategic recommendations. A true partner in
                   innovation.
                 </p>
-                <img className='rounded-full w-auto h-20 ' src={HPClients6} alt="John Smith" />
+                <img
+                  className="rounded-full w-auto h-20 "
+                  src={HPClients6}
+                  alt="John Smith"
+                />
                 <p className="font-semibold text-gray-900 text-lg mt-auto">
-                    John Smith
-                </p>                
-                <p className="text-gray-500 text-sm">
-                    President, Synergy Corp
+                  John Smith
                 </p>
-                
+                <p className="text-gray-500 text-sm">President, Synergy Corp</p>
               </div>
             </div>
           </div>
@@ -333,15 +336,47 @@ function HomePage() {
             <h1 className="text-black text-5xl box-content mb-6 font-bold leading-none text-balance">
               Trusted By Leading Businesses
             </h1>
-            <div className='flex sm:gap-25 gap-4 items-center justify-center m-20'>
-              <img src={icono1} alt="Icono" className='sm:w-auto sm:h-8 w-auto h-4' />
-              <img src={icono2} alt="Icono" className='sm:w-auto sm:h-8 w-auto h-4' />
-              <img src={icono3} alt="Icono" className='sm:w-auto sm:h-8 w-auto h-4'/>
-              <img src={icono4} alt="Icono" className='sm:w-auto sm:h-8 w-auto h-4'/>
-              <img src={icono5} alt="Icono" className='sm:w-auto sm:h-8 w-auto h-4'/>
-              <img src={icono4} alt="Icono" className='sm:w-auto sm:h-8 w-auto h-4'/>
-              <img src={icono6} alt="Icono" className='sm:w-auto sm:h-8 w-auto h-4'/>
-              <img src={icono7} alt="Icono" className='sm:w-auto sm:h-8 w-auto h-4'/>
+            <div className="flex sm:gap-25 gap-4 items-center justify-center m-20">
+              <img
+                src={icono1}
+                alt="Icono"
+                className="sm:w-auto sm:h-8 w-auto h-4"
+              />
+              <img
+                src={icono2}
+                alt="Icono"
+                className="sm:w-auto sm:h-8 w-auto h-4"
+              />
+              <img
+                src={icono3}
+                alt="Icono"
+                className="sm:w-auto sm:h-8 w-auto h-4"
+              />
+              <img
+                src={icono4}
+                alt="Icono"
+                className="sm:w-auto sm:h-8 w-auto h-4"
+              />
+              <img
+                src={icono5}
+                alt="Icono"
+                className="sm:w-auto sm:h-8 w-auto h-4"
+              />
+              <img
+                src={icono4}
+                alt="Icono"
+                className="sm:w-auto sm:h-8 w-auto h-4"
+              />
+              <img
+                src={icono6}
+                alt="Icono"
+                className="sm:w-auto sm:h-8 w-auto h-4"
+              />
+              <img
+                src={icono7}
+                alt="Icono"
+                className="sm:w-auto sm:h-8 w-auto h-4"
+              />
             </div>
           </div>
         </section>

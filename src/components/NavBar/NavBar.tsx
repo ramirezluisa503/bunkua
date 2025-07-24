@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import logo from '../../assets/images/bunkuaLogo.svg';
+import logoPrincipal from '../../assets/images/logoPrincipal.webp';
 import { NavLink } from 'react-router-dom';
+import SwitchButton from './../SwitchButton/SwitchButton';
 
 export const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,12 +13,13 @@ export const NavBar = () => {
   return (
     <header className="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50">
       <div className="px-4 sm:px-6 lg:px-8">
-        <div className="flex  items-center h-16">
+        <div className="flex items-center h-16">
+          {/* Logo */}
           <div className="items-center flex">
             <div className="flex-shrink-0 flex items-center">
               <div className="w-8 h-8 mr-3">
                 <img
-                  src={logo}
+                  src={logoPrincipal}
                   alt="logoBunkua"
                 />
               </div>
@@ -26,10 +28,10 @@ export const NavBar = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-1 ">
+          <nav className="hidden md:flex space-x-1">
             <NavLink
               to={'/'}
-              className="text-gray-700 hover:text-green px-3 py-2 text-sm font-medium transition-colors duration-200 " 
+              className="text-gray-700 hover:text-green px-3 py-2 text-sm font-medium transition-colors duration-200"
             >
               Inicio
             </NavLink>
@@ -43,7 +45,7 @@ export const NavBar = () => {
               to={'/AboutUs'}
               className="text-gray-700 hover:text-green px-3 py-2 text-sm font-medium transition-colors duration-200"
             >
-              Acerca de nostros
+              Acerca de nosotros
             </NavLink>
             <NavLink
               to={'/CaseStudies'}
@@ -59,38 +61,49 @@ export const NavBar = () => {
             </NavLink>
           </nav>
 
-          {/* Language Selector */}
-          <div className="hidden md:flex items-center space-x-10 md:ml-auto ml-50">BOTONES</div>
+          {/* Desktop Language Selector */}
+          <div className="hidden md:flex items-center space-x-10 md:ml-auto">
+            <SwitchButton />
+          </div>
 
-          {/* Mobile menu button */}
-          <div className="md:hidden">
+          {/* Mobile: Language Selector + Hamburger Menu */}
+          <div className="md:hidden flex items-center space-x-4">
+            {/* Mobile Language Selector */}
+            <SwitchButton />
+
+            {/* Hamburger Menu Button */}
             <button
               onClick={toggleMenu}
-              className="text-gray-700 hover:text-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
+              className="text-gray-700 hover:text-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 p-2"
             >
-              {isMenuOpen ? (
-                <img
-                  src={logo}
-                  className="w-6 h-6"
-                />
-              ) : (
-                <img
-                  src={logo}
-                  className="w-6 h-6 "
-                />
-              )}
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                {isMenuOpen ? (
+                  <path d="M6 18L18 6M6 6l12 12" />
+                ) : (
+                  <path d="M4 6h16M4 12h16M4 18h16" />
+                )}
+              </svg>
             </button>
           </div>
         </div>
       </div>
 
-      {/* Mobile Navigation */}
+      {/* Mobile Navigation Menu */}
       {isMenuOpen && (
         <div className="md:hidden bg-white border-t border-gray-200 text-center">
           <div className="px-2 pt-2 pb-3 space-y-1">
             <NavLink
               to={'/'}
               className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-green-600 hover:bg-gray-50 transition-colors duration-200"
+              onClick={() => setIsMenuOpen(false)}
             >
               Inicio
             </NavLink>
@@ -98,54 +111,35 @@ export const NavBar = () => {
             <NavLink
               to={'/services'}
               className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-green-600 hover:bg-gray-50 transition-colors duration-200"
+              onClick={() => setIsMenuOpen(false)}
             >
               Servicios
             </NavLink>
-            <a
-              href="#"
+
+            <NavLink
+              to={'/AboutUs'}
               className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-green-600 hover:bg-gray-50 transition-colors duration-200"
+              onClick={() => setIsMenuOpen(false)}
             >
-              Acerca de nostros
-            </a>
-            <a
-              href="#"
+              Acerca de nosotros
+            </NavLink>
+
+            <NavLink
+              to={'/CaseStudies'}
               className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-green-600 hover:bg-gray-50 transition-colors duration-200"
+              onClick={() => setIsMenuOpen(false)}
             >
               Casos de estudio
-            </a>
-            <a
-              href="#"
+            </NavLink>
+
+            <NavLink
+              to={'/ContactUs'}
               className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-green-600 hover:bg-gray-50 transition-colors duration-200"
+              onClick={() => setIsMenuOpen(false)}
             >
               Contáctanos
-            </a>
+            </NavLink>
           </div>
-
-          {/* Mobile Language Selector */}
-          {/* <div className="px-5 py-3 border-t border-gray-200">
-            <div className="flex space-x-2">
-              <button
-                onClick={() => handleLanguageChange('Esp')}
-                className={`px-3 py-1 text-sm font-medium rounded-full transition-colors duration-200 ${
-                  activeLanguage === 'Esp'
-                    ? 'bg-gray-200 text-gray-800'
-                    : 'text-gray-500 hover:text-gray-700'
-                }`}
-              >
-                Esp
-              </button>
-              <button
-                onClick={() => handleLanguageChange('Eng')}
-                className={`px-3 py-1 text-sm font-medium rounded-full transition-colors duration-200 ${
-                  activeLanguage === 'Eng'
-                    ? 'bg-green-600 text-white'
-                    : 'text-gray-500 hover:text-gray-700'
-                }`}
-              >
-                Eng
-              </button>
-            </div>
-          </div> */}
         </div>
       )}
     </header>
