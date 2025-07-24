@@ -11,6 +11,13 @@ import Visionaries1 from '../assets/Images/Visionaries1.webp';
 import Visionaries2 from '../assets/Images/Visionaries2.webp';
 import Visionaries3 from '../assets/Images/Visionaries3.webp';
 import Visionaries4 from '../assets/Images/Visionaries4.webp';
+import ComillasCafes from '../assets/Images/ComillasCafes.svg'
+import bombillo from '../assets/Images/Bombillo.svg'
+import escudo from '../assets/Images/Escudo.svg'
+import users from '../assets/Images/Users.svg'
+import destello from '../assets/Images/Destello.svg'
+import calendario from '../assets/Images/Calendario.svg'
+import medalla from '../assets/Images/Medalla.svg'
 
 export const AboutUs = () => {
   return (
@@ -68,15 +75,33 @@ export const AboutUs = () => {
         </section>
         {/*OUR MISSION */}
         <section>
-          <div className="sm:p-8 sm:max-w-2xl sm:mx-auto sm:mt-10 sm:mb-36 mx-20 p-8 bg-white rounded-xl shadow-sm  text-center">
-            <p className="sm:text-4xl sm:mb-6 italic font-bold text-gray-900 leading-normal ">
-              Our mission is to facilitate unprecedented prosperity, abundance,
-              tranquility, and productivity for entrepreneurs by enabling
-              intelligent technology adoption.
-            </p>
-            <p className="text-base text-grey">— BUNKUA Leadership</p>
+          <div className="sm:p-8 sm:max-w-2xl sm:mx-auto mx-auto p-9  bg-white rounded-xl text-center shadow-md transform hover:scale-102 transition-transform duration-60">
+    
+            <div className='flex justify-start sm:ml-6'> 
+              <img
+                src={ComillasCafes}
+                className="w-10 h-10 sm:w-16 sm:h-16"
+              />
+            </div>
+
+            <div>
+              <p className="text-xl sm:text-4xl sm:mb-6 italic font-bold text-gray-900 leading-normal">
+                  Our mission is to facilitate unprecedented prosperity, abundance,
+                  tranquility, and productivity for entrepreneurs by enabling
+                  intelligent technology adoption.
+                  <p className="text-base text-gray-700 mt-4">— BUNKUA Leadership</p>
+              </p>
+                
+              <div className='flex justify-end sm:-mt-7 sm:mr-4'>
+                <img
+                  src={ComillasCafes}
+                  className="w-10 h-10 sm:w-16 sm:h-16"
+                />
+              </div>
+            </div>
           </div>
         </section>
+
         {/*OUR CORE VALUE CARDS */}
         <section>
           <div className="mt-28 mb-20">
@@ -86,7 +111,14 @@ export const AboutUs = () => {
             {/* CARDS OUR EXPERTICIE*/}
             <div className="sm:grid sm:grid-cols-3  sm:gap-6 m-11 grid grid-cols-1 gap-6   ">
               {/*CARD 1*/}
-              <div className=" border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-between h-full text-center ">
+              <div className=" border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-between h-full text-center shadow-md transform hover:scale-102 transition-transform duration-60 ">
+                <div className='bg-cs-card text-white font-bold rounded-full size-11 flex items-center         justify-center m-5'>
+                  <img
+                    src={bombillo}
+                    className="w-8 h-8"
+                  />
+                </div>
+
                 <h3 className="text-xl font-semibold mb-2 text-gray-800">
                   Innovation
                 </h3>
@@ -96,7 +128,13 @@ export const AboutUs = () => {
                 </p>
               </div>
               {/*CARD 2*/}
-              <div className="border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-between h-full text-center ">
+              <div className="border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-between h-full text-center shadow-md transform hover:scale-102 transition-transform duration-60 ">
+                <div className='bg-cs-card text-white font-bold rounded-full size-11 flex items-center         justify-center m-5'>
+                  <img
+                    src={destello}
+                    className="w-8 h-8"
+                  />
+                </div>
                 <h3 className="text-xl font-semibold mb-2 text-gray-800">
                   Excellence
                 </h3>
@@ -106,7 +144,13 @@ export const AboutUs = () => {
                 </p>
               </div>
               {/*CARD 3*/}
-              <div className="border border-borderGrey  rounded-xl p-6 flex flex-col items-center justify-between h-full text-center">
+              <div className="border border-borderGrey  rounded-xl p-6 flex flex-col items-center justify-between h-full text-center shadow-md transform hover:scale-102 transition-transform duration-60">
+                <div className='bg-cs-card text-white font-bold rounded-full size-11 flex items-center         justify-center m-5'>
+                  <img
+                    src={escudo}
+                    className="w-8 h-8"
+                  />
+                </div>
                 <h3 className="text-xl font-semibold mb-2 text-gray-800">
                   Integrity
                 </h3>
@@ -116,7 +160,13 @@ export const AboutUs = () => {
                 </p>
               </div>
               {/*CARD 4*/}
-              <div className="border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-between h-full text-center ">
+              <div className="border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-between h-full text-center shadow-md transform hover:scale-102 transition-transform duration-60 ">
+                <div className='bg-cs-card text-white font-bold rounded-full size-11 flex items-center         justify-center m-5'>
+                  <img
+                    src={users}
+                    className="w-7 h-7"
+                  />
+                </div>
                 <h3 className="text-xl font-semibold mb-2 text-gray-800">
                   Client-Centricity
                 </h3>
@@ -126,7 +176,13 @@ export const AboutUs = () => {
                 </p>
               </div>
               {/*CARD 5*/}
-              <div className="border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-between h-full text-center ">
+              <div className="border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-between h-full text-center shadow-md transform hover:scale-102 transition-transform duration-60">
+                <div className='bg-cs-card text-white font-bold rounded-full size-11 flex items-center         justify-center m-5'>
+                  <img
+                    src={calendario}
+                    className="w-7 h-7"
+                  />
+                </div>
                 <h3 className="text-xl font-semibold mb-2 text-gray-800">
                   Efficiency
                 </h3>
@@ -136,7 +192,13 @@ export const AboutUs = () => {
                 </p>
               </div>
               {/*CARD 6*/}
-              <div className="border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-between h-full text-center ">
+              <div className="border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-between h-full text-center shadow-md transform hover:scale-102 transition-transform duration-60">
+                <div className='bg-cs-card text-white font-bold rounded-full size-11 flex items-center         justify-center m-5'>
+                  <img
+                    src={medalla}
+                    className="w-8 h-8"
+                  />
+                </div>
                 <h3 className="text-xl font-semibold mb-2 text-gray-800">
                   Impact
                 </h3>
@@ -157,7 +219,7 @@ export const AboutUs = () => {
             </h1>
             <div className="sm:flex-row sm:justify-center sm:items-center sm:gap-6 flex flex-col items-center">
               {/*CARD 1*/}
-              <div className=" border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-between   text-center mb-8 w-3xs ">
+              <div className=" border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-between   text-center mb-8 w-3xs shadow-md transform hover:scale-102 transition-transform duration-60">
                 <img src={Visionaries1} alt="Visionary" className='rounded-full h-auto w-40'/>
                 <h3 className="text-xl font-semibold text-gray-800">
                   Elena Rodriguez
@@ -168,7 +230,7 @@ export const AboutUs = () => {
               </div>
               
               {/*CARD 2*/}
-              <div className="border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-between h-full text-center mb-8 w-3xs ">
+              <div className="border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-between h-full text-center mb-8 w-3xs shadow-md transform hover:scale-102 transition-transform duration-60">
                 <img src={Visionaries2} alt="Visionary" className='rounded-full h-auto w-40' />
                 <h3 className="text-xl font-semibold  text-gray-800">
                   Marcus Chen
@@ -178,7 +240,7 @@ export const AboutUs = () => {
                 </p>
               </div>
               {/*CARD 3*/}
-              <div className="border border-borderGrey  rounded-xl p-6 flex flex-col items-center justify-between h-full text- mb-8 w-3xs">
+              <div className="border border-borderGrey  rounded-xl p-6 flex flex-col items-center justify-between h-full text- mb-8 w-3xs shadow-md transform hover:scale-102 transition-transform duration-60">
                 <img src={Visionaries3} alt="Visionary" className='rounded-full h-auto w-40' />
                 <h3 className="text-xl font-semibold  text-gray-800">
                   Sophia Kim
@@ -188,7 +250,7 @@ export const AboutUs = () => {
                 </p>
               </div>
               {/*CARD 4*/}
-              <div className="border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-between h-full text-center mb-8 w-3xs">
+              <div className="border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-between h-full text-center mb-8 w-3xs shadow-md transform hover:scale-102 transition-transform duration-60">
                 <img src={Visionaries4} alt="Visionary" className='rounded-full h-auto w-40' />
                 <h3 className="text-xl font-semibold  text-gray-800">
                   David Miller
@@ -336,7 +398,7 @@ export const AboutUs = () => {
                 individuals to join our growing team and contribute to
                 meaningful impact.
               </p>
-              <button className="bg-white mt-7 mb-0.5 w-48 h-9 rounded-[6px] text-green">
+              <button className="hover:bg-black hover:text-white bg-white mt-7 mb-0.5 w-48 h-9 rounded-[6px] text-green">
                 View Open Positions
               </button>
             </div>

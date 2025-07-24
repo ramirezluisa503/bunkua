@@ -39,7 +39,7 @@ export const Footer = () => {
             </div>
             <button
               onClick={handleSubmit}
-              className="px-6 py-3 bg-green hover:bg-green-800 text-white font-medium rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
+              className="px-6 py-3 bg-green hover:bg-black hover:text-white text-white font-medium rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
             >
               Subscribe
             </button>

@@ -10,9 +10,9 @@ export const NavBar = () => {
   };
 
   return (
-    <header className="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50">
+    <header className="bg-nv-bg shadow-sm border-b border-gray-200 sticky top-0 z-50">
       <div className="px-4 sm:px-6 lg:px-8">
-        <div className="flex  items-center h-16">
+        <div className="flex  items-center h-12">
           <div className="items-center flex">
             <div className="flex-shrink-0 flex items-center">
               <div className="w-8 h-8 mr-3">

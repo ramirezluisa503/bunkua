@@ -1,0 +1,80 @@
+{
+  // PORTADA (Hero Section)
+  "hp_hero_title": "Knowledge that brings order to chaos.",
+  "hp_hero_subtitle_1": "Empowering your business with intelligent data analysis and AI solutions.",
+  "hp_hero_subtitle_2": "At BUNKUA, we transform complex data into clear, actionable insights, driving prosperity and productivity for entrepreneurs through cutting-edge technology.",
+  "hp_hero_button": "Request a Free Consultation",
+
+  // OUR APPROACH
+  "hp_approach_title": "Our Approach:\nTransforming Data into Actionable Intelligence",
+  "hp_approach_description_1": "BUNKUA specializes in turning raw, unstructured data into a powerful asset. We apply rigorous methodologies in data analysis, machine learning, and artificial intelligence to uncover hidden patterns and predict future trends. Our solutions are designed not just to analyze, but to inform, empowering businesses to make smarter, faster decisions.",
+  "hp_approach_description_2": "We believe that true digital transformation occurs when technology seamlessly integrates with business strategy, creating systems that are intuitive, efficient, and deeply insightful. Our team works closely with clients to build bespoke AI models and implement robust data infrastructures that drive sustainable growth.",
+
+  // OUR EXPERTISE CARDS
+  "hp_expertise_section_title": "Our Expertise: Driving Your Digital Future",
+  "hp_expertise_section_description": "We empower businesses with strategic insights and cutting-edge technology to navigate the complexities of the modern world.",
+
+  // CARD 1: Institutional Diagnosis
+  "hp_card1_title": "Institutional Diagnosis",
+  "hp_card1_description": "Comprehensive analysis of your organization's processes to identify key areas for digital transformation and efficiency gains.",
+  "hp_card_learn_more": "Learn More", // Esta clave se reutiliza en todas las tarjetas
+
+  // CARD 2: Technology Solutions Development
+  "hp_card2_title": "Technology Solutions Development",
+  "hp_card2_description": "Building custom software and technological frameworks tailored to your unique business needs, ensuring scalable and robust solutions.",
+
+  // CARD 3: AI Implementation & Integration
+  "hp_card3_title": "AI Implementation & Integration",
+  "hp_card3_description": "Integrating advanced AI and machine learning models into your existing systems to automate tasks, predict trends, and optimize operations.",
+
+  // CARD 4: Advanced Data Analytics
+  "hp_card4_title": "Advanced Data Analytics",
+  "hp_card4_description": "Leveraging big data and statistical modeling to provide deep insights, enabling data-driven decision-making and strategic planning.",
+
+  // CARD 5: Cybersecurity Consulting
+  "hp_card5_title": "Cybersecurity Consulting",
+  "hp_card5_description": "Protecting your digital assets with robust cybersecurity strategies, ensuring data integrity and business continuity.",
+
+  // CARD 6: Innovation & R&D
+  "hp_card6_title": "Innovation & R&D",
+  "hp_card6_description": "Driving future growth by exploring emerging technologies and developing innovative solutions for competitive advantage.",
+
+  // CLIENTS CARDS
+  "hp_clients_section_title": "What Our Clients Say",
+  "hp_clients_section_description": "Hear directly from the businesses we've empowered.",
+
+  // CLIENT TESTIMONIALS (Text only, names/titles are usually fixed data)
+  "hp_client_quote_1": "BUNKUA transformed our chaotic data into clear, actionable strategies. Their AI implementation boosted our efficiency by 30%.",
+  "hp_client_name_1": "Alice Chen",
+  "hp_client_title_1": "CEO, InnovateTech",
+
+  "hp_client_quote_2": "The team at BUNKUA provided invaluable insights that led to significant cost savings and improved decision-making across our departments.",
+  "hp_client_name_2": "Robert Garcia",
+  "hp_client_title_2": "Director of Operations, Global Logistics",
+
+  "hp_client_quote_3": "Their institutional diagnosis was thorough and precise. We now have a clear roadmap for digital transformation.",
+  "hp_client_name_3": "Sarah Kim",
+  "hp_client_title_3": "Founder, EcoSolutions",
+
+  "hp_client_quote_4": "BUNKUA’s technology solutions seamlessly integrated with our existing infrastructure, proving their expertise and adaptability.",
+  "hp_client_name_4": "David Lee",
+  "hp_client_title_4": "CTO, NexGen Robotics",
+
+  "hp_client_quote_5": "Exceptional service and deep understanding of AI. BUNKUA is truly a leader in bringing order to complex data environments.",
+  "hp_client_name_5": "Maria Rodriguez",
+  "hp_client_title_5": "Head of Data Science, Quantum Analytics",
+
+  "hp_client_quote_6": "Our growth accelerated dramatically after implementing BUNKUA's strategic recommendations. A true partner in innovation.",
+  "hp_client_name_6": "John Smith",
+  "hp_client_title_6": "President, Synergy Corp",
+
+  // BAR (Trusted By)
+  "hp_trusted_by_title": "Trusted By Leading Businesses",
+
+  // READY TO TRANSFORM
+  "hp_transform_section_title": "Ready to Transform Your Business?",
+  "hp_transform_section_description": "Connect with BUNKUA today to discover how our data analysis and AI services can unlock new potentials for your company.",
+  "hp_transform_button": "Get Started Now",
+
+  
+}

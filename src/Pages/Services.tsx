@@ -1,5 +1,12 @@
 import { Layout } from '../components/Layout/Layout';
 import PortadaServicios from '../assets/Images/PortadaServicios.webp';
+import BombilloCafe from '../assets/Images/BombilloCafe.svg'
+import grid from '../assets/Images/Grid.svg'
+import BrainCafe from '../assets/Images/BrainCafe.svg'
+import FlechaCrecimiento from '../assets/Images/FlechaCrecimiento.svg'
+import escudo from '../assets/Images/Escudo.svg'
+import users from '../assets/Images/Users.svg'
+import rompecabezas from '../assets/Images/Rompezacebas.svg'
 
 export const Services = () => {
   return (
@@ -10,7 +17,7 @@ export const Services = () => {
          style={{ backgroundImage: `url(${PortadaServicios})` }} 
           >      
           <div className="flex flex-col justify-center items-center mx-11 relative z-10">
-            <h1 className="text-black text-7xl max-w-4xl mx-auto  font-bold leading-none text-center">
+            <h1 className="text-black sm:text-7xl text-5xl max-w-4xl mx-auto  font-bold leading-none text-center">
               Empowering Your Business Through Digital Innovation
             </h1>
             <p className="text-brown text-xl box-content leading-normal text-center m-5">
@@ -19,7 +26,7 @@ export const Services = () => {
             <p className="text-grey text-xl max-w-2xl box-content leading-normal text-center">
               At BUNKUA, we partner with visionary entrepreneurs to navigate the complexities of the digital age, providing precise data analysis and intelligent AI solutions that bring order to chaos and unlock unparalleled productivity.
             </p>
-            <button className="bg-green text-white mt-7 mb-0.5 w-fit h-9 px-3 rounded-[6px]">
+            <button className="hover:bg-black  bg-green text-white mt-7 mb-0.5 w-fit h-9 px-3 rounded-[6px]">
               Get a Free Consultation
             </button>
           </div>
@@ -43,7 +50,13 @@ export const Services = () => {
             {/* CARDS OUR CORE SERVICES*/}
             <div className="grid grid-cols-1 gap-6 sm:grid sm:grid-cols-3  sm:gap-6 m-11   ">
               {/*CARD 1*/}
-              <div className="border border-grayLight shadow-md rounded-xl p-6 flex flex-col  justify-between h-full text-center text-balance">
+              <div className="border border-grayLight shadow-md rounded-xl p-6 flex flex-col  justify-between h-full text-center text-balance transform hover:scale-102 transition-transform duration-60">
+                <div className='flex flex-col items-center m-5'>
+                  <img
+                    src={BombilloCafe}
+                    className="w-8 h-8"
+                  />
+                </div>
                 <h3 className="text-2xl font-semibold mb-4 text-gray-800 items-center">
                   Institutional Diagnosis
                 </h3>
@@ -62,7 +75,13 @@ export const Services = () => {
                 </button>
               </div>
               {/*CARD 2*/}
-              <div className="border border-grayLight shadow-md rounded-xl p-6 flex flex-col justify-between h-full text-center text-balance">
+              <div className="border border-grayLight shadow-md rounded-xl p-6 flex flex-col justify-between h-full text-center text-balance transform hover:scale-102 transition-transform duration-60">
+                <div className='flex flex-col items-center m-5 '>
+                  <img
+                    src={grid}
+                    className="w-8 h-8"
+                  />
+                </div>
                 <h3 className="text-2xl font-semibold mb-4 text-gray-800 items-center ">
                   Technology Solutions Development
                 </h3>
@@ -81,7 +100,13 @@ export const Services = () => {
                 </button>
               </div>
               {/*CARD 3*/}
-              <div className="border border-grayLight shadow-md rounded-xl p-6 flex flex-col  justify-between h-full text-center text-balance">
+              <div className="border border-grayLight shadow-md rounded-xl p-6 flex flex-col  justify-between h-full text-center text-balance transform hover:scale-102 transition-transform duration-60">
+                <div className='flex flex-col items-center m-5 '>
+                  <img
+                    src={BrainCafe}
+                    className="w-8 h-8"
+                  />
+                </div>
                 <h3 className="text-2xl font-semibold mb-4 text-gray-800 items-center">
                   AI Implementation & Integration
                 </h3>
@@ -121,7 +146,7 @@ export const Services = () => {
             {/*Our Transformative CARDS*/}
             <div className="grid grid-cols-1 gap-6 sm:grid sm:grid-cols-4  sm:gap-6 m-11   ">
               {/*CARD 1*/}
-              <div className="p-6 flex flex-col  justify-between items-center h-full text-center ">
+              <div className="p-6 flex flex-col  justify-between items-center h-full text-center  ">
 
                 <div className='bg-green text-white font-bold rounded-full size-11 flex items-center         justify-center m-5'>1
                 </div>
@@ -191,41 +216,67 @@ export const Services = () => {
             {/* CARDS WHY CHOOSE BUNKUA*/}
             <div className="grid grid-cols-1 gap-6 sm:grid sm:grid-cols-4  sm:gap-6 m-11   ">
               {/*CARD 1*/}
-              <div className="border border-grayLight shadow-md rounded-xl p-6 flex flex-col  justify-between h-full text-center text-balance">
+              <div className="border border-grayLight shadow-md rounded-xl p-6 flex flex-col  justify-between h-full text-center text-balance transform hover:scale-102 transition-transform duration-60">
+                <div className='m-5'>
+                  <img
+                    src={FlechaCrecimiento}
+                    className="w-8 h-8"
+                  />
+                </div>
                 <h3 className="text-2xl font-semibold mb-2 text-gray-800 items-center">
                   Proven Impact
                 </h3>
-                <p className="text-grey text-sm mb-4 leading-relaxed text-center">
+                <p className="text-grey text-sm mb-4 px-8 leading-relaxed text-center">
                   Track record of delivering tangible business outcomes and
                   significant ROI for our clients.
                 </p>
               </div>
               {/*CARD 2*/}
-              <div className="border border-grayLight shadow-md rounded-xl p-6 flex flex-col justify-between h-full text-center text-balance">
+              <div className="border border-grayLight shadow-md rounded-xl p-6 flex flex-col justify-between h-full text-center text-balance transform hover:scale-102 transition-transform duration-60">
+                <div className='m-5'>
+                  <img
+                    src={users}
+                    className="w-8 h-8"
+                  />
+
+                </div>
                 <h3 className="text-2xl font-semibold mb-2 text-gray-800 items-center ">
                   Expert Team
                 </h3>
-                <p className="text-grey text-sm mb-4 leading-relaxed text-center">
+                <p className="text-grey text-sm mb-4 px-8 leading-relaxed text-center">
                   Highly skilled professionals with deep expertise in data
                   science, AI, and software engineering.
                 </p>
               </div>
               {/*CARD 3*/}
-              <div className="border border-grayLight shadow-md rounded-xl p-6 flex flex-col  justify-between h-full text-center text-balance">
+              <div className="border border-grayLight shadow-md rounded-xl p-6 flex flex-col  justify-between h-full text-center text-balance transform hover:scale-102 transition-transform duration-60">
+                <div className='m-5'>
+                  <img
+                    src={escudo}
+                    className="w-8 h-8"
+                  />
+                </div>
                 <h3 className="text-2xl font-semibold mb-2 text-gray-800 items-center">
                   Secure & Scalable
                 </h3>
-                <p className="text-grey text-sm mb-4 leading-relaxed text-center items-center">
+                <p className="text-grey text-sm mb-4 px-8 leading-relaxed text-center items-center">
                   Solutions built with enterprise-grade security and designed
                   for future growth.
                 </p>
               </div>
               {/*CARD 4*/}
-              <div className="border border-grayLight shadow-md rounded-xl p-6 flex flex-col  justify-between h-full text-center text-balance">
+              <div className="border border-grayLight shadow-md rounded-xl p-6 flex flex-col  justify-between h-full text-center text-balance transform hover:scale-102 transition-transform duration-60">
+                <div className='m-5'>
+                  <img
+                    src={rompecabezas}
+                    className="w-8 h-8"
+                  />
+
+                </div>
                 <h3 className="text-2xl font-semibold mb-2 text-gray-800 items-center">
                   Tailored Solutions
                 </h3>
-                <p className="text-grey text-sm mb-4 leading-relaxed text-center items-center">
+                <p className="text-grey text-sm mb-4 px-8 leading-relaxed text-center items-center">
                   Customized approaches that fit your unique challenges, not
                   one-size-fits-all templates.
                 </p>
@@ -244,7 +295,7 @@ export const Services = () => {
               Let's discuss how BUNKUA's expertise in data analysis and AI can
               drive your next wave of growth and efficiency.
             </p>
-            <button className="bg-green text-white mt-7 mb-0.5 w-fit  p-2 rounded-[6px]">
+            <button className="hover:bg-black bg-green text-white mt-7 mb-0.5 w-fit  p-2 rounded-[6px]">
               Schedule a Discovery Call
             </button>
           </div>
