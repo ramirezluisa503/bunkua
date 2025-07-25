@@ -1,17 +1,28 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export default function SwitchButton() {
-  const [isChecked, setIsChecked] = useState(false);
+  const { i18n } = useTranslation();
+
+  const [isChecked, setIsChecked] = useState(i18n.language === 'en');
+
+  useEffect(() => {
+    const handleLanguageChange = (lng: string) => {
+      setIsChecked(lng === 'en');
+    };
+    i18n.on('languageChanged', handleLanguageChange);
+    return () => {
+      i18n.off('languageChanged', handleLanguageChange);
+    };
+  }, [i18n]);
 
   const toggleLanguage = () => {
-    setIsChecked(!isChecked);
-    // Aquí puedes agregar la lógica para cambiar el idioma
-    // const newLang = !isChecked ? 'en' : 'es';
-    // i18n.changeLanguage(newLang);
+    const newLang = i18n.language === 'es' ? 'en' : 'es';
+    i18n.changeLanguage(newLang);
   };
 
   return (
-    <div className="flex items-center justify-center h-8 text-center">
+    <div className="flex items-center justify-end ml-40 h-8 text-center ">
       <label className="inline-block relative m-0">
         <input
           type="checkbox"

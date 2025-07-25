@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next'; // Importa useTranslation
 import facebook from '../../assets/images/facebook.webp';
 import instagram from '../../assets/images/instagram.webp';
 import twitter from '../../assets/images/twitter.webp';
@@ -6,6 +7,7 @@ import linkedin from '../../assets/images/linkedin.webp';
 
 export const Footer = () => {
   const [email, setEmail] = useState('');
+  const { t } = useTranslation(); // Inicializa useTranslation
 
   const handleSubmit = () => {
     if (email) {
@@ -23,7 +25,7 @@ export const Footer = () => {
 
         <div className="w-full max-w-md">
           <h2 className="text-xl font-medium text-gray-700 mb-8 text-center">
-            Subscribe to our newsletter
+            {t('ft_newsletterTitulo')}
           </h2>
 
           <div className="flex gap-2">
@@ -33,7 +35,7 @@ export const Footer = () => {
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="Input your email"
+                placeholder={t('ft_emailPlaceholder')}
                 className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent text-gray-700 placeholder-gray-400"
               />
             </div>
@@ -41,7 +43,7 @@ export const Footer = () => {
               onClick={handleSubmit}
               className="px-6 py-3 bg-green hover:bg-black hover:text-white text-white font-medium rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
             >
-              Subscribe
+              {t('ft_btnSuscribirse')}
             </button>
           </div>
         </div>
@@ -50,7 +52,7 @@ export const Footer = () => {
       <footer className="py-8 px-4">
         <div className="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center">
           <div className="text-gray-500 text-sm mb-4 sm:mb-0">
-            © 2020 BUNKUA.
+            {t('ft_derechosReservados')}
           </div>
 
           <div className="flex space-x-4">

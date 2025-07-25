@@ -1,11 +1,9 @@
+import { useTranslation } from 'react-i18next';
 import { Layout } from '../components/Layout/Layout';
 import HomePageImage2 from '../assets/Images/HomePageImage2.webp';
 import HPClients1 from '../assets/Images/HPClients1.webp';
 import HPClients2 from '../assets/Images/HPClients2.webp';
 import HPClients3 from '../assets/Images/HPClients3.webp';
-import HPClients4 from '../assets/Images/HPClients4.webp';
-import HPClients5 from '../assets/Images/HPClients5.webp';
-import HPClients6 from '../assets/Images/HPClients6.webp';
 import PortadaHomaPage from '../assets/Images/PortadaHomePage.webp';
 import icono1 from '../assets/Images/HP1.webp';
 import icono2 from '../assets/Images/HP2.webp';
@@ -24,12 +22,13 @@ import cohete from '../assets/Images/Cohete.svg';
 import comillas from '../assets/Images/Comillas.svg';
 
 function HomePage() {
+  const { t } = useTranslation();
   return (
     <Layout>
       <article>
         {/*PORTADA */}
         <section
-          className="relative  bg-cover bg-center  min-h-screen flex items-center justify-center px-4"
+          className="relative bg-cover bg-center min-h-screen flex items-center justify-center px-4"
           style={{ backgroundImage: `url(${PortadaHomaPage})` }}
         >
           <div
@@ -37,61 +36,43 @@ function HomePage() {
             style={{
               backgroundImage:
                 'linear-gradient(to top, rgba(255,255,255,1) 5%, rgba(255,255,255,0) 120%)',
-              // De abajo (0%) hacia arriba (to top):
-              // - rgba(255,255,255,0.7) al 0% (abajo del todo, 70% opacidad blanca)
-              // - rgba(255,255,255,0) al 10% (al 10% de la altura, completamente transparente)
             }}
           ></div>
 
           <div className="flex flex-col justify-center items-center mx-11 relative z-10">
-            <h1 className="text-black text-7xl max-w-3xl mx-auto  font-bold leading-none text-center">
-              Knowledge that brings order to chaos.
+            <h1 className="sm:text-7xl text-black text-6xl max-w-3xl mx-auto font-bold leading-none text-center">
+              {t('hp_hero_title')}
             </h1>
             <p className="text-brown text-xl box-content leading-normal text-center m-5">
-              Empowering your business with intelligent data analysis and AI
-              solutions.
+              {t('hp_hero_subtitle_1')}
             </p>
             <p className="text-grey text-xl max-w-4xl box-content leading-normal text-center">
-              At BUNKUA, we transform complex data into clear, actionable
-              insights, driving prosperity and productivity for entrepreneurs
-              through cutting-edge technology.
+              {t('hp_hero_subtitle_2')}
             </p>
             <button className="bg-green hover:bg-black text-white mt-7 mb-0.5 w-fit h-9 px-3 rounded-[6px]">
-              Request a Free Consultation
+              {t('hp_hero_button')}
             </button>
           </div>
         </section>
 
         {/*OUR APPROACH */}
         <section>
-          <div className="sm:gap-10 sm:grid-cols-2 grid grid-cols-1 p-4 m-9  box-content  ">
+          <div className="sm:gap-10 sm:grid-cols-2 grid grid-cols-1 p-4 m-9 box-content">
             <div className="sm:col-span-1 text-left box-content">
               <h1 className="text-black text-5xl box-content mb-6 font-bold leading-none text-left text-balance">
-                Our Approach:
-                <br />
-                Transforming Data into Actionable Intelligence
+                {t('hp_approach_title')}
               </h1>
               <p className="text-grey box-content leading-normal text-left">
-                BUNKUA specializes in turning raw, unstructured data into a
-                powerful asset. We apply rigorous methodologies in data
-                analysis, machine learning, and artificial intelligence to
-                uncover hidden patterns and predict future trends. Our solutions
-                are designed not just to analyze, but to inform, empowering
-                businesses to make smarter, faster decisions.
+                {t('hp_approach_description_1')}
                 <br />
-                <br /> We believe that true digital transformation occurs when
-                technology seamlessly integrates with business strategy,
-                creating systems that are intuitive, efficient, and deeply
-                insightful. Our team works closely with clients to build bespoke
-                AI models and implement robust data infrastructures that drive
-                sustainable growth.
+                <br /> {t('hp_approach_description_2')}
               </p>
             </div>
             <div className="mt-15 max-w-full h-auto mx-auto my-auto size-72 text-3xl box-content sm:size-fit sm:col-span-1 sm:px-3 sm:mt-0">
               <img
                 className="rounded-xl "
                 src={HomePageImage2}
-                alt="Image"
+                alt={t('hp_alt_image1')}
               />
             </div>
           </div>
@@ -102,16 +83,15 @@ function HomePage() {
           <div className="mt-28 mb-20">
             <div className="text-center mx-11">
               <h1 className="text-black text-5xl box-content mb-6 font-bold leading-none text-balance">
-                Our Expertise: Driving Your Digital Future
+                {t('hp_expertise_section_title')}
               </h1>
               <p className="text-grey box-content leading-normal ">
-                We empower businesses with strategic insights and cutting-edge
-                technology to navigate the complexities of the modern world.
+                {t('hp_expertise_section_description')}
               </p>
             </div>
 
             {/* CARDS OUR EXPERTICIE*/}
-            <div className="grid grid-cols-1 gap-6 sm:grid sm:grid-cols-3  sm:gap-6 m-11   ">
+            <div className="grid grid-cols-1 gap-6 sm:grid sm:grid-cols-3 sm:gap-6 m-11">
               {/*CARD 1*/}
               <div className="border border-borderGrey shadow-md rounded-xl p-6 flex flex-col items-center justify-between h-full text-center transform hover:scale-102 transition-transform duration-60">
                 <div className="m-5">
@@ -121,18 +101,16 @@ function HomePage() {
                   />
                 </div>
                 <h3 className="text-xl font-semibold mb-5 text-gray-800">
-                  Institutional Diagnosis
+                  {t('hp_card1_title')}
                 </h3>
                 <p className="text-grey text-sm mb-10 max-w-90 leading-relaxed text-center ">
-                  Comprehensive analysis of your organization's processes to
-                  identify key areas for digital transformation and efficiency
-                  gains.
+                  {t('hp_card1_description')}
                 </p>
                 <a
                   href="#"
                   className="inline-flex items-center text-green hover:underline mt-auto gap-3 "
                 >
-                  Learn More
+                  {t('hp_card_learn_more')}
                   <img
                     src={FlechaDerecha}
                     className="w-4 h-4"
@@ -148,18 +126,16 @@ function HomePage() {
                   />
                 </div>
                 <h3 className="text-xl font-semibold mb-5 text-gray-800">
-                  Technology Solutions Development
+                  {t('hp_card2_title')}
                 </h3>
                 <p className="text-grey text-sm mb-10 max-w-90 leading-relaxed text-center ">
-                  Building custom software and technological frameworks tailored
-                  to your unique business needs, ensuring scalable and robust
-                  solutions.
+                  {t('hp_card2_description')}
                 </p>
                 <a
                   href="#"
                   className="inline-flex items-center text-green hover:underline mt-auto gap-3"
                 >
-                  Learn More
+                  {t('hp_card_learn_more')}
                   <img
                     src={FlechaDerecha}
                     className="w-4 h-4"
@@ -175,18 +151,16 @@ function HomePage() {
                   />
                 </div>
                 <h3 className="text-xl font-semibold mb-5 text-gray-800">
-                  AI Implementation & Integration
+                  {t('hp_card3_title')}
                 </h3>
                 <p className="text-grey text-sm mb-10 max-w-90 leading-relaxed text-center ">
-                  Integrating advanced AI and machine learning models into your
-                  existing systems to automate tasks, predict trends, and
-                  optimize operations.
+                  {t('hp_card3_description')}
                 </p>
                 <a
                   href="#"
                   className="inline-flex items-center text-green hover:underline mt-auto gap-3"
                 >
-                  Learn More
+                  {t('hp_card_learn_more')}
                   <img
                     src={FlechaDerecha}
                     className="w-4 h-4"
@@ -202,18 +176,16 @@ function HomePage() {
                   />
                 </div>
                 <h3 className="text-xl font-semibold mb-5 text-gray-800">
-                  Advanced Data Analytics
+                  {t('hp_card4_title')}
                 </h3>
                 <p className="text-grey text-sm mb-10 max-w-90 leading-relaxed text-center ">
-                  Leveraging big data and statistical modeling to provide deep
-                  insights, enabling data-driven decision-making and strategic
-                  planning.
+                  {t('hp_card4_description')}
                 </p>
                 <a
                   href="#"
                   className="inline-flex items-center text-green hover:underline mt-auto gap-3"
                 >
-                  Learn More
+                  {t('hp_card_learn_more')}
                   <img
                     src={FlechaDerecha}
                     className="w-4 h-4"
@@ -229,17 +201,16 @@ function HomePage() {
                   />
                 </div>
                 <h3 className="text-xl font-semibold mb-5 text-gray-800">
-                  Cybersecurity Consulting
+                  {t('hp_card5_title')}
                 </h3>
                 <p className="text-grey text-sm mb-10 max-w-90 leading-relaxed text-center ">
-                  Protecting your digital assets with robust cybersecurity
-                  strategies, ensuring data integrity and business continuity.
+                  {t('hp_card5_description')}
                 </p>
                 <a
                   href="#"
                   className="inline-flex items-center text-green hover:underline mt-auto gap-3"
                 >
-                  Learn More
+                  {t('hp_card_learn_more')}
                   <img
                     src={FlechaDerecha}
                     className="w-4 h-4"
@@ -255,17 +226,16 @@ function HomePage() {
                   />
                 </div>
                 <h3 className="text-xl font-semibold mb-5 text-gray-800">
-                  Innovation & R&D
+                  {t('hp_card6_title')}
                 </h3>
                 <p className="text-grey text-sm mb-10 max-w-90 leading-relaxed text-center ">
-                  Driving future growth by exploring emerging technologies and
-                  developing innovative solutions for competitive advantage.
+                  {t('hp_card6_description')}
                 </p>
                 <a
                   href="#"
                   className="inline-flex items-center text-green hover:underline mt-auto gap-3"
                 >
-                  Learn More
+                  {t('hp_card_learn_more')}
                   <img
                     src={FlechaDerecha}
                     className="w-4 h-4"
@@ -281,10 +251,10 @@ function HomePage() {
           <div className="mt-28 mb-20 bg-grayLight py-14">
             <div className="text-center mx-11">
               <h1 className="text-black text-5xl box-content mb-6 font-bold leading-none text-balance">
-                What Our Clients Say
+                {t('hp_clients_section_title')}
               </h1>
               <p className="text-grey box-content leading-normal ">
-                Hear directly from the businesses we\'ve empowered.
+                {t('hp_clients_section_description')}
               </p>
             </div>
 
@@ -297,19 +267,17 @@ function HomePage() {
                   className="w-8 h-8"
                 />
                 <p className="text-lg italic p-5 text-hp-clients leading-relaxed text-center">
-                  BUNKUA transformed our chaotic data into clear, actionable
-                  strategies. Their AI implementation boosted our efficiency by
-                  30%.
+                  {t('hp_client_quote_1')}
                 </p>
                 <img
-                  className="rounded-full mt-5 w-auto h-22 "
+                  className="rounded-full mt-auto w-auto h-22 "
                   src={HPClients1}
                   alt="Alice Chen"
                 />
                 <p className="font-semibold text-gray-900 text-lg mt-auto">
-                  Alice Chen
+                  {t('hp_client_name_1')}
                 </p>
-                <p className="text-grey text-sm">CEO, InnovateTech</p>
+                <p className="text-grey text-sm">{t('hp_client_title_1')}</p>
               </div>
               {/*CARD 2*/}
               <div className="cards transform hover:scale-102 transition-transform duration-60">
@@ -318,21 +286,17 @@ function HomePage() {
                   className="w-8 h-8"
                 />
                 <p className="text-lg italic p-5 text-hp-clients leading-relaxed text-center">
-                  The team at BUNKUA provided invaluable insights that led to
-                  significant cost savings and improved decision-making across
-                  our departments.
+                  {t('hp_client_quote_2')}
                 </p>
                 <img
-                  className="rounded-full w-auto h-20"
+                  className="rounded-full w-auto mt-auto h-20"
                   src={HPClients2}
                   alt="Robert Garcia"
                 />
                 <p className="font-semibold text-gray-900 text-lg mt-auto">
-                  Robert Garcia
+                  {t('hp_client_name_2')}
                 </p>
-                <p className="text-grey text-sm">
-                  Director of Operations, Global Logistics
-                </p>
+                <p className="text-grey text-sm">{t('hp_client_title_2')}</p>
               </div>
               {/*CARD 3*/}
               <div className="cards transform hover:scale-102 transition-transform duration-60">
@@ -341,82 +305,17 @@ function HomePage() {
                   className="w-8 h-8"
                 />
                 <p className="text-lg italic p-5 text-hp-clients leading-relaxed text-center">
-                  Their institutional diagnosis was thorough and precise. We now
-                  have a clear roadmap for digital transformation.
+                  {t('hp_client_quote_3')}
                 </p>
                 <img
-                  className="rounded-full w-auto h-20 mt-6 "
+                  className="rounded-full w-auto h-20 mt-auto "
                   src={HPClients3}
                   alt="Sarah Kim"
                 />
                 <p className="font-semibold text-gray-900 text-lg mt-auto">
-                  Sarah Kim
+                  {t('hp_client_name_3')}
                 </p>
-                <p className="text-grey text-sm">Founder, EcoSolutions</p>
-              </div>
-              {/*CARD 4*/}
-              <div className="cards transform hover:scale-102 transition-transform duration-60">
-                <img
-                  src={comillas}
-                  className="w-8 h-8"
-                />
-                <p className="text-lg italic p-5 text-hp-clients leading-relaxed text-center">
-                  BUNKUA’s technology solutions seamlessly integrated with our
-                  existing infrastructure, proving their expertise and
-                  adaptability.
-                </p>
-                <img
-                  className="rounded-full w-auto h-20 mt-5"
-                  src={HPClients4}
-                  alt="David Lee"
-                />
-                <p className="font-semibold text-gray-900 text-lg mt-auto">
-                  David Lee
-                </p>
-                <p className="text-grey text-sm">CTO, NexGen Robotics</p>
-              </div>
-              {/*CARD 5*/}
-              <div className="cards transform hover:scale-102 transition-transform duration-60">
-                <img
-                  src={comillas}
-                  className="w-8 h-8"
-                />
-                <p className="-lg italic p-5 text-hp-clients leading-relaxed text-center">
-                  Exceptional service and deep understanding of AI. BUNKUA is
-                  truly a leader in bringing order to complex data environments.
-                </p>
-                <img
-                  className="rounded-full w-auto h-20 mt-5"
-                  src={HPClients5}
-                  alt="Maria Rodriguez"
-                />
-                <p className="font-semibold text-gray-900 text-lg mt-auto">
-                  Maria Rodriguez
-                </p>
-                <p className="text-grey text-sm">
-                  Head of Data Science, Quantum Analytics
-                </p>
-              </div>
-              {/*CARD 6*/}
-              <div className="cards transform hover:scale-102 transition-transform duration-60">
-                <img
-                  src={comillas}
-                  className="w-8 h-8"
-                />
-                <p className="text-lg italic p-5 text-hp-clients leading-relaxed text-center">
-                  Our growth accelerated dramatically after implementing
-                  BUNKUA's strategic recommendations. A true partner in
-                  innovation.
-                </p>
-                <img
-                  className="rounded-full w-auto h-20 mt-5 "
-                  src={HPClients6}
-                  alt="John Smith"
-                />
-                <p className="font-semibold text-gray-900 text-lg mt-auto">
-                  John Smith
-                </p>
-                <p className="text-gray-500 text-sm">President, Synergy Corp</p>
+                <p className="text-grey text-sm">{t('hp_client_title_3')}</p>
               </div>
             </div>
           </div>
@@ -426,7 +325,7 @@ function HomePage() {
         <section>
           <div className="text-center mx-11 mt-30">
             <h1 className="text-black text-5xl box-content mb-6 font-bold leading-none text-balance">
-              Trusted By Leading Businesses
+              {t('hp_trusted_by_title')}
             </h1>
             <div className="flex sm:gap-25 gap-4 items-center justify-center m-20">
               <img
@@ -475,16 +374,15 @@ function HomePage() {
 
         {/*READY TO TRANSFORM */}
         <section>
-          <div className="sm:mx-24 mt-40 mb-20 mx-10 px-8 pt-8 pb-4  text-center bg-green h-auto w-auto rounded-t-xl">
+          <div className="sm:mx-24 mt-40 mb-20 mx-10 px-8 pt-8 pb-4 text-center bg-green h-auto w-auto rounded-t-xl">
             <h1 className="text-white text-5xl box-content mb-6 font-bold leading-none text-balance">
-              Ready to Transform Your Business?
+              {t('hp_transform_section_title')}
             </h1>
             <p className="text-white box-content leading-normal ">
-              Connect with BUNKUA today to discover how our data analysis and AI
-              services can unlock new potentials for your company.
+              {t('hp_transform_section_description')}
             </p>
             <button className="bg-white hover:bg-black hover:text-white mt-7 mb-0.5 w-48 h-9 rounded-[6px] text-green">
-              Get Started Now
+              {t('hp_transform_button')}
             </button>
           </div>
         </section>

@@ -43,7 +43,11 @@
 }
 
 .bar {
-  @apply p-4 border border-borderGrey rounded-[6px] size-fit sm:hover:bg-green sm:hover:text-white hover:bg-green hover:text-white
+  @apply p-4 border border-borderGrey rounded-[6px] size-fit sm:hover:bg-green sm:hover:text-white hover:bg-green hover:text-white;
+}
+
+.textNavbar{
+  @apply text-gray-700 hover:text-green px-3 py-2 text-[16px] font-semibold transition-colors duration-200;
 }
 
 
