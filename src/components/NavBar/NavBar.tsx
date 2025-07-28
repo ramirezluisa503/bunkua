@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { useTranslation } from 'react-i18next'; // Importa useTranslation
+import { useTranslation } from 'react-i18next';
 
 import logoPrincipal from '../../assets/images/logoPrincipal.webp';
 import SwitchButton from './../SwitchButton/SwitchButton.tsx';
 
 export const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { t } = useTranslation(); // Inicializa useTranslation
+  const { t } = useTranslation();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -33,47 +33,53 @@ export const NavBar = () => {
           <nav className="hidden md:flex space-x-1">
             <NavLink
               to={'/'}
-              className="textNavbar"
+              className={({ isActive }) =>
+                isActive ? 'textNavbar !text-green' : 'textNavbar'
+              }
             >
               {t('nv_inicio')}
             </NavLink>
             <NavLink
               to={'/services'}
-              className="textNavbar"
+              className={({ isActive }) =>
+                isActive ? 'textNavbar !text-green' : 'textNavbar'
+              }
             >
               {t('nv_servicios')}
             </NavLink>
             <NavLink
               to={'/AboutUs'}
-              className="textNavbar"
+              className={({ isActive }) =>
+                isActive ? 'textNavbar !text-green' : 'textNavbar'
+              }
             >
               {t('nv_acercaDeNosotros')}
             </NavLink>
             <NavLink
               to={'/CaseStudies'}
-              className="textNavbar"
+              className={({ isActive }) =>
+                isActive ? 'textNavbar !text-green' : 'textNavbar'
+              }
             >
               {t('nv_casosDeEstudio')}
             </NavLink>
             <NavLink
               to={'/ContactUs'}
-              className="textNavbar"
+              className={({ isActive }) =>
+                isActive ? 'textNavbar !text-green' : 'textNavbar'
+              }
             >
               {t('nv_contactanos')}
             </NavLink>
           </nav>
 
-          {/* Desktop Language Selector */}
           <div className="hidden md:flex items-center space-x-10 md:ml-auto">
             <SwitchButton />
           </div>
 
-          {/* Mobile: Language Selector + Hamburger Menu */}
           <div className="md:hidden flex items-center space-x-4">
-            {/* Mobile Language Selector */}
             <SwitchButton />
 
-            {/* Hamburger Menu Button */}
             <button
               onClick={toggleMenu}
               className="text-gray-700 hover:text-green focus:outline-none"
@@ -104,7 +110,13 @@ export const NavBar = () => {
           <div className="px-2 pt-2 pb-3 space-y-1">
             <NavLink
               to={'/'}
-              className="block px-3 py-2 text-2xl font-medium text-gray-700 hover:text-green-600 hover:bg-gray-50 transition-colors duration-200"
+              className={({ isActive }) =>
+                `block px-3 py-2 text-2xl font-medium transition-colors duration-200 ${
+                  isActive
+                    ? '!text-green-600 bg-green-50'
+                    : 'text-gray-700 hover:text-green-600 hover:bg-gray-50'
+                }`
+              }
               onClick={() => setIsMenuOpen(false)}
             >
               {t('nv_inicio')}
@@ -112,7 +124,13 @@ export const NavBar = () => {
 
             <NavLink
               to={'/services'}
-              className="block px-3 py-2 text-2xl font-medium text-gray-700 hover:text-green-600 hover:bg-gray-50 transition-colors duration-200"
+              className={({ isActive }) =>
+                `block px-3 py-2 text-2xl font-medium transition-colors duration-200 ${
+                  isActive
+                    ? '!text-green-600 bg-green-50'
+                    : 'text-gray-700 hover:text-green-600 hover:bg-gray-50'
+                }`
+              }
               onClick={() => setIsMenuOpen(false)}
             >
               {t('nv_servicios')}
@@ -120,7 +138,13 @@ export const NavBar = () => {
 
             <NavLink
               to={'/AboutUs'}
-              className="block px-3 py-2 text-2xl font-medium text-gray-700 hover:text-green-600 hover:bg-gray-50 transition-colors duration-200"
+              className={({ isActive }) =>
+                `block px-3 py-2 text-2xl font-medium transition-colors duration-200 ${
+                  isActive
+                    ? '!text-green-600 bg-green-50'
+                    : 'text-gray-700 hover:text-green-600 hover:bg-gray-50'
+                }`
+              }
               onClick={() => setIsMenuOpen(false)}
             >
               {t('nv_acercaDeNosotros')}
@@ -128,7 +152,13 @@ export const NavBar = () => {
 
             <NavLink
               to={'/CaseStudies'}
-              className="block px-3 py-2 text-2xl font-medium text-gray-700 hover:text-green-600 hover:bg-gray-50 transition-colors duration-200"
+              className={({ isActive }) =>
+                `block px-3 py-2 text-2xl font-medium transition-colors duration-200 ${
+                  isActive
+                    ? '!text-green-600 bg-green-50'
+                    : 'text-gray-700 hover:text-green-600 hover:bg-gray-50'
+                }`
+              }
               onClick={() => setIsMenuOpen(false)}
             >
               {t('nv_casosDeEstudio')}
@@ -136,7 +166,13 @@ export const NavBar = () => {
 
             <NavLink
               to={'/ContactUs'}
-              className="block px-3 py-2 text-2xl font-medium text-gray-700 hover:text-green-600 hover:bg-gray-50 transition-colors duration-200"
+              className={({ isActive }) =>
+                `block px-3 py-2 text-2xl font-medium transition-colors duration-200 ${
+                  isActive
+                    ? '!text-green-600 bg-green-50'
+                    : 'text-gray-700 hover:text-green-600 hover:bg-gray-50'
+                }`
+              }
               onClick={() => setIsMenuOpen(false)}
             >
               {t('nv_contactanos')}
