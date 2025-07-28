@@ -29,13 +29,10 @@
   --color-green: #445737;
   --color-grayLight: #f7f7f7;
   --color-borderGrey: #ebebea;
-  --color-bk-hover: #445737;
   --color-cs-beige: #ecedea;
-  --color-cs-card:#eceeeb;
-  --color-hp-clients:#242524;
+  --color-cs-card: #eceeeb;
+  --color-hp-clients: #242524;
   --color-nv-bg: #f9f2e0;
-  
-  
 }
 
 .cards {
@@ -46,8 +43,6 @@
   @apply p-4 border border-borderGrey rounded-[6px] size-fit sm:hover:bg-green sm:hover:text-white hover:bg-green hover:text-white;
 }
 
-.textNavbar{
+.textNavbar {
   @apply text-gray-700 hover:text-green px-3 py-2 text-[16px] font-semibold transition-colors duration-200;
 }
-
-
