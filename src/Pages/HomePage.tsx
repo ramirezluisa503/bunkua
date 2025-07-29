@@ -62,7 +62,7 @@ function HomePage() {
               <h1 className="text-black text-5xl box-content mb-6 font-bold leading-none text-left text-balance">
                 {t('hp_approach_title')}
               </h1>
-              <p className="text-grey box-content leading-normal text-left">
+              <p className="text-grey box-content leading-normal text-left ">
                 {t('hp_approach_description_1')}
                 <br />
                 <br /> {t('hp_approach_description_2')}
@@ -85,7 +85,7 @@ function HomePage() {
               <h1 className="text-black text-5xl box-content mb-6 font-bold leading-none text-balance">
                 {t('hp_expertise_section_title')}
               </h1>
-              <p className="text-grey box-content leading-normal ">
+              <p className="text-grey text-xl box-content leading-normal ">
                 {t('hp_expertise_section_description')}
               </p>
             </div>
@@ -93,7 +93,7 @@ function HomePage() {
             {/* CARDS OUR EXPERTICIE*/}
             <div className="grid grid-cols-1 gap-6 sm:grid sm:grid-cols-3 sm:gap-6 m-11">
               {/*CARD 1*/}
-              <div className="border border-borderGrey shadow-md rounded-xl p-6 flex flex-col items-center justify-between h-full text-center transform hover:scale-102 transition-transform duration-60">
+              <div className="border border-borderGrey shadow-md rounded-xl p-6 flex flex-col items-center justify-between h-full text-center transform hover:scale-102 transition-transform duration-300">
                 <div className="m-5">
                   <img
                     src={portapepeles}
@@ -118,7 +118,7 @@ function HomePage() {
                 </a>
               </div>
               {/*CARD 2*/}
-              <div className="border border-borderGrey shadow-md rounded-xl p-6 flex flex-col items-center justify-between h-full text-center transform hover:scale-102 transition-transform duration-60">
+              <div className="border border-borderGrey shadow-md rounded-xl p-6 flex flex-col items-center justify-between h-full text-center transform hover:scale-102 transition-transform duration-300">
                 <div className="m-5">
                   <img
                     src={flechas}
@@ -143,7 +143,7 @@ function HomePage() {
                 </a>
               </div>
               {/*CARD 3*/}
-              <div className="border border-borderGrey shadow-md rounded-xl p-6 flex flex-col items-center justify-between h-full text-center transform hover:scale-102 transition-transform duration-60">
+              <div className="border border-borderGrey shadow-md rounded-xl p-6 flex flex-col items-center justify-between h-full text-center transform hover:scale-102 transition-transform duration-300">
                 <div className="m-5">
                   <img
                     src={brain}
@@ -168,7 +168,7 @@ function HomePage() {
                 </a>
               </div>
               {/*CARD 4*/}
-              <div className="border border-borderGrey shadow-md rounded-xl p-6 flex flex-col items-center justify-between h-full text-center transform hover:scale-102 transition-transform duration-60">
+              <div className="border border-borderGrey shadow-md rounded-xl p-6 flex flex-col items-center justify-between h-full text-center transform hover:scale-102 transition-transform duration-300">
                 <div className="m-5">
                   <img
                     src={barras}
@@ -193,7 +193,7 @@ function HomePage() {
                 </a>
               </div>
               {/*CARD 5*/}
-              <div className="border border-borderGrey shadow-md rounded-xl p-6 flex flex-col items-center justify-between h-full text-center transform hover:scale-102 transition-transform duration-60 ">
+              <div className="border border-borderGrey shadow-md rounded-xl p-6 flex flex-col items-center justify-between h-full text-center transform hover:scale-102 transition-transform duration-300 ">
                 <div className="m-5">
                   <img
                     src={escudo}
@@ -218,7 +218,7 @@ function HomePage() {
                 </a>
               </div>
               {/*CARD 6*/}
-              <div className="border border-borderGrey shadow-md rounded-xl p-6 flex flex-col items-center justify-between h-full text-center transform hover:scale-102 transition-transform duration-60">
+              <div className="border border-borderGrey shadow-md rounded-xl p-6 flex flex-col items-center justify-between h-full text-center transform hover:scale-102 transition-transform duration-300">
                 <div className="m-5">
                   <img
                     src={cohete}
@@ -253,7 +253,7 @@ function HomePage() {
               <h1 className="text-black text-5xl box-content mb-6 font-bold leading-none text-balance">
                 {t('hp_clients_section_title')}
               </h1>
-              <p className="text-grey box-content leading-normal ">
+              <p className="text-grey text-xl box-content leading-normal ">
                 {t('hp_clients_section_description')}
               </p>
             </div>
@@ -261,7 +261,7 @@ function HomePage() {
             {/* CARDS What our clients Say*/}
             <div className="sm:grid sm:grid-cols-3 sm:gap-6 grid grid-cols-1 gap-6 m-11 ">
               {/*CARD 1*/}
-              <div className="cards transform hover:scale-102 transition-transform duration-60">
+              <div className="cards transform hover:scale-102 transition-transform duration-300">
                 <img
                   src={comillas}
                   className="w-8 h-8"
@@ -280,7 +280,7 @@ function HomePage() {
                 <p className="text-grey text-sm">{t('hp_client_title_1')}</p>
               </div>
               {/*CARD 2*/}
-              <div className="cards transform hover:scale-102 transition-transform duration-60">
+              <div className="cards transform hover:scale-102 transition-transform duration-300">
                 <img
                   src={comillas}
                   className="w-8 h-8"
@@ -299,7 +299,7 @@ function HomePage() {
                 <p className="text-grey text-sm">{t('hp_client_title_2')}</p>
               </div>
               {/*CARD 3*/}
-              <div className="cards transform hover:scale-102 transition-transform duration-60">
+              <div className="cards transform hover:scale-102 transition-transform duration-300">
                 <img
                   src={comillas}
                   className="w-8 h-8"

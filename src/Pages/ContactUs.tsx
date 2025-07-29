@@ -50,12 +50,13 @@ export const ContactUs = () => {
           </div>
         </section>
 
-        <section>
-          <div className="sm:flex sm:flex-row flex flex-col bg-white border border-borderGrey rounded-b-2xl p-8   max-w-5xl w-auto">
-            {/* Sección del Formulario (Mitad Izquierda) */}
+        {/*FORMULARIO */}
+        <section className='flex flex-row justify-center items-center m-15'>
+          <div className="sm:flex sm:flex-row flex flex-col bg-white border border-borderGrey rounded-2xl p-8 max-w-5xl w-auto">
+            {/* Form Section (Left Half) */}
             <div className="w-full md:w-1/2 p-4 flex flex-col justify-center">
               <h2 className="text-2xl font-semibold text-gray-800 mb-6">
-                Envíanos un Mensaje
+                {t('cu_title')} {/* Uses the 'cu_title' key for the heading */}
               </h2>
               <form className="space-y-4">
                 <div>
@@ -63,14 +64,14 @@ export const ContactUs = () => {
                     htmlFor="fullName"
                     className="block text-sm font-medium text-grey mb-1"
                   >
-                    Tu nombre completo
+                    {t('cu_fullNameLabel')} {/* Uses the 'cu_fullNameLabel' key */}
                   </label>
                   <input
                     type="text"
                     id="fullName"
                     name="fullName"
-                    placeholder="Tu nombre completo"
-                    className="mt-1 block w-full px-3 py-2 text-grey border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
+                    placeholder={t('cu_fullNamePlaceholder')} 
+                    className="mt-1 block w-full px-3 py-2 text-grey border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green focus:border-green sm:text-sm"
                     required
                   />
                 </div>
@@ -79,14 +80,14 @@ export const ContactUs = () => {
                     htmlFor="email"
                     className="block text-sm font-medium text-grey mb-1"
                   >
-                    Tu dirección de correo electrónico
+                    {t('cu_emailLabel')} 
                   </label>
                   <input
                     type="email"
                     id="email"
                     name="email"
-                    placeholder="ejemplo@dominio.com"
-                    className="mt-1 block w-full px-3 py-2 text-grey border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
+                    placeholder={t('cu_emailPlaceholder')} 
+                    className="mt-1 block w-full px-3 py-2 text-grey border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green focus:border-green sm:text-sm"
                     required
                   />
                 </div>
@@ -95,13 +96,13 @@ export const ContactUs = () => {
                     htmlFor="message"
                     className="block text-sm font-medium text-grey mb-1"
                   >
-                    Tu mensaje o consulta
+                    {t('cu_messageLabel')} 
                   </label>
                   <textarea
                     id="message"
                     name="message"
-                    placeholder="Escribe tu mensaje aquí..."
-                    className="mt-1 block w-full px-3 py-2 text-grey border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
+                    placeholder={t('cu_messagePlaceholder')} 
+                    className="mt-1 block w-full px-3 py-2 text-grey border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green focus:border-green sm:text-sm"
                     required
                   ></textarea>
                 </div>
@@ -109,17 +110,17 @@ export const ContactUs = () => {
                   type="submit"
                   className="w-full md:w-auto px-6 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-green hover:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 "
                 >
-                  Enviar consulta
+                  {t('cu_submitButton')} 
                 </button>
               </form>
             </div>
 
-            {/* Sección de la Imagen (Mitad Derecha) */}
-            <div className="w-full md:w-1/2 p-4 flex items-center justify-center mt-8 md:mt-0">
+            {/* Image Section */}
+            <div className="sm:mt-0 sm:w-1/2 sm:ml-10 p-4 flex items-center justify-center mt-8 w-full border-[#fbfbfa] border-15 rounded-xl  ">
               <img
                 src={ImgFormulario}
-                alt="Edificio de oficinas moderno"
-                className="rounded-lg object-cover w-full h-full max-h-[400px] md:max-h-full"
+                alt={t('cu_imageAlt')} 
+                className="md:max-h-full object-cover w-full h-full max-h-[400px] rounded-xl "
               />
             </div>
           </div>
@@ -134,7 +135,7 @@ export const ContactUs = () => {
             {/* CARDS*/}
             <div className="sm:grid sm:grid-cols-3 sm:gap-6 m-11 grid grid-cols-1 gap-6">
               {/*CARD 1*/}
-              <div className="border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-between h-full text-center shadow-md transform hover:scale-102 transition-transform duration-60">
+              <div className="border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-between h-full text-center shadow-md transform hover:scale-102 transition-transform duration-300">
                 <div className="bg-cs-card text-white font-bold rounded-full size-11 flex items-center justify-center m-5">
                   <img
                     src={bombillo}
@@ -149,7 +150,7 @@ export const ContactUs = () => {
                 </p>
               </div>
               {/*CARD 2*/}
-              <div className="border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-between h-full text-center shadow-md transform hover:scale-102 transition-transform duration-60">
+              <div className="border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-between h-full text-center shadow-md transform hover:scale-102 transition-transform duration-300">
                 <div className="bg-cs-card text-white font-bold rounded-full size-11 flex items-center justify-center m-5">
                   <img
                     src={radar}
@@ -164,7 +165,7 @@ export const ContactUs = () => {
                 </p>
               </div>
               {/*CARD 3*/}
-              <div className="border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-between h-full text-center shadow-md transform hover:scale-102 transition-transform duration-60">
+              <div className="border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-between h-full text-center shadow-md transform hover:scale-102 transition-transform duration-300">
                 <div className="bg-cs-card text-white font-bold rounded-full size-11 flex items-center justify-center m-5">
                   <img
                     src={portafolio}
@@ -179,7 +180,7 @@ export const ContactUs = () => {
                 </p>
               </div>
               {/*CARD 4*/}
-              <div className="border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-between h-full text-center shadow-md transform hover:scale-102 transition-transform duration-60">
+              <div className="border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-between h-full text-center shadow-md transform hover:scale-102 transition-transform duration-300">
                 <div className="bg-cs-card text-white font-bold rounded-full size-11 flex items-center justify-center m-5">
                   <img
                     src={world}
@@ -194,7 +195,7 @@ export const ContactUs = () => {
                 </p>
               </div>
               {/*CARD 5*/}
-              <div className="border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-between h-full text-center shadow-md transform hover:scale-102 transition-transform duration-60">
+              <div className="border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-between h-full text-center shadow-md transform hover:scale-102 transition-transform duration-300">
                 <div className="bg-cs-card text-white font-bold rounded-full size-11 flex items-center justify-center m-5">
                   <img
                     src={bombillo}
@@ -209,7 +210,7 @@ export const ContactUs = () => {
                 </p>
               </div>
               {/*CARD 6*/}
-              <div className="border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-between h-full text-center shadow-md transform hover:scale-102 transition-transform duration-60">
+              <div className="border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-between h-full text-center shadow-md transform hover:scale-102 transition-transform duration-300">
                 <div className="bg-cs-card text-white font-bold rounded-full size-11 flex items-center justify-center m-5">
                   <img
                     src={bombillo}

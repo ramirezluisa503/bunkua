@@ -224,6 +224,15 @@
   "cu_card5Descripcion": "Collaborate with a team of seasoned data scientists and AI specialists committed to your success.",
   "cu_card6Titulo": "Tailored Solutions",
   "cu_card6Descripcion": "Receive custom-designed strategies and implementations that perfectly align with your unique business needs and goals.",
+  "cu_title": "Send Us a Message",
+  "cu_fullNameLabel": "Your Full Name",
+  "cu_fullNamePlaceholder": "Enter your full name",
+  "cu_emailLabel": "Your Email Address",
+  "cu_emailPlaceholder": "example@email.com",
+  "cu_messageLabel": "Your Message or Inquiry",
+  "cu_messagePlaceholder": "Type your message or inquiry here...",
+  "cu_submitButton": "Submit Inquiry",
+  "cu_imageAlt": "Modern office building",
 
 
   "ft_newsletterTitulo": "Subscribe to our newsletter",

@@ -37,7 +37,7 @@ export const CaseStudies = () => {
         <section>
           <div className='sm:grid sm:grid-cols-3 sm:gap-10 sm:m-20 grip grid-cols-1 m-15 '>
             {/* CARD 1 */}
-            <div className='border border-borderGrey rounded-[8px] mb-10 flex flex-col shadow-md transform hover:scale-102 transition-transform duration-60'>
+            <div className='border border-borderGrey rounded-[8px] mb-10 flex flex-col shadow-md transform hover:scale-102 transition-transform duration-300'>
               <div>
                 <img className='rounded-t-[8px] w-full h-48 object-cover' src={CaseStudies1} alt="Grafica" />
               </div>
@@ -67,7 +67,7 @@ export const CaseStudies = () => {
             </div>
 
             {/* CARD 2 */}
-            <div className='border border-borderGrey rounded-[8px] mb-10 flex flex-col shadow-md transform hover:scale-102 transition-transform duration-60'>
+            <div className='border border-borderGrey rounded-[8px] mb-10 flex flex-col shadow-md transform hover:scale-102 transition-transform duration-300'>
               <div>
                 <img className='rounded-t-[8px] w-full h-48 object-cover'
                   src={CaseStudies2} alt="Grafica" />
@@ -102,7 +102,7 @@ export const CaseStudies = () => {
             </div>
 
             {/* CARD 3 */}
-            <div className='border border-borderGrey rounded-[8px] mb-10 flex flex-col shadow-md transform hover:scale-102 transition-transform duration-60'>
+            <div className='border border-borderGrey rounded-[8px] mb-10 flex flex-col shadow-md transform hover:scale-102 transition-transform duration-300'>
               <div>
                 <img className='rounded-t-[8px] w-full h-48 object-cover'
                   src={CaseStudies3} alt="Grafica" />
@@ -137,7 +137,7 @@ export const CaseStudies = () => {
             </div>
 
             {/* CARD 4 */}
-            <div className='border border-borderGrey rounded-[8px] mb-10 flex flex-col shadow-md transform hover:scale-102 transition-transform duration-60'>
+            <div className='border border-borderGrey rounded-[8px] mb-10 flex flex-col shadow-md transform hover:scale-102 transition-transform duration-300'>
               <div>
                 <img className='rounded-t-[8px] w-full h-48 object-cover'
                   src={CaseStudies4} alt="Grafica" />
@@ -172,7 +172,7 @@ export const CaseStudies = () => {
             </div>
 
             {/* CARD 5 */}
-            <div className='border border-borderGrey rounded-[8px] mb-10 flex flex-col shadow-md transform hover:scale-102 transition-transform duration-60'>
+            <div className='border border-borderGrey rounded-[8px] mb-10 flex flex-col shadow-md transform hover:scale-102 transition-transform duration-300'>
               <div>
                 <img className='rounded-t-[8px] w-full h-48 object-cover'
                   src={CaseStudies5} alt="Grafica" />
@@ -207,7 +207,7 @@ export const CaseStudies = () => {
             </div>
 
             {/* CARD 6 */}
-            <div className='border border-borderGrey rounded-[8px] mb-10 flex flex-col shadow-md transform hover:scale-102 transition-transform duration-60'>
+            <div className='border border-borderGrey rounded-[8px] mb-10 flex flex-col shadow-md transform hover:scale-102 transition-transform duration-300'>
               <div>
                 <img className='rounded-t-[8px] w-full h-48 object-cover'
                   src={CaseStudies6} alt="Grafica" />
@@ -242,7 +242,7 @@ export const CaseStudies = () => {
             </div>
 
             {/* CARD 7 */}
-            <div className='border border-borderGrey rounded-[8px] mb-10 flex flex-col shadow-md transform hover:scale-102 transition-transform duration-60'>
+            <div className='border border-borderGrey rounded-[8px] mb-10 flex flex-col shadow-md transform hover:scale-102 transition-transform duration-300'>
               <div>
                 <img className='rounded-t-[8px] w-full h-48 object-cover'
                   src={CaseStudies7} alt="Grafica" />
@@ -277,7 +277,7 @@ export const CaseStudies = () => {
             </div>
 
             {/* CARD 8 */}
-            <div className='border border-borderGrey rounded-[8px] mb-10 flex flex-col shadow-md transform hover:scale-102 transition-transform duration-60'>
+            <div className='border border-borderGrey rounded-[8px] mb-10 flex flex-col shadow-md transform hover:scale-102 transition-transform duration-300'>
               <div>
                 <img className='rounded-t-[8px] w-full h-48 object-cover'
                   src={CaseStudies8} alt="Grafica" />
@@ -312,7 +312,7 @@ export const CaseStudies = () => {
             </div>
 
             {/* CARD 9 */}
-            <div className='border border-borderGrey rounded-[8px] mb-10 flex flex-col shadow-md transform hover:scale-102 transition-transform duration-60'>
+            <div className='border border-borderGrey rounded-[8px] mb-10 flex flex-col shadow-md transform hover:scale-102 transition-transform duration-300'>
               <div>
                 <img className='rounded-t-[8px] w-full h-48 object-cover'
                   src={CaseStudies9} alt="Grafica" />

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
-import logoPrincipal from '../../assets/images/logoPrincipal.webp';
+import logoPrincipal from '../../assets/images/LOGOBUNKUA.webp';
 import SwitchButton from './../SwitchButton/SwitchButton.tsx';
 
 export const NavBar = () => {
@@ -14,13 +14,13 @@ export const NavBar = () => {
   };
 
   return (
-    <header className="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50">
+    <header className="bg-[#faf4e1] shadow-sm border-b border-gray-200 sticky top-0 z-50">
       <div className="px-4 sm:px-6 lg:px-8">
         <div className="flex items-center h-14">
           {/* Logo */}
           <div className="items-center flex">
             <div className="flex-shrink-0 flex items-center">
-              <div className="w-10 h-10 mr-3">
+              <div className="w-14 h-14 mr-3">
                 <img
                   src={logoPrincipal}
                   alt="logoBunkua"
@@ -34,7 +34,7 @@ export const NavBar = () => {
             <NavLink
               to={'/'}
               className={({ isActive }) =>
-                isActive ? 'textNavbar !text-green' : 'textNavbar'
+                isActive ? 'textNavbar font-semibold !text-green' : 'textNavbar'
               }
             >
               {t('nv_inicio')}
@@ -42,7 +42,7 @@ export const NavBar = () => {
             <NavLink
               to={'/services'}
               className={({ isActive }) =>
-                isActive ? 'textNavbar !text-green' : 'textNavbar'
+                isActive ? 'textNavbar font-semibold !text-green' : 'textNavbar'
               }
             >
               {t('nv_servicios')}
@@ -50,7 +50,7 @@ export const NavBar = () => {
             <NavLink
               to={'/AboutUs'}
               className={({ isActive }) =>
-                isActive ? 'textNavbar !text-green' : 'textNavbar'
+                isActive ? 'textNavbar font-semibold !text-green' : 'textNavbar'
               }
             >
               {t('nv_acercaDeNosotros')}
@@ -58,7 +58,7 @@ export const NavBar = () => {
             <NavLink
               to={'/CaseStudies'}
               className={({ isActive }) =>
-                isActive ? 'textNavbar !text-green' : 'textNavbar'
+                isActive ? 'textNavbar font-semibold !text-green' : 'textNavbar'
               }
             >
               {t('nv_casosDeEstudio')}
@@ -66,7 +66,7 @@ export const NavBar = () => {
             <NavLink
               to={'/ContactUs'}
               className={({ isActive }) =>
-                isActive ? 'textNavbar !text-green' : 'textNavbar'
+                isActive ? 'textNavbar font-semibold !text-green' : 'textNavbar'
               }
             >
               {t('nv_contactanos')}
@@ -82,7 +82,7 @@ export const NavBar = () => {
 
             <button
               onClick={toggleMenu}
-              className="text-gray-700 hover:text-green focus:outline-none"
+              className="text-gray-700 hover:text-green  focus:outline-none"
             >
               <svg
                 className="w-6 h-6"
@@ -113,8 +113,8 @@ export const NavBar = () => {
               className={({ isActive }) =>
                 `block px-3 py-2 text-2xl font-medium transition-colors duration-200 ${
                   isActive
-                    ? '!text-green-600 bg-green-50'
-                    : 'text-gray-700 hover:text-green-600 hover:bg-gray-50'
+                    ? '!text-green bg-green-50'
+                    : 'text-gray-700 hover:text-green hover:bg-gray-50'
                 }`
               }
               onClick={() => setIsMenuOpen(false)}
@@ -127,8 +127,8 @@ export const NavBar = () => {
               className={({ isActive }) =>
                 `block px-3 py-2 text-2xl font-medium transition-colors duration-200 ${
                   isActive
-                    ? '!text-green-600 bg-green-50'
-                    : 'text-gray-700 hover:text-green-600 hover:bg-gray-50'
+                    ? '!text-green bg-green-50'
+                    : 'text-gray-700 hover:text-green hover:bg-gray-50'
                 }`
               }
               onClick={() => setIsMenuOpen(false)}
@@ -141,8 +141,8 @@ export const NavBar = () => {
               className={({ isActive }) =>
                 `block px-3 py-2 text-2xl font-medium transition-colors duration-200 ${
                   isActive
-                    ? '!text-green-600 bg-green-50'
-                    : 'text-gray-700 hover:text-green-600 hover:bg-gray-50'
+                    ? '!text-green bg-green-50'
+                    : 'text-gray-700 hover:text-green hover:bg-gray-50'
                 }`
               }
               onClick={() => setIsMenuOpen(false)}
@@ -155,8 +155,8 @@ export const NavBar = () => {
               className={({ isActive }) =>
                 `block px-3 py-2 text-2xl font-medium transition-colors duration-200 ${
                   isActive
-                    ? '!text-green-600 bg-green-50'
-                    : 'text-gray-700 hover:text-green-600 hover:bg-gray-50'
+                    ? '!text-green bg-green-50'
+                    : 'text-gray-700 hover:text-green hover:bg-gray-50'
                 }`
               }
               onClick={() => setIsMenuOpen(false)}
@@ -169,8 +169,8 @@ export const NavBar = () => {
               className={({ isActive }) =>
                 `block px-3 py-2 text-2xl font-medium transition-colors duration-200 ${
                   isActive
-                    ? '!text-green-600 bg-green-50'
-                    : 'text-gray-700 hover:text-green-600 hover:bg-gray-50'
+                    ? '!text-green bg-green-50'
+                    : 'text-gray-700 hover:text-green hover:bg-gray-50'
                 }`
               }
               onClick={() => setIsMenuOpen(false)}

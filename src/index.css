@@ -44,5 +44,5 @@
 }
 
 .textNavbar {
-  @apply text-gray-700 hover:text-green px-3 py-2 text-[16px] font-semibold transition-colors duration-200;
+  @apply text-gray-700 hover:text-green px-3 py-2 text-[16px]  transition-colors duration-200;
 }

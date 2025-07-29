@@ -71,7 +71,7 @@ export const AboutUs = () => {
 
         {/*OUR MISSION */}
         <section>
-          <div className="sm:p-8 sm:max-w-2xl sm:mx-auto max-w-sm mx-auto p-9 bg-white rounded-xl text-center shadow-md transform hover:scale-102 transition-transform duration-60">
+          <div className="sm:p-8 sm:max-w-2xl sm:mx-auto max-w-sm mx-auto p-9 bg-white rounded-xl text-center shadow-md transform hover:scale-102 transition-transform duration-300">
             <div className='flex justify-start sm:ml-6'>
               <img
                 src={ComillasCafes}
@@ -102,7 +102,7 @@ export const AboutUs = () => {
             {/* CARDS OUR EXPERTICIE*/}
             <div className="sm:grid sm:grid-cols-3 sm:gap-6 m-11 grid grid-cols-1 gap-6">
               {/*CARD 1*/}
-              <div className="border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-between h-full text-center shadow-md transform hover:scale-102 transition-transform duration-60">
+              <div className="border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-between h-full text-center shadow-md transform hover:scale-102 transition-transform duration-300">
                 <div className='bg-cs-card text-white font-bold rounded-full size-11 flex items-center justify-center m-5'>
                   <img
                     src={bombillo}
@@ -117,7 +117,7 @@ export const AboutUs = () => {
                 </p>
               </div>
               {/*CARD 2*/}
-              <div className="border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-between h-full text-center shadow-md transform hover:scale-102 transition-transform duration-60">
+              <div className="border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-between h-full text-center shadow-md transform hover:scale-102 transition-transform duration-300">
                 <div className='bg-cs-card text-white font-bold rounded-full size-11 flex items-center justify-center m-5'>
                   <img
                     src={destello}
@@ -132,7 +132,7 @@ export const AboutUs = () => {
                 </p>
               </div>
               {/*CARD 3*/}
-              <div className="border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-between h-full text-center shadow-md transform hover:scale-102 transition-transform duration-60">
+              <div className="border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-between h-full text-center shadow-md transform hover:scale-102 transition-transform duration-300">
                 <div className='bg-cs-card text-white font-bold rounded-full size-11 flex items-center justify-center m-5'>
                   <img
                     src={escudo}
@@ -147,7 +147,7 @@ export const AboutUs = () => {
                 </p>
               </div>
               {/*CARD 4*/}
-              <div className="border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-between h-full text-center shadow-md transform hover:scale-102 transition-transform duration-60">
+              <div className="border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-between h-full text-center shadow-md transform hover:scale-102 transition-transform duration-300">
                 <div className='bg-cs-card text-white font-bold rounded-full size-11 flex items-center justify-center m-5'>
                   <img
                     src={users}
@@ -162,7 +162,7 @@ export const AboutUs = () => {
                 </p>
               </div>
               {/*CARD 5*/}
-              <div className="border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-between h-full text-center shadow-md transform hover:scale-102 transition-transform duration-60">
+              <div className="border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-between h-full text-center shadow-md transform hover:scale-102 transition-transform duration-300">
                 <div className='bg-cs-card text-white font-bold rounded-full size-11 flex items-center justify-center m-5'>
                   <img
                     src={calendario}
@@ -177,7 +177,7 @@ export const AboutUs = () => {
                 </p>
               </div>
               {/*CARD 6*/}
-              <div className="border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-between h-full text-center shadow-md transform hover:scale-102 transition-transform duration-60">
+              <div className="border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-between h-full text-center shadow-md transform hover:scale-102 transition-transform duration-300">
                 <div className='bg-cs-card text-white font-bold rounded-full size-11 flex items-center justify-center m-5'>
                   <img
                     src={medalla}
@@ -203,7 +203,7 @@ export const AboutUs = () => {
             </h1>
             <div className="sm:flex-row sm:justify-center sm:items-center sm:gap-6 flex flex-col items-center">
               {/*CARD 1*/}
-              <div className="border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-center text-center mb-8 w-3xs shadow-md transform hover:scale-102 transition-transform duration-60">
+              <div className="border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-center text-center mb-8 w-3xs shadow-md transform hover:scale-102 transition-transform duration-300">
                 <img src={Visionaries1} alt="Visionary" className='rounded-full h-auto w-40'/>
                 <h3 className="text-xl font-semibold text-gray-800">
                   {t('au_visionarioElenaNombre')}
@@ -214,7 +214,7 @@ export const AboutUs = () => {
               </div>
 
               {/*CARD 2*/}
-              <div className="border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-center h-full text-center mb-8 w-3xs shadow-md transform hover:scale-102 transition-transform duration-60">
+              <div className="border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-center h-full text-center mb-8 w-3xs shadow-md transform hover:scale-102 transition-transform duration-300">
                 <img src={Visionaries2} alt="Visionary" className='rounded-full h-auto w-40' />
                 <h3 className="text-xl font-semibold text-gray-800">
                   {t('au_visionarioMarcusNombre')}
@@ -224,7 +224,7 @@ export const AboutUs = () => {
                 </p>
               </div>
               {/*CARD 3*/}
-              <div className="border border-borderGrey rounded-xl p-6 flex flex-col justify-center place-items-center h-full text-center mb-8 w-3xs shadow-md transform hover:scale-102 transition-transform duration-60">
+              <div className="border border-borderGrey rounded-xl p-6 flex flex-col justify-center place-items-center h-full text-center mb-8 w-3xs shadow-md transform hover:scale-102 transition-transform duration-300">
                 <img src={Visionaries3} alt="Visionary" className='rounded-full h-auto w-40' />
                 <h3 className="text-xl font-semibold text-gray-800">
                   {t('au_visionarioSophiaNombre')}
@@ -234,7 +234,7 @@ export const AboutUs = () => {
                 </p>
               </div>
               {/*CARD 4*/}
-              <div className="border border-borderGrey rounded-xl p-6 flex flex-col justify-center items-center h-full text-center mb-8 w-3xs shadow-md transform hover:scale-102 transition-transform duration-60">
+              <div className="border border-borderGrey rounded-xl p-6 flex flex-col justify-center items-center h-full text-center mb-8 w-3xs shadow-md transform hover:scale-102 transition-transform duration-300">
                 <img src={Visionaries4} alt="Visionary" className='rounded-full h-auto w-40' />
                 <h3 className="text-xl font-semibold text-gray-800">
                   {t('au_visionarioDavidNombre')}
