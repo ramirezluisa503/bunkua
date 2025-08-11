@@ -1,4 +1,4 @@
-import { useTranslation } from 'react-i18next'; 
+import { useTranslation } from 'react-i18next';
 import { Layout } from '../components/Layout/Layout';
 import AboutUsPortada1 from '../assets/Images/AboutUsPortada1.webp';
 import AboutUsPortada2 from '../assets/Images/AboutUsPortada2.webp';
@@ -21,12 +21,11 @@ import calendario from '../assets/Images/Calendario.svg';
 import medalla from '../assets/Images/Medalla.svg';
 
 export const AboutUs = () => {
-  const { t } = useTranslation(); 
+  const { t } = useTranslation();
 
   return (
     <Layout>
       <article>
-
         {/*ABOUT BUNKUA */}
         <section>
           <div className="sm:grid-cols-2 sm:gap-15 sm:py-20 gap-10 grid grid-cols-1 p-16 items-center">
@@ -72,7 +71,7 @@ export const AboutUs = () => {
         {/*OUR MISSION */}
         <section>
           <div className="sm:p-8 sm:max-w-2xl sm:mx-auto max-w-sm mx-auto p-9 bg-white rounded-xl text-center shadow-md transform hover:scale-102 transition-transform duration-60">
-            <div className='flex justify-start sm:ml-6'>
+            <div className="flex justify-start sm:ml-6">
               <img
                 src={ComillasCafes}
                 className="w-10 h-10 sm:w-16 sm:h-16"
@@ -81,9 +80,11 @@ export const AboutUs = () => {
             <div>
               <p className="text-xl sm:text-4xl sm:mb-6 italic font-bold text-gray-900 leading-normal">
                 {t('au_misionTitulo')}
-                <p className="text-base text-gray-700 mt-4">{t('au_misionAutor')}</p>
+                <p className="text-base text-gray-700 mt-4">
+                  {t('au_misionAutor')}
+                </p>
               </p>
-              <div className='flex justify-end sm:-mt-7 sm:mr-4'>
+              <div className="flex justify-end sm:-mt-7 sm:mr-4">
                 <img
                   src={ComillasCafes}
                   className="w-10 h-10 sm:w-16 sm:h-16"
@@ -103,7 +104,7 @@ export const AboutUs = () => {
             <div className="sm:grid sm:grid-cols-3 sm:gap-6 m-11 grid grid-cols-1 gap-6">
               {/*CARD 1*/}
               <div className="border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-between h-full text-center shadow-md transform hover:scale-102 transition-transform duration-60">
-                <div className='bg-cs-card text-white font-bold rounded-full size-11 flex items-center justify-center m-5'>
+                <div className="bg-cs-card text-white font-bold rounded-full size-11 flex items-center justify-center m-5">
                   <img
                     src={bombillo}
                     className="w-8 h-8"
@@ -118,7 +119,7 @@ export const AboutUs = () => {
               </div>
               {/*CARD 2*/}
               <div className="border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-between h-full text-center shadow-md transform hover:scale-102 transition-transform duration-60">
-                <div className='bg-cs-card text-white font-bold rounded-full size-11 flex items-center justify-center m-5'>
+                <div className="bg-cs-card text-white font-bold rounded-full size-11 flex items-center justify-center m-5">
                   <img
                     src={destello}
                     className="w-8 h-8"
@@ -133,7 +134,7 @@ export const AboutUs = () => {
               </div>
               {/*CARD 3*/}
               <div className="border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-between h-full text-center shadow-md transform hover:scale-102 transition-transform duration-60">
-                <div className='bg-cs-card text-white font-bold rounded-full size-11 flex items-center justify-center m-5'>
+                <div className="bg-cs-card text-white font-bold rounded-full size-11 flex items-center justify-center m-5">
                   <img
                     src={escudo}
                     className="w-8 h-8"
@@ -148,7 +149,7 @@ export const AboutUs = () => {
               </div>
               {/*CARD 4*/}
               <div className="border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-between h-full text-center shadow-md transform hover:scale-102 transition-transform duration-60">
-                <div className='bg-cs-card text-white font-bold rounded-full size-11 flex items-center justify-center m-5'>
+                <div className="bg-cs-card text-white font-bold rounded-full size-11 flex items-center justify-center m-5">
                   <img
                     src={users}
                     className="w-7 h-7"
@@ -163,7 +164,7 @@ export const AboutUs = () => {
               </div>
               {/*CARD 5*/}
               <div className="border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-between h-full text-center shadow-md transform hover:scale-102 transition-transform duration-60">
-                <div className='bg-cs-card text-white font-bold rounded-full size-11 flex items-center justify-center m-5'>
+                <div className="bg-cs-card text-white font-bold rounded-full size-11 flex items-center justify-center m-5">
                   <img
                     src={calendario}
                     className="w-7 h-7"
@@ -178,7 +179,7 @@ export const AboutUs = () => {
               </div>
               {/*CARD 6*/}
               <div className="border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-between h-full text-center shadow-md transform hover:scale-102 transition-transform duration-60">
-                <div className='bg-cs-card text-white font-bold rounded-full size-11 flex items-center justify-center m-5'>
+                <div className="bg-cs-card text-white font-bold rounded-full size-11 flex items-center justify-center m-5">
                   <img
                     src={medalla}
                     className="w-8 h-8"
@@ -204,7 +205,11 @@ export const AboutUs = () => {
             <div className="sm:flex-row sm:justify-center sm:items-center sm:gap-6 flex flex-col items-center">
               {/*CARD 1*/}
               <div className="border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-center text-center mb-8 w-3xs shadow-md transform hover:scale-102 transition-transform duration-60">
-                <img src={Visionaries1} alt="Visionary" className='rounded-full h-auto w-40'/>
+                <img
+                  src={Visionaries1}
+                  alt="Visionary"
+                  className="rounded-full h-auto w-40"
+                />
                 <h3 className="text-xl font-semibold text-gray-800">
                   {t('au_visionarioElenaNombre')}
                 </h3>
@@ -215,7 +220,11 @@ export const AboutUs = () => {
 
               {/*CARD 2*/}
               <div className="border border-borderGrey rounded-xl p-6 flex flex-col items-center justify-center h-full text-center mb-8 w-3xs shadow-md transform hover:scale-102 transition-transform duration-60">
-                <img src={Visionaries2} alt="Visionary" className='rounded-full h-auto w-40' />
+                <img
+                  src={Visionaries2}
+                  alt="Visionary"
+                  className="rounded-full h-auto w-40"
+                />
                 <h3 className="text-xl font-semibold text-gray-800">
                   {t('au_visionarioMarcusNombre')}
                 </h3>
@@ -225,7 +234,11 @@ export const AboutUs = () => {
               </div>
               {/*CARD 3*/}
               <div className="border border-borderGrey rounded-xl p-6 flex flex-col justify-center place-items-center h-full text-center mb-8 w-3xs shadow-md transform hover:scale-102 transition-transform duration-60">
-                <img src={Visionaries3} alt="Visionary" className='rounded-full h-auto w-40' />
+                <img
+                  src={Visionaries3}
+                  alt="Visionary"
+                  className="rounded-full h-auto w-40"
+                />
                 <h3 className="text-xl font-semibold text-gray-800">
                   {t('au_visionarioSophiaNombre')}
                 </h3>
@@ -235,7 +248,11 @@ export const AboutUs = () => {
               </div>
               {/*CARD 4*/}
               <div className="border border-borderGrey rounded-xl p-6 flex flex-col justify-center items-center h-full text-center mb-8 w-3xs shadow-md transform hover:scale-102 transition-transform duration-60">
-                <img src={Visionaries4} alt="Visionary" className='rounded-full h-auto w-40' />
+                <img
+                  src={Visionaries4}
+                  alt="Visionary"
+                  className="rounded-full h-auto w-40"
+                />
                 <h3 className="text-xl font-semibold text-gray-800">
                   {t('au_visionarioDavidNombre')}
                 </h3>
@@ -337,17 +354,41 @@ export const AboutUs = () => {
 
         {/*BAR */}
         <section>
-          <div className='m-20'>
+          <div className="m-20">
             <h2 className="sm:mx-15 mb-10 text-3xl font-bold text-center text-black">
               {t('au_confianzaTitulo')}
             </h2>
-            <div className='flex sm:gap-55 gap-9 items-center justify-center'>
-              <img src={Trusted1} alt="Icono" className='sm:w-auto sm:h-14 w-auto h-8' />
-              <img src={Trusted2} alt="Icono" className='sm:w-auto sm:h-14 w-auto h-8' />
-              <img src={Trusted3} alt="Icono" className='sm:w-auto sm:h-14 w-auto h-8'/>
-              <img src={Trusted4} alt="Icono" className='sm:w-auto sm:h-14 w-auto h-8'/>
-              <img src={Trusted3} alt="Icono" className='sm:w-auto sm:h-14 w-auto h-8'/>
-              <img src={Trusted5} alt="Icono" className='sm:w-auto sm:h-14 w-auto h-8'/>
+            <div className="flex sm:gap-55 gap-9 items-center justify-center">
+              <img
+                src={Trusted1}
+                alt="Icono"
+                className="sm:w-auto sm:h-14 w-auto h-8"
+              />
+              <img
+                src={Trusted2}
+                alt="Icono"
+                className="sm:w-auto sm:h-14 w-auto h-8"
+              />
+              <img
+                src={Trusted3}
+                alt="Icono"
+                className="sm:w-auto sm:h-14 w-auto h-8"
+              />
+              <img
+                src={Trusted4}
+                alt="Icono"
+                className="sm:w-auto sm:h-14 w-auto h-8"
+              />
+              <img
+                src={Trusted3}
+                alt="Icono"
+                className="sm:w-auto sm:h-14 w-auto h-8"
+              />
+              <img
+                src={Trusted5}
+                alt="Icono"
+                className="sm:w-auto sm:h-14 w-auto h-8"
+              />
             </div>
           </div>
         </section>
