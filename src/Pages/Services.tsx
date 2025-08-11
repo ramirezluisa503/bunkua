@@ -51,7 +51,7 @@ export const Services = () => {
             {/* CARDS OUR CORE SERVICES*/}
             <div className="grid grid-cols-1 gap-6 sm:grid sm:grid-cols-3  sm:gap-6 m-11   ">
               {/*CARD 1*/}
-              <div className="border border-grayLight shadow-md rounded-xl p-6 flex flex-col  justify-between h-full text-center text-balance transform hover:scale-102 transition-transform duration-60">
+              <div className="border border-grayLight shadow-md rounded-xl p-6 flex flex-col  justify-between h-full text-center text-balance transform hover:scale-102 transition-transform duration-300">
                 <div className="flex flex-col items-center m-5">
                   <img
                     src={BombilloCafe}
@@ -75,7 +75,7 @@ export const Services = () => {
                 </button>
               </div>
               {/*CARD 2*/}
-              <div className="border border-grayLight shadow-md rounded-xl p-6 flex flex-col justify-between h-full text-center text-balance transform hover:scale-102 transition-transform duration-60">
+              <div className="border border-grayLight shadow-md rounded-xl p-6 flex flex-col justify-between h-full text-center text-balance transform hover:scale-102 transition-transform duration-300">
                 <div className="flex flex-col items-center m-5 ">
                   <img
                     src={grid}
@@ -99,7 +99,7 @@ export const Services = () => {
                 </button>
               </div>
               {/*CARD 3*/}
-              <div className="border border-grayLight shadow-md rounded-xl p-6 flex flex-col  justify-between h-full text-center text-balance transform hover:scale-102 transition-transform duration-60">
+              <div className="border border-grayLight shadow-md rounded-xl p-6 flex flex-col  justify-between h-full text-center text-balance transform hover:scale-102 transition-transform duration-300">
                 <div className="flex flex-col items-center m-5 ">
                   <img
                     src={BrainCafe}
@@ -208,7 +208,7 @@ export const Services = () => {
             {/* CARDS WHY CHOOSE BUNKUA*/}
             <div className="grid grid-cols-1 gap-6 sm:grid sm:grid-cols-4  sm:gap-6 m-11   ">
               {/*CARD 1*/}
-              <div className="border border-grayLight shadow-md rounded-xl p-6 flex flex-col  justify-between h-full text-center text-balance transform hover:scale-102 transition-transform duration-60">
+              <div className="border border-grayLight shadow-md rounded-xl p-6 flex flex-col  justify-between h-full text-center text-balance transform hover:scale-102 transition-transform duration-300">
                 <div className="m-5">
                   <img
                     src={FlechaCrecimiento}
@@ -223,7 +223,7 @@ export const Services = () => {
                 </p>
               </div>
               {/*CARD 2*/}
-              <div className="border border-grayLight shadow-md rounded-xl p-6 flex flex-col justify-between h-full text-center text-balance transform hover:scale-102 transition-transform duration-60">
+              <div className="border border-grayLight shadow-md rounded-xl p-6 flex flex-col justify-between h-full text-center text-balance transform hover:scale-102 transition-transform duration-300">
                 <div className="m-5">
                   <img
                     src={users}
@@ -238,7 +238,7 @@ export const Services = () => {
                 </p>
               </div>
               {/*CARD 3*/}
-              <div className="border border-grayLight shadow-md rounded-xl p-6 flex flex-col  justify-between h-full text-center text-balance transform hover:scale-102 transition-transform duration-60">
+              <div className="border border-grayLight shadow-md rounded-xl p-6 flex flex-col  justify-between h-full text-center text-balance transform hover:scale-102 transition-transform duration-300">
                 <div className="m-5">
                   <img
                     src={escudo}
@@ -253,7 +253,7 @@ export const Services = () => {
                 </p>
               </div>
               {/*CARD 4*/}
-              <div className="border border-grayLight shadow-md rounded-xl p-6 flex flex-col  justify-between h-full text-center text-balance transform hover:scale-102 transition-transform duration-60">
+              <div className="border border-grayLight shadow-md rounded-xl p-6 flex flex-col  justify-between h-full text-center text-balance transform hover:scale-102 transition-transform duration-300">
                 <div className="m-5">
                   <img
                     src={rompecabezas}

@@ -224,6 +224,17 @@
   "cu_card5Descripcion": "Colabora con un equipo de científicos de datos y especialistas en IA experimentados, comprometidos con tu éxito.",
   "cu_card6Titulo": "Soluciones a Medida",
   "cu_card6Descripcion": "Recibe estrategias e implementaciones diseñadas a medida que se alinean perfectamente con las necesidades y objetivos únicos de tu negocio.",
+  "cu_title": "Envíanos un Mensaje",
+  "cu_fullNameLabel": "Tu nombre completo",
+  "cu_fullNamePlaceholder": "Ingresa tu nombre completo",
+  "cu_emailLabel": "Tu dirección de correo electrónico",
+  "cu_emailPlaceholder": "ejemplo@email.com",
+  "cu_messageLabel": "Tu mensaje o consulta",
+  "cu_messagePlaceholder": "Ingresa tu mensaje o consulta aquí...",
+  "cu_submitButton": "Enviar consulta",
+  "cu_imageAlt": "Edificio de oficinas moderno",
+  "alert":"¡Mensaje enviado con éxito! Nos pondremos en contacto pronto.",
+  "error":"Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo.",
 
 
   "ft_newsletterTitulo": "Suscríbete a nuestro boletín",
