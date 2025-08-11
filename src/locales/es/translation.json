@@ -233,6 +233,8 @@
   "cu_messagePlaceholder": "Ingresa tu mensaje o consulta aquí...",
   "cu_submitButton": "Enviar consulta",
   "cu_imageAlt": "Edificio de oficinas moderno",
+  "alert":"¡Mensaje enviado con éxito! Nos pondremos en contacto pronto.",
+  "error":"Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo.",
 
 
   "ft_newsletterTitulo": "Suscríbete a nuestro boletín",

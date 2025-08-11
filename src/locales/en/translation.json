@@ -233,6 +233,8 @@
   "cu_messagePlaceholder": "Type your message or inquiry here...",
   "cu_submitButton": "Submit Inquiry",
   "cu_imageAlt": "Modern office building",
+  "alert":"Message sent successfully! We'll be in touch soon.",
+  "error":"There was an error sending the message. Please try again.",
 
 
   "ft_newsletterTitulo": "Subscribe to our newsletter",
