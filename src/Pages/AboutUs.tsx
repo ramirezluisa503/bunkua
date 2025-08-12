@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { Layout } from '../components/Layout/Layout';
-import AboutUsPortada1 from '../assets/Images/AboutUsPortada1.webp';
-import AboutUsPortada2 from '../assets/Images/AboutUsPortada2.webp';
+import AboutUsPortada1 from '../assets/Images/ImagenFormulario.webp';
+import AboutUsPortada2 from '../assets/Images/NuestraHistoria.webp';
 import AboutUsFoot from '../assets/Images/AboutUsFoot.webp';
 import Trusted1 from '../assets/Images/Trusted1.webp';
 import Trusted2 from '../assets/Images/Trusted2.webp';
@@ -37,9 +37,9 @@ export const AboutUs = () => {
                 {t('au_aboutUsDescripcion')}
               </p>
             </div>
-            <div className="sm:mt-0 sm:ml-0 mx-auto mt-5">
+            <div className="sm:mt-0 sm:ml-0 mx-auto">
               <img
-                className="sm:size-fit max-w-full h-auto size-72 rounded-xl"
+                className="sm:size-fit max-w-120 h-auto size-72 rounded-xl"
                 src={AboutUsPortada1}
                 alt="Image"
               />
@@ -58,9 +58,9 @@ export const AboutUs = () => {
                 {t('au_nuestraHistoriaDescripcion')}
               </p>
             </div>
-            <div className="sm:mt-0 sm:ml-0 mx-auto mt-5">
+            <div className="sm:mt-0 sm:ml-0 mx-auto">
               <img
-                className="sm:size-fit max-w-full h-auto size-72 rounded-xl"
+                className="sm:size-fit max-w-80 h-auto rounded-xl block"
                 src={AboutUsPortada2}
                 alt="Image"
               />
