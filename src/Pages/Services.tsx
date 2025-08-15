@@ -1,13 +1,14 @@
 import { useTranslation } from 'react-i18next';
 import { Layout } from '../components/Layout/Layout';
 import PortadaServicios from '../assets/Images/PortadaServicios.webp';
-import BombilloCafe from '../assets/Images/BombilloCafe.svg'
-import grid from '../assets/Images/Grid.svg'
-import BrainCafe from '../assets/Images/BrainCafe.svg'
-import FlechaCrecimiento from '../assets/Images/FlechaCrecimiento.svg'
-import escudo from '../assets/Images/Escudo.svg'
-import users from '../assets/Images/Users.svg'
-import rompecabezas from '../assets/Images/Rompezacebas.svg'
+import BombilloCafe from '../assets/Images/BombilloCafe.svg';
+import grid from '../assets/Images/Grid.svg';
+import BrainCafe from '../assets/Images/BrainCafe.svg';
+import FlechaCrecimiento from '../assets/Images/FlechaCrecimiento.svg';
+import escudo from '../assets/Images/Escudo.svg';
+import users from '../assets/Images/Users.svg';
+import rompecabezas from '../assets/Images/Rompezacebas.svg';
+import { NavLink } from 'react-router-dom';
 
 export const Services = () => {
   const { t } = useTranslation();
@@ -15,17 +16,25 @@ export const Services = () => {
     <Layout>
       <article>
         {/*PORTADA */}
-        <section className="relative  bg-cover bg-center  min-h-screen flex items-center justify-center px-4"
+        <section
+          className="relative  bg-cover bg-center  min-h-screen flex items-center justify-center px-4"
           style={{ backgroundImage: `url(${PortadaServicios})` }}
-          >
+        >
+          <div
+            className="absolute inset-0 z-0"
+            style={{
+              backgroundImage:
+                'linear-gradient(to top, rgba(255,255,255,1) 5%, rgba(255,255,255,0) 45%)',
+            }}
+          ></div>
           <div className="flex flex-col justify-center items-center mx-11 relative z-10">
             <h1 className="text-black sm:text-7xl text-5xl max-w-4xl mx-auto  font-bold leading-none text-center">
               {t('sv_portadaTitulo')}
             </h1>
-            <p className="text-brown text-xl box-content leading-normal text-center m-5">
+            <p className="text-black text-xl box-content leading-normal text-center m-5">
               {t('sv_portadaSubtitulo')}
             </p>
-            <p className="text-grey text-xl max-w-2xl box-content leading-normal text-center">
+            <p className="text-black text-xl max-w-2xl box-content leading-normal text-center">
               {t('sv_portadaDescripcion')}
             </p>
             <button className="hover:bg-black  bg-green text-white mt-7 mb-0.5 w-fit h-9 px-3 rounded-[6px]">
@@ -50,7 +59,7 @@ export const Services = () => {
             <div className="grid grid-cols-1 gap-6 sm:grid sm:grid-cols-3  sm:gap-6 m-11   ">
               {/*CARD 1*/}
               <div className="border border-grayLight shadow-md rounded-xl p-6 flex flex-col  justify-between h-full text-center text-balance transform hover:scale-102 transition-transform duration-300">
-                <div className='flex flex-col items-center m-5'>
+                <div className="flex flex-col items-center m-5">
                   <img
                     src={BombilloCafe}
                     className="w-8 h-8"
@@ -74,7 +83,7 @@ export const Services = () => {
               </div>
               {/*CARD 2*/}
               <div className="border border-grayLight shadow-md rounded-xl p-6 flex flex-col justify-between h-full text-center text-balance transform hover:scale-102 transition-transform duration-300">
-                <div className='flex flex-col items-center m-5 '>
+                <div className="flex flex-col items-center m-5 ">
                   <img
                     src={grid}
                     className="w-8 h-8"
@@ -98,7 +107,7 @@ export const Services = () => {
               </div>
               {/*CARD 3*/}
               <div className="border border-grayLight shadow-md rounded-xl p-6 flex flex-col  justify-between h-full text-center text-balance transform hover:scale-102 transition-transform duration-300">
-                <div className='flex flex-col items-center m-5 '>
+                <div className="flex flex-col items-center m-5 ">
                   <img
                     src={BrainCafe}
                     className="w-8 h-8"
@@ -140,8 +149,8 @@ export const Services = () => {
             <div className="grid grid-cols-1 gap-6 sm:grid sm:grid-cols-4  sm:gap-6 m-11   ">
               {/*CARD 1*/}
               <div className="p-6 flex flex-col  justify-between items-center h-full text-center  ">
-
-                <div className='bg-green text-white font-bold rounded-full size-11 flex items-center         justify-center m-5'>1
+                <div className="bg-green text-white font-bold rounded-full size-11 flex items-center         justify-center m-5">
+                  1
                 </div>
 
                 <h3 className="text-xl font-semibold mb-2 text-gray-800 items-center">
@@ -153,7 +162,8 @@ export const Services = () => {
               </div>
               {/*CARD 2*/}
               <div className=" p-6 flex flex-col justify-between items-center h-full text-center">
-                <div className='bg-green text-white font-bold rounded-full size-11 flex items-center         justify-center m-5'>2
+                <div className="bg-green text-white font-bold rounded-full size-11 flex items-center         justify-center m-5">
+                  2
                 </div>
                 <h3 className="text-xl font-semibold mb-2 text-gray-800 items-center ">
                   {t('sv_procesoPaso2Titulo')}
@@ -164,7 +174,8 @@ export const Services = () => {
               </div>
               {/*CARD 3*/}
               <div className=" p-6 flex flex-col  justify-between items-center h-full text-center ">
-                <div className='bg-green text-white font-bold rounded-full size-11 flex items-center         justify-center m-5'>3
+                <div className="bg-green text-white font-bold rounded-full size-11 flex items-center         justify-center m-5">
+                  3
                 </div>
                 <h3 className="text-xl font-semibold mb-2 text-gray-800 items-center">
                   {t('sv_procesoPaso3Titulo')}
@@ -175,7 +186,8 @@ export const Services = () => {
               </div>
               {/*CARD 4*/}
               <div className="p-6 flex flex-col  justify-between items-center h-full text-center ">
-                <div className='bg-green text-white font-bold rounded-full size-11 flex items-center         justify-center m-5'>4
+                <div className="bg-green text-white font-bold rounded-full size-11 flex items-center         justify-center m-5">
+                  4
                 </div>
                 <h3 className="text-xl font-semibold mb-2 text-gray-800 items-center">
                   {t('sv_procesoPaso4Titulo')}
@@ -204,7 +216,7 @@ export const Services = () => {
             <div className="grid grid-cols-1 gap-6 sm:grid sm:grid-cols-4  sm:gap-6 m-11   ">
               {/*CARD 1*/}
               <div className="border border-grayLight shadow-md rounded-xl p-6 flex flex-col  justify-between h-full text-center text-balance transform hover:scale-102 transition-transform duration-300">
-                <div className='m-5'>
+                <div className="m-5">
                   <img
                     src={FlechaCrecimiento}
                     className="w-8 h-8"
@@ -219,12 +231,11 @@ export const Services = () => {
               </div>
               {/*CARD 2*/}
               <div className="border border-grayLight shadow-md rounded-xl p-6 flex flex-col justify-between h-full text-center text-balance transform hover:scale-102 transition-transform duration-300">
-                <div className='m-5'>
+                <div className="m-5">
                   <img
                     src={users}
                     className="w-8 h-8"
                   />
-
                 </div>
                 <h3 className="text-2xl font-semibold mb-2 text-gray-800 items-center ">
                   {t('sv_equipoExpertoTitulo')}
@@ -235,7 +246,7 @@ export const Services = () => {
               </div>
               {/*CARD 3*/}
               <div className="border border-grayLight shadow-md rounded-xl p-6 flex flex-col  justify-between h-full text-center text-balance transform hover:scale-102 transition-transform duration-300">
-                <div className='m-5'>
+                <div className="m-5">
                   <img
                     src={escudo}
                     className="w-8 h-8"
@@ -250,12 +261,11 @@ export const Services = () => {
               </div>
               {/*CARD 4*/}
               <div className="border border-grayLight shadow-md rounded-xl p-6 flex flex-col  justify-between h-full text-center text-balance transform hover:scale-102 transition-transform duration-300">
-                <div className='m-5'>
+                <div className="m-5">
                   <img
                     src={rompecabezas}
                     className="w-8 h-8"
                   />
-
                 </div>
                 <h3 className="text-2xl font-semibold mb-2 text-gray-800 items-center">
                   {t('sv_solucionesMedidaTitulo')}
@@ -277,9 +287,11 @@ export const Services = () => {
             <p className="text-grey text-xl text-center box-content leading-normal max-w-2xl">
               {t('sv_listoTransformarDescripcion')}
             </p>
-            <button className="hover:bg-black bg-green text-white mt-7 mb-0.5 w-fit  p-2 rounded-[6px]">
-              {t('sv_btnAgendarLlamada')}
-            </button>
+            <NavLink to={'/contactUs'}>
+              <button className="hover:bg-black cursor-pointer bg-green text-white mt-7 mb-0.5 w-fit  p-2 rounded-[6px]">
+                {t('sv_btnAgendarLlamada')}
+              </button>
+            </NavLink>
           </div>
         </section>
       </article>

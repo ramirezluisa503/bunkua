@@ -1,9 +1,9 @@
 import { useTranslation } from 'react-i18next';
 import { Layout } from '../components/Layout/Layout';
-import HomePageImage2 from '../assets/Images/HomePageImage2.webp';
-import HPClients1 from '../assets/Images/HPClients1.webp';
-import HPClients2 from '../assets/Images/HPClients2.webp';
-import HPClients3 from '../assets/Images/HPClients3.webp';
+import HomePageImage2 from '../assets/Images/NuestroEnfoque.webp';
+import jorge from '../assets/Images/jorge.webp';
+import adriana from '../assets/Images/adriana.webp';
+import carlos from '../assets/Images/carlos.webp';
 import PortadaHomaPage from '../assets/Images/PortadaHomePage.webp';
 import icono1 from '../assets/Images/HP1.webp';
 import icono2 from '../assets/Images/HP2.webp';
@@ -20,6 +20,7 @@ import barras from '../assets/Images/Barras.svg';
 import escudo from '../assets/Images/Escudo.svg';
 import cohete from '../assets/Images/Cohete.svg';
 import comillas from '../assets/Images/Comillas.svg';
+import { NavLink } from 'react-router-dom';
 
 function HomePage() {
   const { t } = useTranslation();
@@ -35,23 +36,25 @@ function HomePage() {
             className="absolute inset-0 z-0"
             style={{
               backgroundImage:
-                'linear-gradient(to top, rgba(255,255,255,1) 5%, rgba(255,255,255,0) 120%)',
+                'linear-gradient(to top, rgba(255,255,255,1) 5%, rgba(255,255,255,0) 30%)',
             }}
           ></div>
 
           <div className="flex flex-col justify-center items-center mx-11 relative z-10">
-            <h1 className="sm:text-7xl text-black text-6xl max-w-3xl mx-auto font-bold leading-none text-center">
+            <h1 className="sm:text-7xl text-white text-6xl max-w-3xl mx-auto font-bold leading-none text-center">
               {t('hp_hero_title')}
             </h1>
-            <p className="text-brown text-xl box-content leading-normal text-center m-5">
+            <p className="text-darkgrey text-xl box-content leading-normal text-center m-5">
               {t('hp_hero_subtitle_1')}
             </p>
-            <p className="text-grey text-xl max-w-4xl box-content leading-normal text-center">
+            <p className="text-darkgrey text-xl max-w-4xl box-content leading-normal text-center">
               {t('hp_hero_subtitle_2')}
             </p>
-            <button className="bg-green hover:bg-black text-white mt-7 mb-0.5 w-fit h-9 px-3 rounded-[6px]">
-              {t('hp_hero_button')}
-            </button>
+            <NavLink to={'/ContactUs'}>
+              <button className="bg-green hover:bg-black cursor-pointer text-white mt-7 mb-0.5 w-fit h-9 px-3 rounded-[6px]">
+                {t('hp_hero_button')}
+              </button>
+            </NavLink>
           </div>
         </section>
 
@@ -68,9 +71,9 @@ function HomePage() {
                 <br /> {t('hp_approach_description_2')}
               </p>
             </div>
-            <div className="mt-15 max-w-full h-auto mx-auto my-auto size-72 text-3xl box-content sm:size-fit sm:col-span-1 sm:px-3 sm:mt-0">
+            <div className="mt-15 max-w-xl mx-auto box-content sm:size-fit sm:col-span-1 sm:px-3 sm:mt-0">
               <img
-                className="rounded-xl "
+                className="rounded-xl"
                 src={HomePageImage2}
                 alt={t('hp_alt_image1')}
               />
@@ -271,8 +274,8 @@ function HomePage() {
                 </p>
                 <img
                   className="rounded-full mt-auto w-auto h-22 "
-                  src={HPClients1}
-                  alt="Alice Chen"
+                  src={jorge}
+                  alt="Jorge Lázaro Linarez."
                 />
                 <p className="font-semibold text-gray-900 text-lg mt-auto">
                   {t('hp_client_name_1')}
@@ -290,8 +293,8 @@ function HomePage() {
                 </p>
                 <img
                   className="rounded-full w-auto mt-auto h-20"
-                  src={HPClients2}
-                  alt="Robert Garcia"
+                  src={adriana}
+                  alt="Adriana Ossa."
                 />
                 <p className="font-semibold text-gray-900 text-lg mt-auto">
                   {t('hp_client_name_2')}
@@ -309,8 +312,8 @@ function HomePage() {
                 </p>
                 <img
                   className="rounded-full w-auto h-20 mt-auto "
-                  src={HPClients3}
-                  alt="Sarah Kim"
+                  src={carlos}
+                  alt="Carlos Eduardo Silva Martínez."
                 />
                 <p className="font-semibold text-gray-900 text-lg mt-auto">
                   {t('hp_client_name_3')}
@@ -381,9 +384,11 @@ function HomePage() {
             <p className="text-white box-content leading-normal ">
               {t('hp_transform_section_description')}
             </p>
-            <button className="bg-white hover:bg-black hover:text-white mt-7 mb-0.5 w-48 h-9 rounded-[6px] text-green">
-              {t('hp_transform_button')}
-            </button>
+            <NavLink to={'/contactUs'}>
+              <button className="bg-white hover:bg-black cursor-pointer hover:text-white mt-7 mb-0.5 w-48 h-9 rounded-[6px] text-green">
+                {t('hp_transform_button')}
+              </button>
+            </NavLink>
           </div>
         </section>
       </article>
