@@ -20,14 +20,21 @@ export const Services = () => {
           className="relative  bg-cover bg-center  min-h-screen flex items-center justify-center px-4"
           style={{ backgroundImage: `url(${PortadaServicios})` }}
         >
+          <div
+            className="absolute inset-0 z-0"
+            style={{
+              backgroundImage:
+                'linear-gradient(to top, rgba(255,255,255,1) 5%, rgba(255,255,255,0) 45%)',
+            }}
+          ></div>
           <div className="flex flex-col justify-center items-center mx-11 relative z-10">
             <h1 className="text-black sm:text-7xl text-5xl max-w-4xl mx-auto  font-bold leading-none text-center">
               {t('sv_portadaTitulo')}
             </h1>
-            <p className="text-brown text-xl box-content leading-normal text-center m-5">
+            <p className="text-black text-xl box-content leading-normal text-center m-5">
               {t('sv_portadaSubtitulo')}
             </p>
-            <p className="text-grey text-xl max-w-2xl box-content leading-normal text-center">
+            <p className="text-black text-xl max-w-2xl box-content leading-normal text-center">
               {t('sv_portadaDescripcion')}
             </p>
             <button className="hover:bg-black  bg-green text-white mt-7 mb-0.5 w-fit h-9 px-3 rounded-[6px]">

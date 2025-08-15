@@ -25,11 +25,18 @@ export const CaseStudies = () => {
           className="relative  bg-cover bg-center  min-h-screen flex items-center justify-center px-4"
           style={{ backgroundImage: `url(${portadaCasos})` }}
         >
+          <div
+            className="absolute inset-0 z-0"
+            style={{
+              backgroundImage:
+                'linear-gradient(to top, rgba(255,255,255,1) 5%, rgba(255,255,255,0) 45%)',
+            }}
+          ></div>
           <div className="flex flex-col justify-center items-center text-center mx-11">
             <h1 className="text-black sm:text-7xl text-5xl max-w-5xl box-content mb-6 font-bold leading-none ">
               {t('cs_portadaTitulo')}
             </h1>
-            <p className="text-grey text-xl max-w-3xl box-content leading-normal ">
+            <p className="text-black text-xl max-w-3xl box-content leading-normal ">
               {t('cs_portadaDescripcion')}
             </p>
             <Link to={'/contactUs'}>
