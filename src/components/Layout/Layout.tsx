@@ -7,9 +7,11 @@ interface LayoutProps {
 
 export const Layout = ({ children }: LayoutProps) => {
   return (
-    <div className="grid min-h-dvh grid-rows-[auto_1fr_auto] w-full max-w-dvw">
+    <div className="min-h-screen flex flex-col w-full relative">
       <NavBar />
-      <main className="max-w-dvw">{children}</main>
+      <main className="flex-1 w-full overflow-x-hidden">
+        <div className="w-full max-w-none">{children}</div>
+      </main>
       <Footer />
     </div>
   );

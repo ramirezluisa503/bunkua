@@ -9,6 +9,7 @@ import Trusted3 from '../assets/Images/Trusted3.webp';
 import Trusted4 from '../assets/Images/Trusted4.webp';
 import Trusted5 from '../assets/Images/Trusted5.webp';
 import victor from '../assets/Images/victor.webp';
+import david from '../assets/Images/david.webp';
 import luisa from '../assets/Images/luisa.webp';
 import ComillasCafes from '../assets/Images/ComillasCafes.svg';
 import bombillo from '../assets/Images/Bombillo.svg';
@@ -233,7 +234,7 @@ export const AboutUs = () => {
               >
                 <div className="border border-borderGrey rounded-xl p-6 flex flex-col justify-center place-items-center h-full text-center mb-8 w-3xs shadow-md transform hover:scale-102 transition-transform duration-300">
                   <img
-                    src={victor}
+                    src={david}
                     alt="Visionary"
                     className="rounded-full h-auto w-33"
                   />

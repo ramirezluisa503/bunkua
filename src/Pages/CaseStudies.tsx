@@ -1,15 +1,12 @@
 import { useTranslation } from 'react-i18next';
 import { Layout } from '../components/Layout/Layout';
 import portadaCasos from '../assets/Images/PortadaServicios.webp';
-import CaseStudies1 from '../assets/Images/CaseStudies1.webp';
+import crm from '../assets/Images/CRM.webp';
 import CaseStudies2 from '../assets/Images/CaseStudies2.webp';
 import CaseStudies3 from '../assets/Images/CaseStudies3.webp';
 import CaseStudies4 from '../assets/Images/CaseStudies4.webp';
 import CaseStudies5 from '../assets/Images/CaseStudies5.webp';
 import CaseStudies6 from '../assets/Images/CaseStudies6.webp';
-import CaseStudies7 from '../assets/Images/CaseStudies7.webp';
-import CaseStudies8 from '../assets/Images/CaseStudies8.webp';
-import CaseStudies9 from '../assets/Images/CaseStudies9.webp';
 import FlechaDiagonal from '../assets/Images/FlechaDiagonal.svg';
 import FlechaDerecha from '../assets/Images/FlechaLargaDerecha.svg';
 import { Link, NavLink } from 'react-router-dom';
@@ -28,11 +25,11 @@ export const CaseStudies = () => {
           <div
             className="absolute inset-0 z-0"
             style={{
-              backgroundImage:
-                'linear-gradient(to top, rgba(255,255,255,1) 5%, rgba(255,255,255,0) 45%)',
+              background:
+                'linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7))',
             }}
           ></div>
-          <div className="flex flex-col justify-center items-center text-center mx-11">
+          <div className="flex flex-col justify-center items-center text-center mx-11 z-10">
             <h1 className="text-black sm:text-7xl text-5xl max-w-5xl box-content mb-6 font-bold leading-none ">
               {t('cs_portadaTitulo')}
             </h1>
@@ -55,14 +52,20 @@ export const CaseStudies = () => {
               <div>
                 <img
                   className="rounded-t-[8px] w-full h-48 object-cover"
-                  src={CaseStudies1}
+                  src={crm}
                   alt="Grafica"
                 />
               </div>
               <div className="my-10 mx-6 flex flex-col flex-grow">
-                <div className="size-fit inline-flex bg-cs-beige text-green text-sm font-medium px-3 py-1 rounded-full mb-4">
-                  {t('cs_card1Categoria')}
+                <div className="sm:flex sm:flex-row sm:gap-2 flex flex-col">
+                  <div className="size-fit inline-flex bg-cs-beige text-green text-sm font-medium px-3 py-1 rounded-full mb-4">
+                    {t('cs_card1Categoria')}
+                  </div>
+                  <div className="size-fit inline-flex bg-cs-beige text-green text-sm font-medium px-3 py-1 rounded-full mb-4">
+                    {t('cs_card1Categoria2')}
+                  </div>
                 </div>
+
                 <h2 className="text-xl font-semibold text-gray-900 mb-2 leading-tight">
                   {t('cs_card1Titulo')}
                 </h2>
@@ -288,129 +291,6 @@ export const CaseStudies = () => {
                   className="flex items-center text-green font-medium hover:underline gap-2"
                 >
                   {t('cs_card6BtnLeerMas')}
-                  <img
-                    src={FlechaDerecha}
-                    className="w-5 h-5"
-                  />
-                </a>
-              </div>
-            </div>
-
-            {/* CARD 7 */}
-            <div className="border border-borderGrey rounded-[8px] mb-10 flex flex-col shadow-md transform hover:scale-102 transition-transform duration-300">
-              <div>
-                <img
-                  className="rounded-t-[8px] w-full h-48 object-cover"
-                  src={CaseStudies7}
-                  alt="Grafica"
-                />
-              </div>
-              <div className="my-10 mx-6 flex flex-col flex-grow">
-                <div className="size-fit inline-flex bg-cs-beige text-green text-sm font-medium px-3 py-1 rounded-full mb-4">
-                  {t('cs_card7Categoria')}
-                </div>
-                <h2 className="text-xl font-semibold text-gray-900 mb-2 leading-tight">
-                  {t('cs_card7Titulo')}
-                </h2>
-                <p className="text-grey text-base mb-6">
-                  {t('cs_card7Descripcion')}
-                </p>
-
-                <div className="flex items-center text-green font-semibold text-lg mb-4 mt-auto gap-3">
-                  <img
-                    src={FlechaDiagonal}
-                    className="w-6 h-6"
-                  />
-                  {t('cs_card7Metrica')}
-                </div>
-
-                <a
-                  href="#"
-                  className="flex items-center text-green font-medium hover:underline gap-2"
-                >
-                  {t('cs_card7BtnLeerMas')}
-                  <img
-                    src={FlechaDerecha}
-                    className="w-5 h-5"
-                  />
-                </a>
-              </div>
-            </div>
-
-            {/* CARD 8 */}
-            <div className="border border-borderGrey rounded-[8px] mb-10 flex flex-col shadow-md transform hover:scale-102 transition-transform duration-300">
-              <div>
-                <img
-                  className="rounded-t-[8px] w-full h-48 object-cover"
-                  src={CaseStudies8}
-                  alt="Grafica"
-                />
-              </div>
-              <div className="my-10 mx-6 flex flex-col flex-grow">
-                <div className="size-fit inline-flex bg-cs-beige text-green text-sm font-medium px-3 py-1 rounded-full mb-4">
-                  {t('cs_card8Categoria')}
-                </div>
-                <h2 className="text-xl font-semibold text-gray-900 mb-2 leading-tight">
-                  {t('cs_card8Titulo')}
-                </h2>
-                <p className="text-grey text-base mb-6">
-                  {t('cs_card8Descripcion')}
-                </p>
-
-                <div className="flex items-center text-green font-semibold text-lg mb-4 mt-auto gap-3">
-                  <img
-                    src={FlechaDiagonal}
-                    className="w-6 h-6"
-                  />
-                  {t('cs_card8Metrica')}
-                </div>
-
-                <a
-                  href="#"
-                  className="flex items-center text-green font-medium hover:underline gap-2"
-                >
-                  {t('cs_card8BtnLeerMas')}
-                  <img
-                    src={FlechaDerecha}
-                    className="w-5 h-5"
-                  />
-                </a>
-              </div>
-            </div>
-
-            {/* CARD 9 */}
-            <div className="border border-borderGrey rounded-[8px] mb-10 flex flex-col shadow-md transform hover:scale-102 transition-transform duration-300">
-              <div>
-                <img
-                  className="rounded-t-[8px] w-full h-48 object-cover"
-                  src={CaseStudies9}
-                  alt="Grafica"
-                />
-              </div>
-              <div className="my-10 mx-6 flex flex-col flex-grow">
-                <div className="size-fit inline-flex bg-cs-beige text-green text-sm font-medium px-3 py-1 rounded-full mb-4">
-                  {t('cs_card9Categoria')}
-                </div>
-                <h2 className="text-xl font-semibold text-gray-900 mb-2 leading-tight">
-                  {t('cs_card9Titulo')}
-                </h2>
-                <p className="text-grey text-base mb-6">
-                  {t('cs_card9Descripcion')}
-                </p>
-
-                <div className="flex items-center text-green font-semibold text-lg mb-4 mt-auto gap-3">
-                  <img
-                    src={FlechaDiagonal}
-                    className="w-6 h-6"
-                  />
-                  {t('cs_card9Metrica')}
-                </div>
-
-                <a
-                  href="#"
-                  className="flex items-center text-green font-medium hover:underline gap-2"
-                >
-                  {t('cs_card9BtnLeerMas')}
                   <img
                     src={FlechaDerecha}
                     className="w-5 h-5"

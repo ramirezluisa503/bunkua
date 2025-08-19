@@ -5,13 +5,8 @@ import jorge from '../assets/Images/jorge.webp';
 import adriana from '../assets/Images/adriana.webp';
 import carlos from '../assets/Images/carlos.webp';
 import PortadaHomaPage from '../assets/Images/PortadaHomePage.webp';
-import icono1 from '../assets/Images/HP1.webp';
-import icono2 from '../assets/Images/HP2.webp';
-import icono3 from '../assets/Images/HP3.webp';
-import icono4 from '../assets/Images/HP4.webp';
-import icono5 from '../assets/Images/HP5.webp';
-import icono6 from '../assets/Images/HP6.webp';
-import icono7 from '../assets/Images/HP7.webp';
+import goby from '../assets/Images/goby.webp';
+import bray from '../assets/Images/bray.webp';
 import portapepeles from '../assets/Images/Portapapeles.svg';
 import flechas from '../assets/Images/Flechas.svg';
 import FlechaDerecha from '../assets/Images/FlechaDerecha.svg';
@@ -36,7 +31,7 @@ function HomePage() {
             className="absolute inset-0 z-0"
             style={{
               backgroundImage:
-                'linear-gradient(to top, rgba(255,255,255,1) 5%, rgba(255,255,255,0) 30%)',
+                'linear-gradient(to top, rgba(255,255,255,1) -5%, rgba(255,255,255,0) 75%)',
             }}
           ></div>
 
@@ -44,10 +39,10 @@ function HomePage() {
             <h1 className="sm:text-7xl text-white text-6xl max-w-3xl mx-auto font-bold leading-none text-center">
               {t('hp_hero_title')}
             </h1>
-            <p className="text-darkgrey text-xl box-content leading-normal text-center m-5">
+            <p className="text-2xl box-content leading-normal text-center m-5">
               {t('hp_hero_subtitle_1')}
             </p>
-            <p className="text-darkgrey text-xl max-w-4xl box-content leading-normal text-center">
+            <p className="text-2xl max-w-4xl box-content leading-normal text-center">
               {t('hp_hero_subtitle_2')}
             </p>
             <NavLink to={'/ContactUs'}>
@@ -66,14 +61,17 @@ function HomePage() {
                 {t('hp_approach_title')}
               </h1>
               <p className="text-grey box-content leading-normal text-left ">
+                <strong>{t('hp_approach_descriptionBunkua_1')}</strong>
                 {t('hp_approach_description_1')}
+                <strong>{t('hp_approach_descriptionHasunde_1')}</strong>
+                {t('hp_approach_description-1_1')}
                 <br />
                 <br /> {t('hp_approach_description_2')}
               </p>
             </div>
             <div className="mt-15 max-w-xl mx-auto box-content sm:size-fit sm:col-span-1 sm:px-3 sm:mt-0">
               <img
-                className="rounded-xl"
+                className="rounded-xl w-full h-auto object-cover"
                 src={HomePageImage2}
                 alt={t('hp_alt_image1')}
               />
@@ -82,8 +80,8 @@ function HomePage() {
         </section>
 
         {/*OUR EXPERTISE CARDS */}
-        <section>
-          <div className="mt-28 mb-20">
+        <section className="py-12 sm:py-16 lg:py-20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mx-11">
               <h1 className="text-black text-5xl box-content mb-6 font-bold leading-none text-balance">
                 {t('hp_expertise_section_title')}
@@ -332,45 +330,20 @@ function HomePage() {
             </h1>
             <div className="flex sm:gap-25 gap-4 items-center justify-center m-20">
               <img
-                src={icono1}
+                src={goby}
                 alt="Icono"
-                className="sm:w-auto sm:h-8 w-auto h-4"
+                className="sm:w-auto sm:h-11 w-auto h-10"
               />
               <img
-                src={icono2}
+                src={bray}
                 alt="Icono"
-                className="sm:w-auto sm:h-8 w-auto h-4"
+                className="sm:w-auto sm:h-11 w-auto h-10"
               />
-              <img
-                src={icono3}
-                alt="Icono"
-                className="sm:w-auto sm:h-8 w-auto h-4"
-              />
-              <img
+              {/* <img
                 src={icono4}
                 alt="Icono"
                 className="sm:w-auto sm:h-8 w-auto h-4"
-              />
-              <img
-                src={icono5}
-                alt="Icono"
-                className="sm:w-auto sm:h-8 w-auto h-4"
-              />
-              <img
-                src={icono4}
-                alt="Icono"
-                className="sm:w-auto sm:h-8 w-auto h-4"
-              />
-              <img
-                src={icono6}
-                alt="Icono"
-                className="sm:w-auto sm:h-8 w-auto h-4"
-              />
-              <img
-                src={icono7}
-                alt="Icono"
-                className="sm:w-auto sm:h-8 w-auto h-4"
-              />
+              /> */}
             </div>
           </div>
         </section>

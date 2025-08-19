@@ -8,7 +8,7 @@ import FlechaCrecimiento from '../assets/Images/FlechaCrecimiento.svg';
 import escudo from '../assets/Images/Escudo.svg';
 import users from '../assets/Images/Users.svg';
 import rompecabezas from '../assets/Images/Rompezacebas.svg';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 export const Services = () => {
   const { t } = useTranslation();
@@ -23,8 +23,8 @@ export const Services = () => {
           <div
             className="absolute inset-0 z-0"
             style={{
-              backgroundImage:
-                'linear-gradient(to top, rgba(255,255,255,1) 5%, rgba(255,255,255,0) 45%)',
+              background:
+                'linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7))',
             }}
           ></div>
           <div className="flex flex-col justify-center items-center mx-11 relative z-10">
@@ -37,9 +37,11 @@ export const Services = () => {
             <p className="text-black text-xl max-w-2xl box-content leading-normal text-center">
               {t('sv_portadaDescripcion')}
             </p>
-            <button className="hover:bg-black  bg-green text-white mt-7 mb-0.5 w-fit h-9 px-3 rounded-[6px]">
-              {t('sv_btnConsultaGratis')}
-            </button>
+            <Link to={'/contactUs'}>
+              <button className="hover:bg-black bg-green text-white mt-7 mb-0.5 w-fit h-9 px-3 rounded-[6px] cursor-pointer">
+                {t('sv_btnConsultaGratis')}
+              </button>
+            </Link>
           </div>
         </section>
 
