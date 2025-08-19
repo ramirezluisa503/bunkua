@@ -2,10 +2,10 @@ import { useTranslation } from 'react-i18next';
 import { Layout } from '../components/Layout/Layout';
 import portadaCasos from '../assets/Images/PortadaServicios.webp';
 import crm from '../assets/Images/CRM.webp';
-import CaseStudies2 from '../assets/Images/CaseStudies2.webp';
-import CaseStudies3 from '../assets/Images/CaseStudies3.webp';
-import CaseStudies4 from '../assets/Images/CaseStudies4.webp';
-import CaseStudies5 from '../assets/Images/CaseStudies5.webp';
+import bray2 from '../assets/Images/bray2.webp';
+import CaseStudies3 from '../assets/Images/DiseñoExperiencias.webp';
+import CaseStudies4 from '../assets/Images/agentesIA.webp';
+import CaseStudies5 from '../assets/Images/consultoria.webp';
 import CaseStudies6 from '../assets/Images/CaseStudies6.webp';
 import FlechaDiagonal from '../assets/Images/FlechaDiagonal.svg';
 import FlechaDerecha from '../assets/Images/FlechaLargaDerecha.svg';
@@ -99,13 +99,22 @@ export const CaseStudies = () => {
               <div>
                 <img
                   className="rounded-t-[8px] w-full h-48 object-cover"
-                  src={CaseStudies2}
+                  style={{ objectPosition: 'center 20%' }}
+                  src={bray2}
                   alt="Grafica"
                 />
               </div>
               <div className="my-10 mx-6 flex flex-col flex-grow">
-                <div className="size-fit inline-flex bg-cs-beige text-green text-sm font-medium px-3 py-1 rounded-full mb-4">
-                  {t('cs_card2Categoria')}
+                <div className="sm:flex sm:flex-row sm:gap-2 flex flex-col">
+                  <div className="size-fit inline-flex bg-cs-beige text-green text-sm font-medium px-3 py-1 rounded-full mb-4">
+                    {t('cs_card2Categoria')}
+                  </div>
+                  <div className="size-fit inline-flex bg-cs-beige text-green text-sm font-medium px-3 py-1 rounded-full mb-4">
+                    {t('cs_card2-1Categoria')}
+                  </div>
+                  <div className="size-fit inline-flex bg-cs-beige text-green text-sm font-medium px-3 py-1 rounded-full mb-4">
+                    {t('cs_card1Categoria2')}
+                  </div>
                 </div>
                 <h2 className="text-xl font-semibold text-gray-900 mb-2 leading-tight">
                   {t('cs_card2Titulo')}
@@ -145,16 +154,21 @@ export const CaseStudies = () => {
                 />
               </div>
               <div className="my-10 mx-6 flex flex-col flex-grow">
-                <div className="size-fit inline-flex bg-cs-beige text-green text-sm font-medium px-3 py-1 rounded-full mb-4">
-                  {t('cs_card3Categoria')}
+                <div className="sm:flex sm:flex-row sm:gap-2 flex flex-col">
+                  <div className="size-fit inline-flex bg-cs-beige text-green text-sm font-medium px-3 py-1 rounded-full mb-4">
+                    {t('cs_card3Categoria')}
+                  </div>
+                  <div className="size-fit inline-flex bg-cs-beige text-green text-sm font-medium px-3 py-1 rounded-full mb-4">
+                    {t('cs_card3-1Categoria')}
+                  </div>
                 </div>
+
                 <h2 className="text-xl font-semibold text-gray-900 mb-2 leading-tight">
                   {t('cs_card3Titulo')}
                 </h2>
                 <p className="text-grey text-base mb-6">
                   {t('cs_card3Descripcion')}
                 </p>
-
                 <div className="flex items-center text-green font-semibold text-lg mb-4 mt-auto gap-3">
                   <img
                     src={FlechaDiagonal}
@@ -162,7 +176,6 @@ export const CaseStudies = () => {
                   />
                   {t('cs_card3Metrica')}
                 </div>
-
                 <a
                   href="#"
                   className="flex items-center text-green font-medium hover:underline gap-2"
