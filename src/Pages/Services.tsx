@@ -20,14 +20,14 @@ export const Services = () => {
           className="relative  bg-cover bg-center  min-h-screen flex items-center justify-center px-4"
           style={{ backgroundImage: `url(${PortadaServicios})` }}
         >
-          <div
+          {/* <div
             className="absolute inset-0 z-0"
             style={{
               background:
                 'linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7))',
             }}
-          ></div>
-          <div className="flex flex-col justify-center items-center mx-11 relative z-10">
+          ></div> */}
+          <div className="flex flex-col justify-center items-center mx-11 relative z-10 bg-bg-services">
             <h1 className="text-black sm:text-7xl text-5xl max-w-4xl mx-auto  font-bold leading-none text-center">
               {t('sv_portadaTitulo')}
             </h1>

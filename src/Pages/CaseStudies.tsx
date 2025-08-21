@@ -22,14 +22,14 @@ export const CaseStudies = () => {
           className="relative  bg-cover bg-center  min-h-screen flex items-center justify-center px-4"
           style={{ backgroundImage: `url(${portadaCasos})` }}
         >
-          <div
+          {/* <div
             className="absolute inset-0 z-0"
             style={{
               background:
                 'linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7))',
             }}
-          ></div>
-          <div className="flex flex-col justify-center items-center text-center mx-11 z-10">
+          ></div> */}
+          <div className="flex flex-col justify-center items-center text-center mx-11 z-10 bg-bg-services">
             <h1 className="text-black sm:text-7xl text-5xl max-w-5xl box-content mb-6 font-bold leading-none ">
               {t('cs_portadaTitulo')}
             </h1>
