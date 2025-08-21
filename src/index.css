@@ -34,6 +34,7 @@
   --color-hp-clients: #242524;
   --color-nv-bg: #f9f2e0;
   --color-darkgrey: #434543;
+  --color-bg-services: rgba(255, 255, 255, 0.7);
 }
 
 .cards {
