@@ -29,11 +29,11 @@ export const CaseStudies = () => {
                 'linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7))',
             }}
           ></div> */}
-          <div className="flex flex-col justify-center items-center text-center mx-11 z-10 bg-bg-services">
-            <h1 className="text-black sm:text-7xl text-5xl max-w-5xl box-content mb-6 font-bold leading-none ">
+          <div className="flex flex-col justify-center items-center text-center mx-11 z-10 bg-bg-services sm:p-6 p-16">
+            <h1 className="text-black sm:text-7xl text-6xl max-w-5xl box-content mb-6 font-bold leading-none ">
               {t('cs_portadaTitulo')}
             </h1>
-            <p className="text-black text-xl max-w-3xl box-content leading-normal ">
+            <p className="text-black text-xl max-w-3xl box-content leading-normal">
               {t('cs_portadaDescripcion')}
             </p>
             <Link to={'/contactUs'}>
