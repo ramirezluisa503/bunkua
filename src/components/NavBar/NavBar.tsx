@@ -115,6 +115,17 @@ export const NavBar = () => {
 
               {/*provicional*/}
               <NavLink
+                to={'/Crm'}
+                className={({ isActive }) =>
+                  isActive
+                    ? 'textNavbar font-semibold !text-green'
+                    : 'textNavbar'
+                }
+              >
+                Crm
+              </NavLink>
+
+              <NavLink
                 to={'/TrainingAI'}
                 className={({ isActive }) =>
                   isActive
