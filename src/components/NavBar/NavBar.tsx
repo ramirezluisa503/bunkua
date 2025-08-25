@@ -112,6 +112,18 @@ export const NavBar = () => {
               >
                 {t('nv_contactanos')}
               </NavLink>
+
+              {/*provicional*/}
+              <NavLink
+                to={'/TrainingAI'}
+                className={({ isActive }) =>
+                  isActive
+                    ? 'textNavbar font-semibold !text-green'
+                    : 'textNavbar'
+                }
+              >
+                CapacitacionIA
+              </NavLink>
             </nav>
           </div>
 
