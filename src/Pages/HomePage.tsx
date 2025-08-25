@@ -27,16 +27,16 @@ function HomePage() {
           className="relative bg-cover bg-center min-h-screen flex items-center justify-center px-4"
           style={{ backgroundImage: `url(${PortadaHomaPage})` }}
         >
-          <div
+          {/* <div
             className="absolute inset-0 z-0"
             style={{
               backgroundImage:
                 'linear-gradient(to top, rgba(255,255,255,1) -5%, rgba(255,255,255,0) 75%)',
             }}
-          ></div>
+          ></div> */}
 
-          <div className="flex flex-col justify-center items-center mx-11 relative z-10">
-            <h1 className="sm:text-7xl text-white text-6xl max-w-3xl mx-auto font-bold leading-none text-center">
+          <div className="flex flex-col justify-center items-center mx-11 relative z-10 bg-bg-services sm:p-6 p-16">
+            <h1 className="sm:text-7xl text-6xl text-black max-w-3xl mx-auto font-bold leading-none text-center">
               {t('hp_hero_title')}
             </h1>
             <p className="text-2xl box-content leading-normal text-center m-5">
