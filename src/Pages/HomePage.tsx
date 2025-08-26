@@ -39,10 +39,10 @@ function HomePage() {
             <h1 className="sm:text-7xl text-6xl text-black max-w-3xl mx-auto font-bold leading-none text-center">
               {t('hp_hero_title')}
             </h1>
-            <p className="text-2xl box-content leading-normal text-center m-5">
+            <p className="text-xl box-content leading-normal text-center m-5">
               {t('hp_hero_subtitle_1')}
             </p>
-            <p className="text-2xl max-w-4xl box-content leading-normal text-center">
+            <p className="text-xl max-w-4xl box-content leading-normal text-center">
               {t('hp_hero_subtitle_2')}
             </p>
             <NavLink to={'/ContactUs'}>
