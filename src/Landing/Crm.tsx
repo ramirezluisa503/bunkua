@@ -91,7 +91,6 @@ export const Crm = () => {
                   text="Contactos"
                 />
 
-                {/* Segunda fila - 2 elementos centrados en las columnas 2 y 3 */}
                 {/* Inventarios - posicionado en la columna 2 */}
                 <IconsCrm
                   image={inventario}
