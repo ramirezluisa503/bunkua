@@ -1,4 +1,3 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 import IMGportada from '../assets/Images/PortadaCapacitacionIA.webp';
 import NuestroPrograma from '../assets/Images/NuestroPrograma.webp';

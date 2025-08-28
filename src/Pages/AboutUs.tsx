@@ -11,6 +11,7 @@ import Trusted5 from '../assets/Images/Trusted5.webp';
 import victor from '../assets/Images/victor.webp';
 import david from '../assets/Images/david.webp';
 import luisa from '../assets/Images/luisa.webp';
+import Juan from '../assets/Images/JuanDavidMedina.webp';
 import ComillasCafes from '../assets/Images/ComillasCafes.svg';
 import bombillo from '../assets/Images/Bombillo.svg';
 import escudo from '../assets/Images/Escudo.svg';
@@ -26,7 +27,7 @@ export const AboutUs = () => {
   return (
     <Layout>
       <article>
-        {/*ABOUT BUNKUA */}
+        
         {/*ABOUT BUNKUA */}
         <section>
           <div className="sm:grid-cols-2 sm:gap-15 sm:py-20 gap-10 grid grid-cols-1 p-16 items-center place-items-center">
@@ -216,7 +217,7 @@ export const AboutUs = () => {
                   <img
                     src={victor}
                     alt="Visionary"
-                    className="rounded-full h-auto w-33"
+                    className="rounded-full h-auto w-32"
                   />
                   <h3 className="text-xl font-semibold text-gray-800 mt-4">
                     {t('au_visionarioElenaNombre')}
@@ -256,7 +257,7 @@ export const AboutUs = () => {
                   <img
                     src={luisa}
                     alt="Visionary"
-                    className="rounded-full h-auto w-33"
+                    className="rounded-full h-auto w-32"
                   />
                   <h3 className="text-xl font-semibold text-gray-800 mt-4">
                     {t('au_visionarioMarcusNombre')}
@@ -274,14 +275,14 @@ export const AboutUs = () => {
               >
                 <div className="border border-borderGrey rounded-xl p-6 flex flex-col justify-center items-center h-full text-center mb-8 w-3xs shadow-md transform hover:scale-102 transition-transform duration-300">
                   <img
-                    src={luisa}
+                    src={Juan}
                     alt="Visionary"
-                    className="rounded-full h-auto w-33"
+                    className="rounded-full h-auto w-36"
                   />
                   <h3 className="text-xl font-semibold text-gray-800 mt-4">
                     {t('au_visionarioDavidNombre')}
                   </h3>
-                  <p className="sm:max-w-80 text-grey text-[14px] mb-4 leading-relaxed text-center">
+                  <p className="sm:max-w-80 text-grey text-[14px] mb-4 leading-relaxed text-center h-12">
                     {t('au_visionarioDavidCargo')}
                   </p>
                 </div>
