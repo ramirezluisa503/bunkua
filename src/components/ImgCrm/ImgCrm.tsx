@@ -5,7 +5,7 @@ interface ImgCrm {
 
 export const ImgCrm = ({ text, image }: ImgCrm) => {
   return (
-    <div className="flex flex-col items-center text-center">
+    <div className="flex flex-col items-center text-center transform hover:scale-110 transition-all duration-300">
       <img
         src={image}
         alt={text}
