@@ -3,29 +3,14 @@ import { IconsCrm } from '../components/IconsCrm/IconsCrm';
 import { ListCrm } from '../components/ListCrm/ListCrm';
 import { ImgCrm } from '../components/ImgCrm/ImgCrm';
 import { FasesCrm } from '../components/FasesCrm/FasesCrm';
-import hascunde from '../assets/images/hascunde-logo.webp';
-import bunkua from '../assets/images/bunkua.webp';
-import ventas from '../assets/images/iconVentas.webp';
-import crm from '../assets/images/iconCRM.webp';
-import facturación from '../assets/images/iconFacturacion.webp';
-import contacto from '../assets/images/iconContacto.webp';
-import mrp from '../assets/images/iconMRP.webp';
-import inventario from '../assets/images/iconInventario.webp';
-import IaCrm from '../assets/images/ImgCRM.webp';
-import capturaCrm from '../assets/images/CapturaCRM.webp';
-import flecha from '../assets/images/FlechaDerechaGris.svg';
-import user from '../assets/images/user.svg';
-import paper from '../assets/images/Paper.svg';
-import hands from '../assets/images/Hands.svg';
-import check from '../assets/images/Check.svg';
 import { CardCrm } from '../components/CardCrm/CardCrm';
+import { images } from '../assets/images/index';
 
 export const Crm = () => {
   return (
     <Layout>
       <header className="min-h-[200px] bg-[#faf4e1]">
         <div className="container mx-auto py-8">
-          {/* Header */}
           <div className="flex justify-around items-start mb-10 mt-12">
             <div className="flex-1 max-w-2xl">
               <h1 className="text-5xl md:text-6xl font-black text-gray-900 mb-4 mt-4">
@@ -49,13 +34,12 @@ export const Crm = () => {
               <div className="text-gray-600">Que me mande al link del CRM</div>
             </div>
 
-            {/* Logo */}
             <div className="flex-shrink-0">
               <div className="text-center mb-4">
                 <div className="flex items-center justify-center mb-2">
                   <div className="text-2xl font-bold text-gray-800 justify-items-center ">
                     <img
-                      src={hascunde}
+                      src={images.hascunde}
                       alt="hascunde"
                       width={85}
                       className={'content-center'}
@@ -69,38 +53,33 @@ export const Crm = () => {
               </div>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl ml-auto">
                 <IconsCrm
-                  image={ventas}
+                  image={images.ventas}
                   text="Ventas"
                 />
 
-                {/* CRM */}
                 <IconsCrm
-                  image={crm}
+                  image={images.crm}
                   text="CRM"
                 />
 
-                {/* Facturación */}
                 <IconsCrm
-                  image={facturación}
+                  image={images.facturacion}
                   text="Facturación"
                 />
 
-                {/* Contactos */}
                 <IconsCrm
-                  image={contacto}
+                  image={images.contacto}
                   text="Contactos"
                 />
 
-                {/* Inventarios - posicionado en la columna 2 */}
                 <IconsCrm
-                  image={inventario}
+                  image={images.inventario}
                   text="Inventario"
                   style="md:col-start-2"
                 />
 
-                {/* MRP - posicionado en la columna 3 */}
                 <IconsCrm
-                  image={mrp}
+                  image={images.mrp}
                   text="MRP"
                 />
               </div>
@@ -111,7 +90,6 @@ export const Crm = () => {
 
       <article className="min-h-screen pt-15 bg-[#fafafb]">
         <div className="max-w-7xl mx-auto">
-          {/* Header Section */}
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
               ¿Qué es un CRM y por qué lo necesita?
@@ -126,7 +104,6 @@ export const Crm = () => {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Benefits Section */}
             <div className="space-y-8">
               <h2 className="text-3xl font-bold text-gray-800 mb-8">
                 Beneficios
@@ -143,7 +120,7 @@ export const Crm = () => {
 
             <div className="relative">
               <img
-                src={IaCrm}
+                src={images.IaCrm}
                 alt="IaCrm"
                 className="w-full h-100 rounded shadow-2xl"
               />
@@ -154,7 +131,6 @@ export const Crm = () => {
 
       <article className="min-h-[600px] bg-white pt-15">
         <div className="max-w-7xl mx-auto">
-          {/* Header Section */}
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
               Módulos Clave de un CRM
@@ -165,41 +141,38 @@ export const Crm = () => {
             </p>
           </div>
 
-          {/* Modules Grid */}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mb-16">
-            {/* Ventas */}
             <ImgCrm
               text="Ventas"
-              image={ventas}
+              image={images.ventas}
             />
 
             <ImgCrm
               text="CRM"
-              image={crm}
+              image={images.crm}
             />
 
             <ImgCrm
               text="Facturación"
-              image={facturación}
+              image={images.facturacion}
             />
 
             <ImgCrm
               text="Contacto"
-              image={contacto}
+              image={images.contacto}
             />
 
             <ImgCrm
               text="Inventario"
-              image={inventario}
+              image={images.inventario}
             />
 
             <ImgCrm
               text="MRP"
-              image={mrp}
+              image={images.mrp}
             />
           </div>
 
-          {/* Bottom Section */}
           <div className="bg-gray-100 rounded-2xl p-8">
             <h2 className="text-2xl font-bold text-gray-800 mb-4">
               Gestión de Leads y Oportunidades
@@ -216,42 +189,36 @@ export const Crm = () => {
 
       <article className="min-h-screen pt-15">
         <div className="max-w-7xl mx-auto">
-          {/* Header */}
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
               Fases del Embudo de Ventas
             </h1>
           </div>
 
-          {/* Sales Funnel Steps */}
           <div className="grid grid-cols-1 md:grid-cols-7 gap-8 mb-22">
-            {/* Nuevo Lead */}
             <FasesCrm
               text1="Nuevo Lead"
               text2="Identifica y califica contactos potenciales."
-              image={user}
+              image={images.user}
             />
 
-            {/* Arrow */}
             <div className="hidden md:flex items-center justify-center">
               <img
-                src={flecha}
+                src={images.flecha}
                 alt="flecha"
                 className="w-15 h-15"
               />
             </div>
 
-            {/* Cotización */}
             <FasesCrm
               text1="Cotización"
               text2="Prepara y envía propuestas personalizadas."
-              image={paper}
+              image={images.paper}
             />
 
-            {/* Arrow */}
             <div className="hidden md:flex items-center justify-center">
               <img
-                src={flecha}
+                src={images.flecha}
                 alt="flecha"
                 className="w-15 h-15"
               />
@@ -260,13 +227,12 @@ export const Crm = () => {
             <FasesCrm
               text1="Casi Ganado"
               text2="Negocia y cierra acuerdos con seguimiento."
-              image={hands}
+              image={images.hands}
             />
 
-            {/* Arrow */}
             <div className="hidden md:flex items-center justify-center">
               <img
-                src={flecha}
+                src={images.flecha}
                 alt="flecha"
                 className="w-15 h-15"
               />
@@ -275,25 +241,25 @@ export const Crm = () => {
             <FasesCrm
               text1="Ganado"
               text2="Registra la venta y gestiona el post-cierre."
-              image={check}
+              image={images.check}
             />
           </div>
 
           <div className="flex justify-evenly">
             <img
-              src={capturaCrm}
+              src={images.capturaCrm}
               alt="Interfaz CRM mostrando las fases del embudo de ventas"
               className="w-200 h-auto rounded-lg"
             />
 
             <div className="flex justify-end items-center">
               <img
-                src={hascunde}
+                src={images.hascunde}
                 alt="Hascunde"
                 className="h-40 w-auto mr-10"
               />
               <img
-                src={bunkua}
+                src={images.bunkua}
                 alt="Logo Bunkua"
                 className="h-40 w-auto"
               />
@@ -304,8 +270,7 @@ export const Crm = () => {
 
       <article className="min-h-screen pt-15 bg-[#fafafb]">
         <div className="max-w-7xl mx-auto">
-          {/* Header Section */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-2">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
               Módulo de Ventas: Cierra Más Negocios
             </h1>
@@ -315,9 +280,8 @@ export const Crm = () => {
             </p>
           </div>
 
-          <div className="bg-gray-100 p-8 sm:p-12 lg:p-16">
+          <div className="p-8 sm:p-12 lg:p-16">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-              {/* Tarjeta 1 */}
               <CardCrm
                 text1="Crear Cotizaciones"
                 text2="Genere propuestas detalladas con productos y precios."
@@ -355,6 +319,115 @@ export const Crm = () => {
                 text2="Obtén informes detallados para identificar tendencias y
                   optimizar estrategias comerciales."
                 icon={'📈'}
+              />
+            </div>
+          </div>
+          <div className="flex justify-center">
+            <img
+              src={images.capturaVentas}
+              alt="capturaVentas"
+              className="w-290 rounded-lg"
+            />
+          </div>
+        </div>
+      </article>
+
+      <article className="min-h-screen pt-15 mt-10">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+              Módulo de Facturación: Control Financiero Simplificado
+            </h1>
+            <p className="text-lg md:text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
+              Automatice la facturación y el seguimiento de pagos para una
+              gestión financiera sin <br /> esfuerzo.
+            </p>
+          </div>
+
+          <div className="p-8 sm:p-12 lg:p-16">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+              <CardCrm
+                text1="Facturación Simplificada"
+                text2="Crea facturas profesionales de forma rápida, integrando datos de ventas automáticamente."
+                image={images.img}
+              />
+
+              <CardCrm
+                text1="Seguimiento de Pagos"
+                text2="Monitorea el estado de tus pagos, con recordatorios automáticos para deudas pendientes."
+                image={images.coins}
+              />
+
+              <CardCrm
+                text1="Control de Gastos"
+                text2="Registra y clasifica todos tus gastos operativos para una gestión financiera precisa."
+                image={images.dolar}
+              />
+            </div>
+          </div>
+          <div className="flex justify-center">
+            <img
+              src={images.capturaFacturacion}
+              alt="capturaFacturacion"
+              className="w-290 rounded-lg"
+            />
+          </div>
+
+          <div className="flex justify-center mt-15">
+            <img
+              src={images.capturaFacturacion2}
+              alt="capturaFacturacion"
+              className="w-290 rounded-lg"
+            />
+          </div>
+        </div>
+      </article>
+
+      <article className="min-h-screen pt-15">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+              Módulo de Contactos: Su Base de Datos Centralizada
+            </h1>
+            <p className="text-lg md:text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
+              El corazón de su CRM, donde toda la información de clientes y
+              prospectos reside de forma segura y accesible.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-center mt-12">
+            <div className="space-y-8">
+              {/* <h2 className="text-3xl font-bold text-gray-800 mb-8">
+                Beneficios
+              </h2> */}
+
+              <div className="space-y-4">
+                <p>
+                  El módulo de contactos es la fuente de verdad para todos los
+                  datos de sus clientes.
+                </p>
+                <p>
+                  <strong>Base de Datos Unificada:</strong> Almacena perfiles de
+                  clientes, historial de interacciones, notas y documentos.
+                </p>
+                <p>
+                  <strong>Integración Multi-Módulo:</strong> Es utilizado por
+                  otros módulos (Ventas, Marketing, Soporte) para rellenar datos
+                  automáticamente y garantizar la consistencia.
+                </p>
+                <p>
+                  <strong>Visión 360 del Cliente:</strong> Ofrece una vista
+                  completa de cada cliente, permitiendo un servicio
+                  personalizado y eficiente.
+                </p>
+              </div>
+            </div>
+
+            <div className="relative">
+              <img
+                src={images.IaCrm}
+                alt="IaCrm"
+                className="w-full h-100 rounded shadow-2xl"
               />
             </div>
           </div>
