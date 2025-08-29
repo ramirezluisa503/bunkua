@@ -382,6 +382,57 @@ export const Crm = () => {
           </div>
         </div>
       </article>
+
+      <article className="min-h-screen pt-15">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+              Módulo de Contactos: Su Base de Datos Centralizada
+            </h1>
+            <p className="text-lg md:text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
+              El corazón de su CRM, donde toda la información de clientes y
+              prospectos reside de forma segura y accesible.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-center mt-12">
+            <div className="space-y-8">
+              {/* <h2 className="text-3xl font-bold text-gray-800 mb-8">
+                Beneficios
+              </h2> */}
+
+              <div className="space-y-4">
+                <p>
+                  El módulo de contactos es la fuente de verdad para todos los
+                  datos de sus clientes.
+                </p>
+                <p>
+                  <strong>Base de Datos Unificada:</strong> Almacena perfiles de
+                  clientes, historial de interacciones, notas y documentos.
+                </p>
+                <p>
+                  <strong>Integración Multi-Módulo:</strong> Es utilizado por
+                  otros módulos (Ventas, Marketing, Soporte) para rellenar datos
+                  automáticamente y garantizar la consistencia.
+                </p>
+                <p>
+                  <strong>Visión 360 del Cliente:</strong> Ofrece una vista
+                  completa de cada cliente, permitiendo un servicio
+                  personalizado y eficiente.
+                </p>
+              </div>
+            </div>
+
+            <div className="relative">
+              <img
+                src={images.IaCrm}
+                alt="IaCrm"
+                className="w-full h-100 rounded shadow-2xl"
+              />
+            </div>
+          </div>
+        </div>
+      </article>
     </Layout>
   );
 };
