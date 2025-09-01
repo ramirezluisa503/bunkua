@@ -5,6 +5,8 @@ import { ImgCrm } from '../components/ImgCrm/ImgCrm';
 import { FasesCrm } from '../components/FasesCrm/FasesCrm';
 import { CardCrm } from '../components/CardCrm/CardCrm';
 import { images } from '../assets/images/index';
+import { CheckList } from '../components/CheckList/CheckList';
+import { NavLink } from 'react-router-dom';
 
 export const Crm = () => {
   return (
@@ -30,8 +32,6 @@ export const Crm = () => {
               <button className="hover:bg-black bg-green text-white mt-7 mb-8 w-fit h-9 px-3 rounded-[6px] cursor-pointer">
                 Empieza a utilizar ahora
               </button>
-
-              <div className="text-gray-600">Que me mande al link del CRM</div>
             </div>
 
             <div className="flex-shrink-0">
@@ -425,14 +425,158 @@ export const Crm = () => {
 
             <div className="relative">
               <img
-                src={images.IaCrm}
+                src={images.moduloContacto}
                 alt="IaCrm"
                 className="w-full h-100 rounded shadow-2xl"
               />
             </div>
           </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-center mt-22">
+            <div className="relative">
+              <img
+                src={images.capturaContacto}
+                alt="capturaContacto"
+                className="w-full rounded shadow-2xl"
+              />
+            </div>
+
+            <div className="space-y-8">
+              <h2 className="text-3xl font-bold text-gray-800">
+                Beneficios Clave:
+              </h2>
+
+              <div className="space-y-4">
+                <CheckList text="Acceso rápido a la información completa de cada cliente." />
+                <CheckList text="Historial de interacciones unificado para una comunicación consistente." />
+                <CheckList text="Segmentación avanzada para campañas de marketing dirigidas." />
+                <CheckList text="Mejora la colaboración entre equipos de ventas y soporte." />
+              </div>
+            </div>
+          </div>
         </div>
       </article>
+
+      <article className="min-h-screen pt-15 mt-10">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+              Módulo de Facturación: Control Financiero Simplificado
+            </h1>
+            <p className="text-lg md:text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
+              Automatice la facturación y el seguimiento de pagos para una
+              gestión financiera sin <br /> esfuerzo.
+            </p>
+          </div>
+
+          <div className="p-8 sm:p-12 lg:p-16">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
+              <CardCrm
+                text1="Control de Stock en Tiempo Real"
+                text2="Monitoriza tus niveles de inventario, entradas y salidas, evitando roturas o excesos."
+                image={images.box}
+              />
+
+              <CardCrm
+                text1="Integración con Ventas y MRP"
+                text2="Conecta automáticamente tus ventas con el inventario y planifica la producción según la demanda real."
+                image={images.block}
+              />
+            </div>
+          </div>
+
+          <div className="w-full flex items-center justify-center">
+            <div className="grid grid-cols-2 gap-6 max-w-6xl">
+              <img
+                src={images.capturaInventario1}
+                alt="capturaContacto"
+                className="rounded-xl shadow-lg h-40 w-full"
+              />
+
+              <img
+                src={images.capturaInventario2}
+                alt="capturaContacto"
+                className="rounded-xl shadow-lg h-40 w-full"
+              />
+
+              <img
+                src={images.capturaInventario3}
+                alt="capturaContacto"
+                className="rounded-xl shadow-lg h-40 w-full"
+              />
+
+              <img
+                src={images.capturaInventario4}
+                alt="capturaContacto"
+                className="rounded-xl shadow-lg h-40 w-full"
+              />
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article className="min-h-screen pt-15 bg-[#fafafb]">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+              Módulo MRP: Planificación de Recursos de Fabricación
+            </h1>
+            <p className="text-lg md:text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
+              Optimice su producción asegurando la disponibilidad de materiales
+              y componentes <br /> necesarios.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-8">
+              <p className="text-gray-800 mb-8">
+                <strong>
+                  El módulo de MRP es fundamental para empresas de fabricación,
+                  permitiendo:
+                </strong>
+              </p>
+
+              <div className="space-y-4">
+                <ListCrm text="Planificación de Materiales" />
+                <ListCrm text="Gestión de Órdenes de Fabricación" />
+                <ListCrm text="Integración con inventario" />
+                <ListCrm text="Optimización de Recursos" />
+              </div>
+            </div>
+
+            <div className="relative">
+              <img
+                src={images.moduloMrp}
+                alt="moduloMrp"
+                className="w-full h-100 rounded shadow-2xl"
+              />
+            </div>
+          </div>
+          <div className="flex justify-center mt-15">
+            <img
+              src={images.capturaMrp}
+              alt="capturaVentas"
+              className="w-290 rounded-lg"
+            />
+          </div>
+        </div>
+      </article>
+      <footer>
+        <div className="flex flex-col items-center justify-center h-120 bg-[#faf4e1] p-4 text-center">
+          <h2 className="text-4xl md:text-5xl font-bold text-[#333333] mb-4">
+            ¿Listo para Transformar tu Negocio?
+          </h2>
+          <p className="max-w-xl text-lg text-[#555555] mb-8">
+            Descubre cómo CRM Empresarial puede centralizar tus operaciones,
+            potenciar tus ventas y escalar tu crecimiento.
+          </p>
+          <NavLink to={'/contactUs'}>
+            <button className="hover:bg-black bg-green text-white mt-7 mb-0.5 w-fit h-9 px-3 rounded-[6px] cursor-pointer">
+              Solicita una prueba ahora
+            </button>
+          </NavLink>
+        </div>
+      </footer>
     </Layout>
   );
 };
