@@ -7,6 +7,8 @@ import { ContactUs } from './Pages/ContactUs';
 import { useEffect } from 'react';
 import { TrainingAI } from './Landing/TrainingAI';
 import { Crm } from './Landing/Crm';
+import { AppBrey } from './Landing/AppBrey';
+
 
 // OPCIÓN 1: Usando scroll behavior smooth (más simple)
 const ScrollToTopSmooth = () => {
@@ -58,6 +60,11 @@ function App() {
         <Route
           path="/Crm"
           element={<Crm />}
+        />
+
+        <Route
+          path="/AppBrey"
+          element={<AppBrey />}
         />
       </Routes>
     </>

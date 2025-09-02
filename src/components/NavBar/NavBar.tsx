@@ -135,6 +135,19 @@ export const NavBar = () => {
               >
                 CapacitacionIA
               </NavLink>
+
+              <NavLink
+                to={'/AppBrey'}
+                className={({ isActive }) =>
+                  isActive
+                    ? 'textNavbar font-semibold !text-green'
+                    : 'textNavbar'
+                }
+              >
+                AppBrey
+              </NavLink>
+
+              
             </nav>
           </div>
 
