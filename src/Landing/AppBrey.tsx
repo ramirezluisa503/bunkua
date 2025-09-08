@@ -1,6 +1,7 @@
 import { Layout } from '../components/Layout/Layout';
 import AutoCarousel from '../components/Carousel/Carousel';
-import { CheckList } from '../components/CheckList/CheckList'; 
+import { CheckList } from '../components/CheckList/CheckList';
+import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
 import Brey1 from '../assets/images/Brey1.webp';
 import Brey2 from '../assets/images/Brey2.webp';
@@ -21,8 +22,8 @@ import Microphone from '../assets/images/Microphone.svg';
 import Users from '../assets/images/Users.svg';
 
 export const AppBrey = () => {
+  const { t } = useTranslation();
 
-  
   const imagesData = [
     { src: Brey1, alt: 'Bray 1' },
     { src: Brey2, alt: 'Bray 2' },
@@ -40,150 +41,149 @@ export const AppBrey = () => {
   ];
 
   return (
-      <Layout>
-        <section className=" sm:grid sm:grid-cols-2 sm:gap-10 flex flex-col p-2 bg-gray-50 ">
-          
-          {/* Portada */}
-          <article className="gap-10 grid grid-cols-1 bg-white p-16 items-center place-items-center">
-            <div className="sm:text-left text-center box-content">
-              <h2 className="sm:text-4xl text-3xl text-black  box-content mb-6 font-bold leading-tight">
-                APP BREY: La Solución Definitiva para el Levantamiento de Activos en Campo
-              </h2>
-              <p className="text-grey text-balance text-xl box-content leading-relaxed">
-                Optimice la recopilación y gestión de datos de sus activos en campo con nuestra aplicación móvil robusta y fácil de usar. Trabaje sin conexión, capture datos con voz y asegure la integridad de su información.
-              </p>
-              <NavLink to={'/contactUs'}>
-                <button className="hover:bg-black bg-green text-white mt-7 mb-0.5 w-fit h-9 px-3 rounded-[6px] cursor-pointer">
-                Agendar una demostración
-                </button>
-              </NavLink>
-            </div>
-          </article>
-          
-          <article className='flex justify-center items-center'>
-            <AutoCarousel slides={imagesData} interval={8000} />
-          </article>
-    
-        </section>
+    <Layout>
+      <section className=" sm:grid sm:grid-cols-2 sm:gap-10 flex flex-col p-2 bg-gray-50 ">
         
-        {/* Cards */}
-        <section className='bg-lpAppBray-bg'>
-            <div className="grid grid-cols-1 gap-6 sm:grid sm:grid-cols-4  sm:gap-6 p-20   ">
-              {/*CARD 1*/}
-              <div className="bg-white border border-grayLight shadow-md rounded-xl p-6 flex flex-col  justify-between h-full text-center text-balance transform hover:scale-102 transition-transform duration-300">
-                <div className="m-5">
-                  <img
-                    src={Padlock}
-                    className="w-8 h-8"
-                  />
-                </div>
-                <h3 className="text-2xl font-semibold mb-2 text-gray-800 items-center">
-                  Inicio de Sesión Seguro
-                </h3>
-                <p className="text-grey text-sm mb-4 px-8 leading-relaxed text-center">
-                  Acceso protegido con múltiples capas de seguridad para garantizar la privacidad y confidencialidad de sus datos.
-                </p>
-              </div>
-              {/*CARD 2*/}
-              <div className="bg-white border border-grayLight shadow-md rounded-xl p-6 flex flex-col justify-between h-full text-center text-balance transform hover:scale-102 transition-transform duration-300">
-                <div className="m-5">
-                  <img
-                    src={Nube}
-                    className="w-8 h-8"
-                  />
-                </div>
-                <h3 className="text-2xl font-semibold mb-2 text-gray-800 items-center ">
-                  Trabajo Offline
-                </h3>
-                <p className="text-grey text-sm mb-4 px-8 leading-relaxed text-center">
-                  Capture datos cruciales incluso sin conexión a internet. Sincronización automática al restablecer la conectividad.
-                </p>
-              </div>
-              {/*CARD 3*/}
-              <div className="bg-white border border-grayLight shadow-md rounded-xl p-6 flex flex-col  justify-between h-full text-center text-balance transform hover:scale-102 transition-transform duration-300">
-                <div className="m-5">
-                  <img
-                    src={Microphone}
-                    className="w-8 h-8"
-                  />
-                </div>
-                <h3 className="text-2xl font-semibold mb-2 text-gray-800 items-center">
-                  Entrada de Voz a Texto
-                </h3>
-                <p className="text-grey text-sm mb-4 px-8 leading-relaxed text-center items-center">
-                  Agilice la captura de información con la conversión de voz a texto, reduciendo errores y tiempos de registro.
-                </p>
-              </div>
-              {/*CARD 4*/}
-              <div className="bg-white border border-grayLight shadow-md rounded-xl p-6 flex flex-col  justify-between h-full text-center text-balance transform hover:scale-102 transition-transform duration-300">
-                <div className="m-5">
-                  <img
-                    src={Users}
-                    className="w-8 h-8"
-                  />
-                </div>
-                <h3 className="text-2xl font-semibold mb-2 text-gray-800 items-center">
-                  Perfiles Personalizables
-                </h3>
-                <p className="text-grey text-sm mb-4 px-8 leading-relaxed text-center items-center">
-                  Gestione y adapte los perfiles de usuario según las necesidades específicas de cada rol dentro de su organización.
-                </p>
-              </div>
-            </div>
-
-        </section>
-        {/* Roles y Permisos */}
-        <section className='m-20'>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-15 text-center">
-              Roles y Permisos
-          </h2>
-          <article className='sm:grid sm:grid-cols-2 flex flex-col justify-center items-center gap-10'>
-            <div className="sm:grid-cols-1 border border-borderGrey rounded-xl p-8 space-y-8 ">
-              <h3 className="text-3xl font-bold text-gray-800">
-                Administrador
-              </h3>
-
-              <div className="space-y-4">
-                <CheckList text="Gestión completa de usuarios y roles." />
-                <CheckList text="Configuración de permisos de acceso." />
-                <CheckList text="Monitoreo y auditoría de actividades." />
-                <CheckList text="Generación de informes avanzados." />
-                <CheckList text="Personalización de formularios y campos." />
-                <CheckList text="Respaldo y recuperación de datos." />
-              </div>
-            </div>
-            <div className="sm:grid-cols-1 border border-borderGrey rounded-xl p-8 space-y-8">
-              <h3 className="text-3xl font-bold text-gray-800">
-                Usuario
-              </h3>
-
-              <div className="space-y-4">
-                <CheckList text="Levantamiento de activos en campo." />
-                <CheckList text="Captura de datos offline." />
-                <CheckList text="Uso de voz a texto para registros." />
-                <CheckList text="Visualización de activos asignados." />
-                <CheckList text="Actualización de estado de activos." />
-                <CheckList text="Carga de fotos y documentos." />
-              </div>
-            </div>
-          </article>
-          
-        </section>
-        <footer>
-          <div className="flex flex-col items-center justify-center h-120 bg-[#faf4e1] p-4 text-center">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#333333] mb-4">
-              ¿Listo para Optimizar la Gestión de Activos de tu Empresa?
+        {/* Portada */}
+        <article className="gap-10 grid grid-cols-1 bg-white p-16 items-center place-items-center">
+          <div className="sm:text-left text-center box-content">
+            <h2 className="sm:text-4xl text-3xl text-black box-content mb-6 font-bold leading-tight">
+              {t("LpAppBrey-title")}
             </h2>
-            
+            <p className="text-grey text-balance text-xl box-content leading-relaxed">
+              {t("LpAppBrey-subtitle")}
+            </p>
             <NavLink to={'/contactUs'}>
               <button className="hover:bg-black bg-green text-white mt-7 mb-0.5 w-fit h-9 px-3 rounded-[6px] cursor-pointer">
-                Contáctanos Hoy
+                {t("LpAppBrey-cta-button-demostracion")}
               </button>
             </NavLink>
           </div>
-        </footer>
+        </article>
+        
+        <article className='flex justify-center items-center'>
+          <AutoCarousel slides={imagesData} interval={8000} />
+        </article>
 
-      </Layout>
+      </section>
+      
+      {/* Cards */}
+      <section className='bg-lpAppBray-bg'>
+          <div className="grid grid-cols-1 gap-6 sm:grid sm:grid-cols-4 sm:gap-6 p-20">
+            {/*CARD 1*/}
+            <div className="bg-white border border-grayLight shadow-md rounded-xl p-6 flex flex-col justify-between h-full text-center text-balance transform hover:scale-102 transition-transform duration-300">
+              <div className="m-5">
+                <img
+                  src={Padlock}
+                  className="w-8 h-8"
+                />
+              </div>
+              <h3 className="text-2xl font-semibold mb-2 text-gray-800 items-center">
+                {t("LpAppBrey-card-title-1")}
+              </h3>
+              <p className="text-grey text-sm mb-4 px-8 leading-relaxed text-center">
+                {t("LpAppBrey-card-text-1")}
+              </p>
+            </div>
+            {/*CARD 2*/}
+            <div className="bg-white border border-grayLight shadow-md rounded-xl p-6 flex flex-col justify-between h-full text-center text-balance transform hover:scale-102 transition-transform duration-300">
+              <div className="m-5">
+                <img
+                  src={Nube}
+                  className="w-8 h-8"
+                />
+              </div>
+              <h3 className="text-2xl font-semibold mb-2 text-gray-800 items-center ">
+                {t("LpAppBrey-card-title-2")}
+              </h3>
+              <p className="text-grey text-sm mb-4 px-8 leading-relaxed text-center">
+                {t("LpAppBrey-card-text-2")}
+              </p>
+            </div>
+            {/*CARD 3*/}
+            <div className="bg-white border border-grayLight shadow-md rounded-xl p-6 flex flex-col justify-between h-full text-center text-balance transform hover:scale-102 transition-transform duration-300">
+              <div className="m-5">
+                <img
+                  src={Microphone}
+                  className="w-8 h-8"
+                />
+              </div>
+              <h3 className="text-2xl font-semibold mb-2 text-gray-800 items-center">
+                {t("LpAppBrey-card-title-3")}
+              </h3>
+              <p className="text-grey text-sm mb-4 px-8 leading-relaxed text-center items-center">
+                {t("LpAppBrey-card-text-3")}
+              </p>
+            </div>
+            {/*CARD 4*/}
+            <div className="bg-white border border-grayLight shadow-md rounded-xl p-6 flex flex-col justify-between h-full text-center text-balance transform hover:scale-102 transition-transform duration-300">
+              <div className="m-5">
+                <img
+                  src={Users}
+                  className="w-8 h-8"
+                />
+              </div>
+              <h3 className="text-2xl font-semibold mb-2 text-gray-800 items-center">
+                {t("LpAppBrey-card-title-4")}
+              </h3>
+              <p className="text-grey text-sm mb-4 px-8 leading-relaxed text-center items-center">
+                {t("LpAppBrey-card-text-4")}
+              </p>
+            </div>
+          </div>
+      </section>
+      {/* Roles y Permisos */}
+      <section className='m-20'>
+        <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-15 text-center">
+          {t("LpAppBrey-roles-title")}
+        </h2>
+        <article className='sm:grid sm:grid-cols-2 flex flex-col justify-center items-center gap-10'>
+          <div className="sm:grid-cols-1 border border-borderGrey rounded-xl p-8 space-y-8 ">
+            <h3 className="text-3xl font-bold text-gray-800">
+              {t("LpAppBrey-admin-title")}
+            </h3>
+
+            <div className="space-y-4">
+              <CheckList text={t("LpAppBrey-admin-list-item-1")} />
+              <CheckList text={t("LpAppBrey-admin-list-item-2")} />
+              <CheckList text={t("LpAppBrey-admin-list-item-3")} />
+              <CheckList text={t("LpAppBrey-admin-list-item-4")} />
+              <CheckList text={t("LpAppBrey-admin-list-item-5")} />
+              <CheckList text={t("LpAppBrey-admin-list-item-6")} />
+            </div>
+          </div>
+          <div className="sm:grid-cols-1 border border-borderGrey rounded-xl p-8 space-y-8">
+            <h3 className="text-3xl font-bold text-gray-800">
+              {t("LpAppBrey-user-title")}
+            </h3>
+
+            <div className="space-y-4">
+              <CheckList text={t("LpAppBrey-user-list-item-1")} />
+              <CheckList text={t("LpAppBrey-user-list-item-2")} />
+              <CheckList text={t("LpAppBrey-user-list-item-3")} />
+              <CheckList text={t("LpAppBrey-user-list-item-4")} />
+              <CheckList text={t("LpAppBrey-user-list-item-5")} />
+              <CheckList text={t("LpAppBrey-user-list-item-6")} />
+            </div>
+          </div>
+        </article>
+        
+      </section>
+      <footer>
+        <div className="flex flex-col items-center justify-center h-120 bg-[#faf4e1] p-4 text-center">
+          <h2 className="text-4xl md:text-5xl font-bold text-[#333333] mb-4">
+            {t("LpAppBrey-footer-title")}
+          </h2>
+          
+          <NavLink to={'/contactUs'}>
+            <button className="hover:bg-black bg-green text-white mt-7 mb-0.5 w-fit h-9 px-3 rounded-[6px] cursor-pointer">
+              {t("LpAppBrey-cta-button-contacto")}
+            </button>
+          </NavLink>
+        </div>
+      </footer>
+
+    </Layout>
     
   );
 };

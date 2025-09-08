@@ -335,7 +335,38 @@
   "Lp-cap-resultados-item-4-description": "Have a solid foundation for exams like PMP or Scrum Master.",
   "Lp-cap-footer-title": "Boost your professional growth!",
   "Lp-cap-footer-description": "Enroll today in our Advanced Project Management Program and become the leader your projects need.",
-  "Lp-cap-footer-button": "Start Your Transformation Now"
+  "Lp-cap-footer-button": "Start Your Transformation Now",
+
+
+
+  "LpAppBrey-title": "APP BREY: The Ultimate Solution for Field Asset Management",
+  "LpAppBrey-subtitle": "Optimize the collection and management of your field assets with our robust and easy-to-use mobile application. Work offline, capture data with voice, and ensure the integrity of your information.",
+  "LpAppBrey-cta-button-demostracion": "Schedule a demo",
+  "LpAppBrey-card-title-1": "Secure Login",
+  "LpAppBrey-card-text-1": "Protected access with multiple security layers to guarantee the privacy and confidentiality of your data.",
+  "LpAppBrey-card-title-2": "Offline Work",
+  "LpAppBrey-card-text-2": "Capture crucial data even without an internet connection. Automatic synchronization upon restoring connectivity.",
+  "LpAppBrey-card-title-3": "Voice-to-Text Input",
+  "LpAppBrey-card-text-3": "Streamline information capture with voice-to-text conversion, reducing errors and registration times.",
+  "LpAppBrey-card-title-4": "Customizable Profiles",
+  "LpAppBrey-card-text-4": "Manage and adapt user profiles according to the specific needs of each role within your organization.",
+  "LpAppBrey-roles-title": "Roles and Permissions",
+  "LpAppBrey-admin-title": "Administrator",
+  "LpAppBrey-admin-list-item-1": "Complete management of users and roles.",
+  "LpAppBrey-admin-list-item-2": "Access permissions configuration.",
+  "LpAppBrey-admin-list-item-3": "Activity monitoring and auditing.",
+  "LpAppBrey-admin-list-item-4": "Advanced report generation.",
+  "LpAppBrey-admin-list-item-5": "Customization of forms and fields.",
+  "LpAppBrey-admin-list-item-6": "Data backup and recovery.",
+  "LpAppBrey-user-title": "User",
+  "LpAppBrey-user-list-item-1": "Field asset surveying.",
+  "LpAppBrey-user-list-item-2": "Offline data capture.",
+  "LpAppBrey-user-list-item-3": "Use of voice-to-text for records.",
+  "LpAppBrey-user-list-item-4": "Viewing of assigned assets.",
+  "LpAppBrey-user-list-item-5": "Asset status update.",
+  "LpAppBrey-user-list-item-6": "Uploading of photos and documents.",
+  "LpAppBrey-footer-title": "Ready to Optimize Your Company's Asset Management?",
+  "LpAppBrey-cta-button-contacto": "Contact Us Today"
 
   
 }

@@ -335,7 +335,38 @@
   "Lp-cap-resultados-item-4-description": "Contar con una base sólida para exámenes como PMP o Scrum Master.",
   "Lp-cap-footer-title": "¡Impulsa tu crecimiento profesional!",
   "Lp-cap-footer-description": "Inscríbete hoy en nuestro Programa Avanzado de Gestión de Proyectos y conviértete en el líder que tus proyectos necesitan.",
-  "Lp-cap-footer-button": "Comienza Tu Transformación Ahora"
+  "Lp-cap-footer-button": "Comienza Tu Transformación Ahora",
+
+
+
+  "LpAppBrey-title": "APP BREY: La Solución Definitiva para el Levantamiento de Activos en Campo",
+  "LpAppBrey-subtitle": "Optimice la recopilación y gestión de datos de sus activos en campo con nuestra aplicación móvil robusta y fácil de usar. Trabaje sin conexión, capture datos con voz y asegure la integridad de su información.",
+  "LpAppBrey-cta-button-demostracion": "Agendar una demostración",
+  "LpAppBrey-card-title-1": "Inicio de Sesión Seguro",
+  "LpAppBrey-card-text-1": "Acceso protegido con múltiples capas de seguridad para garantizar la privacidad y confidencialidad de sus datos.",
+  "LpAppBrey-card-title-2": "Trabajo Offline",
+  "LpAppBrey-card-text-2": "Capture datos cruciales incluso sin conexión a internet. Sincronización automática al restablecer la conectividad.",
+  "LpAppBrey-card-title-3": "Entrada de Voz a Texto",
+  "LpAppBrey-card-text-3": "Agilice la captura de información con la conversión de voz a texto, reduciendo errores y tiempos de registro.",
+  "LpAppBrey-card-title-4": "Perfiles Personalizables",
+  "LpAppBrey-card-text-4": "Gestione y adapte los perfiles de usuario según las necesidades específicas de cada rol dentro de su organización.",
+  "LpAppBrey-roles-title": "Roles y Permisos",
+  "LpAppBrey-admin-title": "Administrador",
+  "LpAppBrey-admin-list-item-1": "Gestión completa de usuarios y roles.",
+  "LpAppBrey-admin-list-item-2": "Configuración de permisos de acceso.",
+  "LpAppBrey-admin-list-item-3": "Monitoreo y auditoría de actividades.",
+  "LpAppBrey-admin-list-item-4": "Generación de informes avanzados.",
+  "LpAppBrey-admin-list-item-5": "Personalización de formularios y campos.",
+  "LpAppBrey-admin-list-item-6": "Respaldo y recuperación de datos.",
+  "LpAppBrey-user-title": "Usuario",
+  "LpAppBrey-user-list-item-1": "Levantamiento de activos en campo.",
+  "LpAppBrey-user-list-item-2": "Captura de datos offline.",
+  "LpAppBrey-user-list-item-3": "Uso de voz a texto para registros.",
+  "LpAppBrey-user-list-item-4": "Visualización de activos asignados.",
+  "LpAppBrey-user-list-item-5": "Actualización de estado de activos.",
+  "LpAppBrey-user-list-item-6": "Carga de fotos y documentos.",
+  "LpAppBrey-footer-title": "¿Listo para Optimizar la Gestión de Activos de tu Empresa?",
+  "LpAppBrey-cta-button-contacto": "Contáctanos Hoy"
 
 
 
