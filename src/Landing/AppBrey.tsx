@@ -1,6 +1,6 @@
 import { Layout } from '../components/Layout/Layout';
-// Asegúrate de que el nombre del componente coincida con el archivo, por ejemplo, AutoCarousel
-import AutoCarousel from '../components/Carousel/Carousel'; 
+import AutoCarousel from '../components/Carousel/Carousel';
+import { CheckList } from '../components/CheckList/CheckList'; 
 import Brey1 from '../assets/images/Brey1.webp';
 import Brey2 from '../assets/images/Brey2.webp';
 import Brey3 from '../assets/images/Brey3.webp';
@@ -14,10 +14,14 @@ import Brey10 from '../assets/images/Brey10.webp';
 import Brey11 from '../assets/images/Brey11.webp';
 import Brey12 from '../assets/images/Brey12.webp';
 import Brey13 from '../assets/images/Brey13.webp';
+import Padlock from '../assets/images/Padlock.svg';
+import Nube from '../assets/images/Nube.svg';
+import Microphone from '../assets/images/Microphone.svg';
+import Users from '../assets/images/Users.svg';
 
 export const AppBrey = () => {
 
-  // Arreglo con la información de las imágenes
+  
   const imagesData = [
     { src: Brey1, alt: 'Bray 1' },
     { src: Brey2, alt: 'Bray 2' },
@@ -35,12 +39,11 @@ export const AppBrey = () => {
   ];
 
   return (
-    <article>
       <Layout>
-        <div className=" sm:grid sm:grid-cols-2 sm:gap-10 flex flex-col p-2 bg-gray-50 ">
+        <section className=" sm:grid sm:grid-cols-2 sm:gap-10 flex flex-col p-2 bg-gray-50 ">
           
           {/* Portada */}
-          <section className="gap-10 grid grid-cols-1 bg-white p-16 items-center place-items-center">
+          <article className="gap-10 grid grid-cols-1 bg-white p-16 items-center place-items-center">
             <div className="sm:text-left text-center box-content">
               <h2 className="sm:text-4xl text-3xl text-black  box-content mb-6 font-bold leading-tight">
                 APP BREY: La Solución Definitiva para el Levantamiento de Activos en Campo
@@ -52,14 +55,119 @@ export const AppBrey = () => {
                 Agendar una demostración
               </button>
             </div>
-          </section>
+          </article>
           
-          <section className='flex justify-center items-center'>
+          <article className='flex justify-center items-center'>
             <AutoCarousel slides={imagesData} interval={8000} />
-          </section>
+          </article>
+    
+        </section>
+        
+        {/* Cards */}
+        <section className='bg-lpAppBray-bg'>
+            <div className="grid grid-cols-1 gap-6 sm:grid sm:grid-cols-4  sm:gap-6 p-20   ">
+              {/*CARD 1*/}
+              <div className="bg-white border border-grayLight shadow-md rounded-xl p-6 flex flex-col  justify-between h-full text-center text-balance transform hover:scale-102 transition-transform duration-300">
+                <div className="m-5">
+                  <img
+                    src={Padlock}
+                    className="w-8 h-8"
+                  />
+                </div>
+                <h3 className="text-2xl font-semibold mb-2 text-gray-800 items-center">
+                  Inicio de Sesión Seguro
+                </h3>
+                <p className="text-grey text-sm mb-4 px-8 leading-relaxed text-center">
+                  Acceso protegido con múltiples capas de seguridad para garantizar la privacidad y confidencialidad de sus datos.
+                </p>
+              </div>
+              {/*CARD 2*/}
+              <div className="bg-white border border-grayLight shadow-md rounded-xl p-6 flex flex-col justify-between h-full text-center text-balance transform hover:scale-102 transition-transform duration-300">
+                <div className="m-5">
+                  <img
+                    src={Nube}
+                    className="w-8 h-8"
+                  />
+                </div>
+                <h3 className="text-2xl font-semibold mb-2 text-gray-800 items-center ">
+                  Trabajo Offline
+                </h3>
+                <p className="text-grey text-sm mb-4 px-8 leading-relaxed text-center">
+                  Capture datos cruciales incluso sin conexión a internet. Sincronización automática al restablecer la conectividad.
+                </p>
+              </div>
+              {/*CARD 3*/}
+              <div className="bg-white border border-grayLight shadow-md rounded-xl p-6 flex flex-col  justify-between h-full text-center text-balance transform hover:scale-102 transition-transform duration-300">
+                <div className="m-5">
+                  <img
+                    src={Microphone}
+                    className="w-8 h-8"
+                  />
+                </div>
+                <h3 className="text-2xl font-semibold mb-2 text-gray-800 items-center">
+                  Entrada de Voz a Texto
+                </h3>
+                <p className="text-grey text-sm mb-4 px-8 leading-relaxed text-center items-center">
+                  Agilice la captura de información con la conversión de voz a texto, reduciendo errores y tiempos de registro.
+                </p>
+              </div>
+              {/*CARD 4*/}
+              <div className="bg-white border border-grayLight shadow-md rounded-xl p-6 flex flex-col  justify-between h-full text-center text-balance transform hover:scale-102 transition-transform duration-300">
+                <div className="m-5">
+                  <img
+                    src={Users}
+                    className="w-8 h-8"
+                  />
+                </div>
+                <h3 className="text-2xl font-semibold mb-2 text-gray-800 items-center">
+                  Perfiles Personalizables
+                </h3>
+                <p className="text-grey text-sm mb-4 px-8 leading-relaxed text-center items-center">
+                  Gestione y adapte los perfiles de usuario según las necesidades específicas de cada rol dentro de su organización.
+                </p>
+              </div>
+            </div>
+
+        </section>
+        {/* Roles y Permisos */}
+        <section>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+              Roles y Permisos
+          </h2>
+          <article>
+            <div className="space-y-8">
+              <h2 className="text-3xl font-bold text-gray-800">
+                Administrador
+              </h2>
+
+              <div className="space-y-4">
+                <CheckList text="Gestión completa de usuarios y roles." />
+                <CheckList text="Configuración de permisos de acceso." />
+                <CheckList text="Monitoreo y auditoría de actividades." />
+                <CheckList text="Generación de informes avanzados." />
+                <CheckList text="Personalización de formularios y campos." />
+                <CheckList text="Respaldo y recuperación de datos." />
+              </div>
+            </div>
+            <div className="space-y-8">
+              <h2 className="text-3xl font-bold text-gray-800">
+                Usuario
+              </h2>
+
+              <div className="space-y-4">
+                <CheckList text="Levantamiento de activos en campo." />
+                <CheckList text="Captura de datos offline." />
+                <CheckList text="Uso de voz a texto para registros." />
+                <CheckList text="Visualización de activos asignados." />
+                <CheckList text="Actualización de estado de activos." />
+                <CheckList text="Carga de fotos y documentos." />
+              </div>
+            </div>
+          </article>
           
-        </div>
+
+        </section>
       </Layout>
-    </article>
+    
   );
 };
