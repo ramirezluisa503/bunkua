@@ -39,9 +39,7 @@ export const CardServicesO = (Props: PropsCardServices) => {
           </div>
         </div>
 
-        <p className="uppercase tracking-widest text-sm text-green font-semibold">
-          FASE {Props.fase}
-        </p>
+        
         <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-2">
           {Props.title}
         </h2>
