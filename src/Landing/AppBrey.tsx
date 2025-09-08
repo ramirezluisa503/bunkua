@@ -1,6 +1,7 @@
 import { Layout } from '../components/Layout/Layout';
 import AutoCarousel from '../components/Carousel/Carousel';
 import { CheckList } from '../components/CheckList/CheckList'; 
+import { NavLink } from 'react-router-dom';
 import Brey1 from '../assets/images/Brey1.webp';
 import Brey2 from '../assets/images/Brey2.webp';
 import Brey3 from '../assets/images/Brey3.webp';
@@ -51,9 +52,11 @@ export const AppBrey = () => {
               <p className="text-grey text-balance text-xl box-content leading-relaxed">
                 Optimice la recopilación y gestión de datos de sus activos en campo con nuestra aplicación móvil robusta y fácil de usar. Trabaje sin conexión, capture datos con voz y asegure la integridad de su información.
               </p>
-              <button className="bg-green hover:bg-black cursor-pointer text-white mt-7 mb-0.5 w-fit h-9 px-3 rounded-[6px]">
+              <NavLink to={'/contactUs'}>
+                <button className="hover:bg-black bg-green text-white mt-7 mb-0.5 w-fit h-9 px-3 rounded-[6px] cursor-pointer">
                 Agendar una demostración
-              </button>
+                </button>
+              </NavLink>
             </div>
           </article>
           
@@ -130,15 +133,15 @@ export const AppBrey = () => {
 
         </section>
         {/* Roles y Permisos */}
-        <section>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+        <section className='m-20'>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-15 text-center">
               Roles y Permisos
           </h2>
-          <article>
-            <div className="space-y-8">
-              <h2 className="text-3xl font-bold text-gray-800">
+          <article className='sm:grid sm:grid-cols-2 flex flex-col justify-center items-center gap-10'>
+            <div className="sm:grid-cols-1 border border-borderGrey rounded-xl p-8 space-y-8 ">
+              <h3 className="text-3xl font-bold text-gray-800">
                 Administrador
-              </h2>
+              </h3>
 
               <div className="space-y-4">
                 <CheckList text="Gestión completa de usuarios y roles." />
@@ -149,10 +152,10 @@ export const AppBrey = () => {
                 <CheckList text="Respaldo y recuperación de datos." />
               </div>
             </div>
-            <div className="space-y-8">
-              <h2 className="text-3xl font-bold text-gray-800">
+            <div className="sm:grid-cols-1 border border-borderGrey rounded-xl p-8 space-y-8">
+              <h3 className="text-3xl font-bold text-gray-800">
                 Usuario
-              </h2>
+              </h3>
 
               <div className="space-y-4">
                 <CheckList text="Levantamiento de activos en campo." />
@@ -165,8 +168,21 @@ export const AppBrey = () => {
             </div>
           </article>
           
-
         </section>
+        <footer>
+          <div className="flex flex-col items-center justify-center h-120 bg-[#faf4e1] p-4 text-center">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#333333] mb-4">
+              ¿Listo para Optimizar la Gestión de Activos de tu Empresa?
+            </h2>
+            
+            <NavLink to={'/contactUs'}>
+              <button className="hover:bg-black bg-green text-white mt-7 mb-0.5 w-fit h-9 px-3 rounded-[6px] cursor-pointer">
+                Contáctanos Hoy
+              </button>
+            </NavLink>
+          </div>
+        </footer>
+
       </Layout>
     
   );
