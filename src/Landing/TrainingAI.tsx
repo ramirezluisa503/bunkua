@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { NavLink } from 'react-router-dom';
 import IMGportada from '../assets/Images/PortadaCapacitacionIA.webp';
 import NuestroPrograma from '../assets/Images/NuestroPrograma.webp';
 import RecursosNecesarios from '../assets/Images/RecursosNecesarios.webp';
@@ -26,9 +27,11 @@ export const TrainingAI = () => {
             <p className="text-grey text-balance text-xl box-content leading-relaxed">
               {t('Lp-cap-description-portada')}
             </p>
-            <button className="bg-green hover:bg-black cursor-pointer text-white mt-7 mb-0.5 w-fit h-9 px-3 rounded-[6px]">
-              {t('Lp-cap-button-portada')}
-            </button>
+            <NavLink to={'/contactUs'}>
+                <button className="hover:bg-black bg-green text-white mt-4 md:mt-7 mb-2 md:mb-0.5 w-fit h-9 px-3 rounded-[6px] cursor-pointer">
+                  {t('Lp-cap-button-portada')}
+                </button>
+            </NavLink>
           </div>
           <div className="sm:mt-0 sm:ml-0">
             <img
@@ -334,10 +337,12 @@ export const TrainingAI = () => {
           <p className="text-grey text-balance text-xl box-content leading-relaxed">
             {t('Lp-cap-footer-description')}
           </p>
-          <button className="bg-green hover:bg-black cursor-pointer text-white mt-7 mb-0.5 w-fit h-9 px-3 rounded-[6px]">
-            {t('Lp-cap-footer-button')}
-          </button>
+          <NavLink to={'/contactUs'}>
+            <button className="hover:bg-black bg-green text-white mt-4 md:mt-7 mb-2 md:mb-0.5 w-fit h-9 px-3 rounded-[6px] cursor-pointer">
+              {t('Lp-cap-footer-button')}
 
+            </button>
+          </NavLink>
         </section>
       </Layout>
     </article>

@@ -20,10 +20,11 @@ export const ServicesO = () => {
               <p className="text-lg text-gray-600 leading-relaxed max-w-lg">
                 {t('Lp-ServiciosOver-somos_socio_estrategico')}
               </p>
-
-              <button className="hover:bg-black bg-green text-white mt-4 md:mt-7 mb-2 md:mb-0.5 w-fit h-9 px-3 rounded-[6px] cursor-pointer">
-                {t('Lp-ServiciosOver-agenda_consulta')}
-              </button>
+              <NavLink to={'/contactUs'}>
+                <button className="hover:bg-black bg-green text-white mt-4 md:mt-7 mb-2 md:mb-0.5 w-fit h-9 px-3 rounded-[6px] cursor-pointer">
+                  {t('Lp-ServiciosOver-agenda_consulta')}
+                </button>
+              </NavLink>
             </div>
 
             {/* Imagen */}

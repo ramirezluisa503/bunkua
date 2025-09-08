@@ -25,9 +25,11 @@ export const Crm = () => {
                 {t('Lp-crm-subtitle')}
               </p>
 
-              <button className="hover:bg-black bg-green text-white mt-4 md:mt-7 mb-4 md:mb-8 w-fit h-9 px-3 rounded-[6px] cursor-pointer">
-                {t('Lp-crm-cta-button')}
-              </button>
+              <NavLink to={'/contactUs'}>
+                <button className="hover:bg-black bg-green text-white mt-4 md:mt-7 mb-2 md:mb-0.5 w-fit h-9 px-3 rounded-[6px] cursor-pointer">
+                  {t('Lp-crm-cta-button')}
+                </button>
+              </NavLink>
             </div>
 
             <div className="flex-shrink-0 w-full lg:w-auto">
