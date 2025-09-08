@@ -7,8 +7,10 @@ import { CardCrm } from '../components/CardCrm/CardCrm';
 import { images } from '../assets/images/index';
 import { CheckList } from '../components/CheckList/CheckList';
 import { NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 export const Crm = () => {
+  const { t } = useTranslation();
   return (
     <Layout>
       <header className="min-h-[200px] bg-[#faf4e1]">
@@ -16,21 +18,15 @@ export const Crm = () => {
           <div className="flex flex-col lg:flex-row justify-around items-start mb-6 md:mb-10 mt-6 md:mt-12 gap-8">
             <div className="flex-1 max-w-2xl">
               <h1 className="text-3xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-4 mt-4">
-                CRM y MRP
-                <br />
-                Empresarial: Impulsa
-                <br />
-                tu Crecimiento
+                {t('Lp-crm-title')}
               </h1>
 
               <p className="text-lg md:text-xl text-gray-700 mb-6 leading-relaxed max-w-lg">
-                Centraliza tus relaciones con clientes, automatiza{' '}
-                <br className="hidden md:block" /> ventas y optimiza cada
-                interacción para disparar tu productividad y rentabilidad.
+                {t('Lp-crm-subtitle')}
               </p>
 
               <button className="hover:bg-black bg-green text-white mt-4 md:mt-7 mb-4 md:mb-8 w-fit h-9 px-3 rounded-[6px] cursor-pointer">
-                Empieza a utilizar ahora
+                {t('Lp-crm-cta-button')}
               </button>
             </div>
 
@@ -54,33 +50,33 @@ export const Crm = () => {
               <div className="grid grid-cols-3 md:grid-cols-4 gap-4 md:gap-6 max-w-4xl ml-auto">
                 <IconsCrm
                   image={images.ventas}
-                  text="Ventas"
+                  text={t('Lp-crm-icons-sales')}
                 />
 
                 <IconsCrm
                   image={images.crm}
-                  text="CRM"
+                  text={t('Lp-crm-icons-crm')}
                 />
 
                 <IconsCrm
                   image={images.facturacion}
-                  text="Facturación"
+                  text={t('Lp-crm-icons-invoicing')}
                 />
 
                 <IconsCrm
                   image={images.contacto}
-                  text="Contactos"
+                  text={t('Lp-crm-icons-contacts')}
                 />
 
                 <IconsCrm
                   image={images.inventario}
-                  text="Inventario"
+                  text={t('Lp-crm-icons-inventory')}
                   style="col-start-2 md:col-start-2"
                 />
 
                 <IconsCrm
                   image={images.mrp}
-                  text="MRP"
+                  text={t('Lp-crm-icons-mrp')}
                 />
               </div>
             </div>
@@ -92,29 +88,25 @@ export const Crm = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12 md:mb-16">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4 md:mb-6">
-              ¿Qué es un CRM y por qué lo necesita?
+              {t('Lp-crm-section-1-title')}
             </h1>
             <p className="text-base md:text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed px-4">
-              Un Sistema de Gestión de Relaciones con el Cliente (CRM) es la
-              herramienta que te permite organizar, analizar y mejorar cada
-              interacción con tus clientes y potenciales clientes. En pocas
-              palabras, es tu aliado para construir relaciones comerciales
-              sólidas y, a su vez, impulsar tus ventas.
+              {t('Lp-crm-section-1-text')}
             </p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-end">
             <div className="space-y-6 md:space-y-8 order-2 lg:order-1">
               <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4 md:mb-8">
-                Beneficios
+                {t('Lp-crm-benefits-title')}
               </h2>
 
               <div className="space-y-4">
-                <ListCrm text="Gestión Centralizada de Datos" />
-                <ListCrm text="Mejora de la Relación con el Cliente" />
-                <ListCrm text="Automatización de Procesos" />
-                <ListCrm text="Análisis de Datos" />
-                <ListCrm text="Aumento de Ventas y Retención" />
+                <ListCrm text={t('Lp-crm-benefits-list-1')} />
+                <ListCrm text={t('Lp-crm-benefits-list-2')} />
+                <ListCrm text={t('Lp-crm-benefits-list-3')} />
+                <ListCrm text={t('Lp-crm-benefits-list-4')} />
+                <ListCrm text={t('Lp-crm-benefits-list-5')} />
               </div>
             </div>
 
@@ -133,55 +125,51 @@ export const Crm = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12 md:mb-16">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4 md:mb-6">
-              Módulos Clave de un CRM
+              {t('Lp-crm-section-2-title')}
             </h1>
             <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto px-4">
-              Nuestra CRM integra módulos esenciales para una gestión
-              empresarial completa y eficiente.
+              {t('Lp-crm-section-2-subtitle')}
             </p>
           </div>
 
           <div className="grid grid-cols-3 md:grid-cols-6 gap-4 md:gap-8 mb-12 md:mb-16">
             <ImgCrm
-              text="Ventas"
+              text={t('Lp-crm-section-2-module-1')}
               image={images.ventas}
             />
 
             <ImgCrm
-              text="CRM"
+              text={t('Lp-crm-section-2-module-2')}
               image={images.crm}
             />
 
             <ImgCrm
-              text="Facturación"
+              text={t('Lp-crm-section-2-module-3')}
               image={images.facturacion}
             />
 
             <ImgCrm
-              text="Contacto"
+              text={t('Lp-crm-section-2-module-4')}
               image={images.contacto}
             />
 
             <ImgCrm
-              text="Inventario"
+              text={t('Lp-crm-section-2-module-5')}
               image={images.inventario}
             />
 
             <ImgCrm
-              text="MRP"
+              text={t('Lp-crm-section-2-module-6')}
               image={images.mrp}
             />
           </div>
 
           <div className="bg-gray-100 rounded-2xl p-4 md:p-8">
             <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4">
-              Gestión de Leads y Oportunidades
+              {t('Lp-crm-section-2-lead-title')}
             </h2>
             <p className="text-gray-700 leading-relaxed text-sm md:text-base">
-              Administre el ciclo de vida de sus prospectos desde el primer
-              contacto hasta la conversión. El CRM permite capturar leads,
-              nutrirlos y convertirlos en oportunidades, siguiendo un flujo de
-              ventas claro:
+              {t('Lp-crm-section-2-lead-text')}
             </p>
           </div>
         </div>
@@ -191,14 +179,14 @@ export const Crm = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-8 md:mb-12">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
-              Fases del Embudo de Ventas
+              {t('Lp-crm-section-3-title')}
             </h1>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-7 gap-4 md:gap-8 mb-12 md:mb-22">
             <FasesCrm
-              text1="Nuevo Lead"
-              text2="Identifica y califica contactos potenciales."
+              text1={t('Lp-crm-section-3-stage-1-title')}
+              text2={t('Lp-crm-section-3-stage-1-text')}
               image={images.user}
             />
 
@@ -211,8 +199,8 @@ export const Crm = () => {
             </div>
 
             <FasesCrm
-              text1="Cotización"
-              text2="Prepara y envía propuestas personalizadas."
+              text1={t('Lp-crm-section-3-stage-2-title')}
+              text2={t('Lp-crm-section-3-stage-2-text')}
               image={images.paper}
             />
 
@@ -225,8 +213,8 @@ export const Crm = () => {
             </div>
 
             <FasesCrm
-              text1="Casi Ganado"
-              text2="Negocia y cierra acuerdos con seguimiento."
+              text1={t('Lp-crm-section-3-stage-3-title')}
+              text2={t('Lp-crm-section-3-stage-3-text')}
               image={images.hands}
             />
 
@@ -239,8 +227,8 @@ export const Crm = () => {
             </div>
 
             <FasesCrm
-              text1="Ganado"
-              text2="Registra la venta y gestiona el post-cierre."
+              text1={t('Lp-crm-section-3-stage-4-title')}
+              text2={t('Lp-crm-section-3-stage-4-text')}
               image={images.check}
             />
           </div>
@@ -272,52 +260,48 @@ export const Crm = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-8 md:mb-2">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4 md:mb-6">
-              Módulo de Ventas: Cierra Más Negocios
+              {t('Lp-crm-section-4-title')}
             </h1>
             <p className="text-base md:text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed px-4">
-              Gestione cada etapa del ciclo de ventas, desde la creación de
-              ofertas hasta la aceptación del cliente.
+              {t('Lp-crm-section-4-subtitle')}
             </p>
           </div>
 
           <div className="p-4 md:p-8 lg:p-16">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 max-w-7xl mx-auto">
               <CardCrm
-                text1="Crear Cotizaciones"
-                text2="Genere propuestas detalladas con productos y precios."
+                text1={t('Lp-crm-section-4-card-1-title')}
+                text2={t('Lp-crm-section-4-card-1-text')}
                 icon={'📝'}
               />
 
               <CardCrm
-                text1="Gestionar Órdenes de Venta"
-                text2="Convierta cotizaciones en pedidos firmes."
+                text1={t('Lp-crm-section-4-card-2-title')}
+                text2={t('Lp-crm-section-4-card-2-text')}
                 icon={'🛒'}
               />
 
               <CardCrm
-                text1="Administrar Contratos"
-                text2="Cree y siga los contratos con sus clientes."
+                text1={t('Lp-crm-section-4-card-3-title')}
+                text2={t('Lp-crm-section-4-card-3-text')}
                 icon={'✍️'}
               />
 
               <CardCrm
-                text1="Automatización de Email"
-                text2="Envía correos personalizados en cada etapa de venta, ahorrando
-                  tiempo y esfuerzo."
+                text1={t('Lp-crm-section-4-card-4-title')}
+                text2={t('Lp-crm-section-4-card-4-text')}
                 icon={'📧'}
               />
 
               <CardCrm
-                text1="Aceptación Online"
-                text2="Permite a tus clientes aceptar propuestas y contratos
-                  directamente desde la web."
+                text1={t('Lp-crm-section-4-card-5-title')}
+                text2={t('Lp-crm-section-4-card-5-text')}
                 icon={'💻'}
               />
 
               <CardCrm
-                text1="Análisis de Ventas"
-                text2="Obtén informes detallados para identificar tendencias y
-                  optimizar estrategias comerciales."
+                text1={t('Lp-crm-section-4-card-6-title')}
+                text2={t('Lp-crm-section-4-card-6-text')}
                 icon={'📈'}
               />
             </div>
@@ -336,32 +320,30 @@ export const Crm = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-8 md:mb-4">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4 md:mb-6">
-              Módulo de Facturación: Control Financiero Simplificado
+              {t('Lp-crm-section-5-title')}
             </h1>
             <p className="text-base md:text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed px-4">
-              Automatice la facturación y el seguimiento de pagos para una
-              gestión financiera sin <br className="hidden md:block" />{' '}
-              esfuerzo.
+              {t('Lp-crm-section-5-subtitle')}
             </p>
           </div>
 
           <div className="p-4 md:p-8 lg:p-16">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 max-w-7xl mx-auto">
               <CardCrm
-                text1="Facturación Simplificada"
-                text2="Crea facturas profesionales de forma rápida, integrando datos de ventas automáticamente."
+                text1={t('Lp-crm-section-5-card-1-title')}
+                text2={t('Lp-crm-section-5-card-1-text')}
                 image={images.img}
               />
 
               <CardCrm
-                text1="Seguimiento de Pagos"
-                text2="Monitorea el estado de tus pagos, con recordatorios automáticos para deudas pendientes."
+                text1={t('Lp-crm-section-5-card-2-title')}
+                text2={t('Lp-crm-section-5-card-2-text')}
                 image={images.coins}
               />
 
               <CardCrm
-                text1="Control de Gastos"
-                text2="Registra y clasifica todos tus gastos operativos para una gestión financiera precisa."
+                text1={t('Lp-crm-section-5-card-3-title')}
+                text2={t('Lp-crm-section-5-card-3-text')}
                 image={images.dolar}
               />
             </div>
@@ -388,34 +370,28 @@ export const Crm = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12 md:mb-16">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4 md:mb-6">
-              Módulo de Contactos: Su Base de Datos Centralizada
+              {t('Lp-crm-section-6-title')}
             </h1>
             <p className="text-base md:text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed px-4">
-              El corazón de su CRM, donde toda la información de clientes y
-              prospectos reside de forma segura y accesible.
+              {t('Lp-crm-section-6-subtitle')}
             </p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center mt-8 md:mt-12">
             <div className="space-y-6 md:space-y-8 order-2 lg:order-1">
               <div className="space-y-4 text-sm md:text-base">
+                <p>{t('Lp-crm-section-6-text-1')}</p>
                 <p>
-                  El módulo de contactos es la fuente de verdad para todos los
-                  datos de sus clientes.
+                  <strong>{t('Lp-crm-section-6-text-2-title')}</strong>{' '}
+                  {t('Lp-crm-section-6-text-2-text')}
                 </p>
                 <p>
-                  <strong>Base de Datos Unificada:</strong> Almacena perfiles de
-                  clientes, historial de interacciones, notas y documentos.
+                  <strong>{t('Lp-crm-section-6-text-3-title')}</strong>{' '}
+                  {t('Lp-crm-section-6-text-3-text')}
                 </p>
                 <p>
-                  <strong>Integración Multi-Módulo:</strong> Es utilizado por
-                  otros módulos (Ventas, Marketing, Soporte) para rellenar datos
-                  automáticamente y garantizar la consistencia.
-                </p>
-                <p>
-                  <strong>Visión 360 del Cliente:</strong> Ofrece una vista
-                  completa de cada cliente, permitiendo un servicio
-                  personalizado y eficiente.
+                  <strong>{t('Lp-crm-section-6-text-4-title')}</strong>{' '}
+                  {t('Lp-crm-section-6-text-4-text')}
                 </p>
               </div>
             </div>
@@ -440,14 +416,14 @@ export const Crm = () => {
 
             <div className="space-y-6 md:space-y-8 order-1 lg:order-2">
               <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
-                Beneficios Clave:
+                {t('Lp-crm-section-6-benefits-title')}
               </h2>
 
               <div className="space-y-4">
-                <CheckList text="Acceso rápido a la información completa de cada cliente." />
-                <CheckList text="Historial de interacciones unificado para una comunicación consistente." />
-                <CheckList text="Segmentación avanzada para campañas de marketing dirigidas." />
-                <CheckList text="Mejora la colaboración entre equipos de ventas y soporte." />
+                <CheckList text={t('Lp-crm-section-6-benefits-list-1')} />
+                <CheckList text={t('Lp-crm-section-6-benefits-list-2')} />
+                <CheckList text={t('Lp-crm-section-6-benefits-list-3')} />
+                <CheckList text={t('Lp-crm-section-6-benefits-list-4')} />
               </div>
             </div>
           </div>
@@ -458,25 +434,24 @@ export const Crm = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-8 md:mb-4">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4 md:mb-6">
-              Módulo de Inventario: Control de Stock Inteligente
+              {t('Lp-crm-section-7-title')}
             </h1>
             <p className="text-base md:text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed px-4">
-              Gestiona tu inventario de manera eficiente con control en tiempo
-              real y <br className="hidden md:block" /> integración completa.
+              {t('Lp-crm-section-7-subtitle')}
             </p>
           </div>
 
           <div className="p-4 md:p-8 lg:p-16">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 max-w-7xl mx-auto">
               <CardCrm
-                text1="Control de Stock en Tiempo Real"
-                text2="Monitoriza tus niveles de inventario, entradas y salidas, evitando roturas o excesos."
+                text1={t('Lp-crm-section-7-card-1-title')}
+                text2={t('Lp-crm-section-7-card-1-text')}
                 image={images.box}
               />
 
               <CardCrm
-                text1="Integración con Ventas y MRP"
-                text2="Conecta automáticamente tus ventas con el inventario y planifica la producción según la demanda real."
+                text1={t('Lp-crm-section-7-card-2-title')}
+                text2={t('Lp-crm-section-7-card-2-text')}
                 image={images.block}
               />
             </div>
@@ -512,65 +487,17 @@ export const Crm = () => {
         </div>
       </article>
 
-      <article className="min-h-screen pt-8 md:pt-15 bg-[#fafafb]">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-12 md:mb-16">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4 md:mb-6">
-              Módulo MRP: Planificación de Recursos de Fabricación
-            </h1>
-            <p className="text-base md:text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed px-4">
-              Optimice su producción asegurando la disponibilidad de materiales
-              y componentes <br className="hidden md:block" /> necesarios.
-            </p>
-          </div>
-
-          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
-            <div className="space-y-6 md:space-y-8 order-2 lg:order-1">
-              <p className="text-gray-800 mb-4 md:mb-8 text-sm md:text-base">
-                <strong>
-                  El módulo de MRP es fundamental para empresas de fabricación,
-                  permitiendo:
-                </strong>
-              </p>
-
-              <div className="space-y-4">
-                <ListCrm text="Planificación de Materiales" />
-                <ListCrm text="Gestión de Órdenes de Fabricación" />
-                <ListCrm text="Integración con inventario" />
-                <ListCrm text="Optimización de Recursos" />
-              </div>
-            </div>
-
-            <div className="relative order-1 lg:order-2">
-              <img
-                src={images.moduloMrp}
-                alt="moduloMrp"
-                className="w-full h-auto rounded shadow-2xl"
-              />
-            </div>
-          </div>
-          <div className="flex justify-center mt-8 md:mt-15 px-4">
-            <img
-              src={images.capturaMrp}
-              alt="capturaVentas"
-              className="w-full max-w-6xl md:w-290 rounded-lg"
-            />
-          </div>
-        </div>
-      </article>
-
       <footer>
         <div className="flex flex-col items-center justify-center h-auto md:h-120 bg-[#faf4e1] p-4 md:p-8 text-center">
           <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-[#333333] mb-4">
-            ¿Listo para Transformar tu Negocio?
+            {t('Lp-crm-footer-title')}
           </h2>
           <p className="max-w-xl text-base md:text-lg text-[#555555] mb-6 md:mb-8 px-4">
-            Descubre cómo CRM Empresarial puede centralizar tus operaciones,
-            potenciar tus ventas y escalar tu crecimiento.
+            {t('Lp-crm-footer-subtitle')}
           </p>
           <NavLink to={'/contactUs'}>
             <button className="hover:bg-black bg-green text-white mt-4 md:mt-7 mb-2 md:mb-0.5 w-fit h-9 px-3 rounded-[6px] cursor-pointer">
-              Solicita una prueba ahora
+              {t('Lp-crm-footer-cta-button')}
             </button>
           </NavLink>
         </div>
