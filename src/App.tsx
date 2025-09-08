@@ -8,7 +8,7 @@ import { useEffect } from 'react';
 import { TrainingAI } from './Landing/TrainingAI';
 import { Crm } from './Landing/Crm';
 import { AppBrey } from './Landing/AppBrey';
-
+import { ServicesO } from './Landing/ServicesO';
 
 // OPCIÓN 1: Usando scroll behavior smooth (más simple)
 const ScrollToTopSmooth = () => {
@@ -65,6 +65,11 @@ function App() {
         <Route
           path="/AppBrey"
           element={<AppBrey />}
+        />
+
+        <Route
+          path="/ServicesO"
+          element={<ServicesO />}
         />
       </Routes>
     </>
