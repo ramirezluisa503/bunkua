@@ -113,50 +113,6 @@ export const NavBar = () => {
                 {t('nv_contactanos')}
               </NavLink>
 
-              {/*provicional*/}
-              <NavLink
-                to={'/Crm'}
-                className={({ isActive }) =>
-                  isActive
-                    ? 'textNavbar font-semibold !text-green'
-                    : 'textNavbar'
-                }
-              >
-                Crm
-              </NavLink>
-
-              <NavLink
-                to={'/TrainingAI'}
-                className={({ isActive }) =>
-                  isActive
-                    ? 'textNavbar font-semibold !text-green'
-                    : 'textNavbar'
-                }
-              >
-                CapacitacionIA
-              </NavLink>
-
-              <NavLink
-                to={'/AppBrey'}
-                className={({ isActive }) =>
-                  isActive
-                    ? 'textNavbar font-semibold !text-green'
-                    : 'textNavbar'
-                }
-              >
-                AppBrey
-              </NavLink>
-
-              <NavLink
-                to={'/ServicesO'}
-                className={({ isActive }) =>
-                  isActive
-                    ? 'textNavbar font-semibold !text-green'
-                    : 'textNavbar'
-                }
-              >
-                Servicios Over
-              </NavLink>
             </nav>
           </div>
 

@@ -80,9 +80,9 @@ export const CaseStudies = () => {
                   />
                   {t('cs_card1Metrica')}
                 </div>
-
-                <a
-                  href="#"
+                <NavLink
+                  to={'/crm'}
+                  target="_blank"
                   className="flex items-center text-green font-medium hover:underline gap-2"
                 >
                   {t('cs_card1BtnLeerMas')}
@@ -90,7 +90,7 @@ export const CaseStudies = () => {
                     src={FlechaDerecha}
                     className="w-5 h-5"
                   />
-                </a>
+                </NavLink>
               </div>
             </div>
 
@@ -131,8 +131,9 @@ export const CaseStudies = () => {
                   {t('cs_card2Metrica')}
                 </div>
 
-                <a
-                  href="#"
+                <NavLink
+                  to={'/AppBrey'}
+                  target="_blank"
                   className="flex items-center text-green font-medium hover:underline gap-2"
                 >
                   {t('cs_card2BtnLeerMas')}
@@ -140,7 +141,7 @@ export const CaseStudies = () => {
                     src={FlechaDerecha}
                     className="w-5 h-5"
                   />
-                </a>
+                </NavLink>
               </div>
             </div>
 
@@ -258,8 +259,9 @@ export const CaseStudies = () => {
                   {t('cs_card5Metrica')}
                 </div>
 
-                <a
-                  href="#"
+                <NavLink
+                  to={'/TrainingAI'}
+                  target="_blank"
                   className="flex items-center text-green font-medium hover:underline gap-2"
                 >
                   {t('cs_card5BtnLeerMas')}
@@ -267,7 +269,7 @@ export const CaseStudies = () => {
                     src={FlechaDerecha}
                     className="w-5 h-5"
                   />
-                </a>
+                </NavLink>
               </div>
             </div>
 
@@ -299,8 +301,9 @@ export const CaseStudies = () => {
                   {t('cs_card6Metrica')}
                 </div>
 
-                <a
-                  href="#"
+                <NavLink
+                  to={'/ServicesO'}
+                  target="_blank"
                   className="flex items-center text-green font-medium hover:underline gap-2"
                 >
                   {t('cs_card6BtnLeerMas')}
@@ -308,7 +311,7 @@ export const CaseStudies = () => {
                     src={FlechaDerecha}
                     className="w-5 h-5"
                   />
-                </a>
+                </NavLink>
               </div>
             </div>
           </div>
