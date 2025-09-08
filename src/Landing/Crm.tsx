@@ -88,7 +88,7 @@ export const Crm = () => {
         </div>
       </header>
 
-      <article className="min-h-screen pt-8 md:pt-15 bg-[#fafafb]">
+      <article className="pt-8 mb-10 md:pt-15 bg-[#fafafb]">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12 md:mb-16">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4 md:mb-6">
@@ -103,7 +103,7 @@ export const Crm = () => {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-end">
             <div className="space-y-6 md:space-y-8 order-2 lg:order-1">
               <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4 md:mb-8">
                 Beneficios
@@ -558,6 +558,7 @@ export const Crm = () => {
           </div>
         </div>
       </article>
+
       <footer>
         <div className="flex flex-col items-center justify-center h-auto md:h-120 bg-[#faf4e1] p-4 md:p-8 text-center">
           <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-[#333333] mb-4">
