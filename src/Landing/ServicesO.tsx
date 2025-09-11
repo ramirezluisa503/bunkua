@@ -146,8 +146,12 @@ export const ServicesO = () => {
               <table className="min-w-full border-collapse">
                 <thead>
                   <tr className="bg-gray-100 text-left text-gray-700">
-                    <th className="px-6 py-3 font-semibold">{t('Lp-ServiciosOver-servicio')}</th>
-                    <th className="px-6 py-3 font-semibold">{t('Lp-ServiciosOver-plazo_estimado')}</th>
+                    <th className="px-6 py-3 font-semibold">
+                      {t('Lp-ServiciosOver-servicio')}
+                    </th>
+                    <th className="px-6 py-3 font-semibold">
+                      {t('Lp-ServiciosOver-plazo_estimado')}
+                    </th>
                     <th className="px-6 py-3 font-semibold">
                       {t('Lp-ServiciosOver-rango_costo')}
                     </th>
@@ -158,32 +162,56 @@ export const ServicesO = () => {
                     <td className="px-6 py-3">
                       {t('Lp-ServiciosOver-fase1_diagnostico_estrategia_tabla')}
                     </td>
-                    <td className="px-6 py-3">{t('Lp-ServiciosOver-plazo_fase1_tabla')}</td>
-                    <td className="px-6 py-3">{t('Lp-ServiciosOver-rango_fase1_tabla')}</td>
+                    <td className="px-6 py-3">
+                      {t('Lp-ServiciosOver-plazo_fase1_tabla')}
+                    </td>
+                    <td className="px-6 py-3">
+                      {t('Lp-ServiciosOver-rango_fase1_tabla')}
+                    </td>
                   </tr>
                   <tr className="border-t border-gray-200 text-left">
-                    <td className="px-6 py-3">{t('Lp-ServiciosOver-fase2_implementacion_tabla')}</td>
-                    <td className="px-6 py-3">{t('Lp-ServiciosOver-plazo_fase2_tabla')}</td>
-                    <td className="px-6 py-3">{t('Lp-ServiciosOver-rango_fase2_tabla')}</td>
+                    <td className="px-6 py-3">
+                      {t('Lp-ServiciosOver-fase2_implementacion_tabla')}
+                    </td>
+                    <td className="px-6 py-3">
+                      {t('Lp-ServiciosOver-plazo_fase2_tabla')}
+                    </td>
+                    <td className="px-6 py-3">
+                      {t('Lp-ServiciosOver-rango_fase2_tabla')}
+                    </td>
                   </tr>
                   <tr className="border-t border-gray-200 text-left">
-                    <td className="px-6 py-3">{t('Lp-ServiciosOver-tarifa_consultor')}</td>
-                    <td className="px-6 py-3">{t('Lp-ServiciosOver-plazo_tarifa_consultor')}</td>
-                    <td className="px-6 py-3">{t('Lp-ServiciosOver-rango_tarifa_consultor')}</td>
+                    <td className="px-6 py-3">
+                      {t('Lp-ServiciosOver-tarifa_consultor')}
+                    </td>
+                    <td className="px-6 py-3">
+                      {t('Lp-ServiciosOver-plazo_tarifa_consultor')}
+                    </td>
+                    <td className="px-6 py-3">
+                      {t('Lp-ServiciosOver-rango_tarifa_consultor')}
+                    </td>
                   </tr>
                   <tr className="border-t border-gray-200 text-left">
                     <td className="px-6 py-3">
                       {t('Lp-ServiciosOver-costo_licencias')}
                     </td>
-                    <td className="px-6 py-3">{t('Lp-ServiciosOver-plazo_costo_licencias')}</td>
-                    <td className="px-6 py-3">{t('Lp-ServiciosOver-rango_costo_licencias')}</td>
+                    <td className="px-6 py-3">
+                      {t('Lp-ServiciosOver-plazo_costo_licencias')}
+                    </td>
+                    <td className="px-6 py-3">
+                      {t('Lp-ServiciosOver-rango_costo_licencias')}
+                    </td>
                   </tr>
                   <tr className="border-t border-gray-200 text-left">
                     <td className="px-6 py-3">
                       {t('Lp-ServiciosOver-soporte_mantenimiento')}
                     </td>
-                    <td className="px-6 py-3">{t('Lp-ServiciosOver-plazo_soporte_mantenimiento')}</td>
-                    <td className="px-6 py-3">{t('Lp-ServiciosOver-rango_soporte_mantenimiento')}</td>
+                    <td className="px-6 py-3">
+                      {t('Lp-ServiciosOver-plazo_soporte_mantenimiento')}
+                    </td>
+                    <td className="px-6 py-3">
+                      {t('Lp-ServiciosOver-rango_soporte_mantenimiento')}
+                    </td>
                   </tr>
                 </tbody>
               </table>

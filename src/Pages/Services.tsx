@@ -8,7 +8,7 @@ import FlechaCrecimiento from '../assets/Images/FlechaCrecimiento.svg';
 import escudo from '../assets/Images/Escudo.svg';
 import users from '../assets/Images/Users.svg';
 import rompecabezas from '../assets/Images/Rompezacebas.svg';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export const Services = () => {
   const { t } = useTranslation();
@@ -37,11 +37,11 @@ export const Services = () => {
             <p className="text-black text-xl max-w-2xl box-content leading-normal text-center">
               {t('sv_portadaDescripcion')}
             </p>
-            <Link to={'/contactUs'}>
+            <NavLink to={'/contactUs'}>
               <button className="hover:bg-black bg-green text-white mt-7 mb-0.5 w-fit h-9 px-3 rounded-[6px] cursor-pointer">
                 {t('sv_btnConsultaGratis')}
               </button>
-            </Link>
+            </NavLink>
           </div>
         </section>
 

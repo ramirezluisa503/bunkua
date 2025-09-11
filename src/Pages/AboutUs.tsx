@@ -19,7 +19,7 @@ import users from '../assets/Images/Users.svg';
 import destello from '../assets/Images/Destello.svg';
 import calendario from '../assets/Images/Calendario.svg';
 import medalla from '../assets/Images/Medalla.svg';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export const AboutUs = () => {
   const { t } = useTranslation();
@@ -27,7 +27,6 @@ export const AboutUs = () => {
   return (
     <Layout>
       <article>
-        
         {/*ABOUT BUNKUA */}
         <section>
           <div className="sm:grid-cols-2 sm:gap-15 sm:py-20 gap-10 grid grid-cols-1 p-16 items-center place-items-center">
@@ -426,11 +425,11 @@ export const AboutUs = () => {
                 {t('au_nuevoRetoDescripcion')}
               </p>
 
-              <Link to={'/contactUs'}>
+              <NavLink to={'/contactUs'}>
                 <button className="hover:bg-black hover:text-white bg-white mt-7 mb-0.5 w-48 h-9 rounded-[6px] text-green cursor-pointer">
                   {t('au_btnVerPuestos')}
                 </button>
-              </Link>
+              </NavLink>
             </div>
             <div className="sm:w-1/2 sm:mt-0 mt-10 flex justify-end">
               <img
