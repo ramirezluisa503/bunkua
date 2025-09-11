@@ -459,7 +459,7 @@ export const Crm = () => {
             </div>
           </div>
 
-          <div className="w-full flex items-center justify-center px-4">
+          <div className="w-full flex items-center justify-center px-4 mb-20">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 max-w-6xl w-full">
               <img
                 src={images.capturaInventario1}

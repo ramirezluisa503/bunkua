@@ -9,7 +9,7 @@ import CaseStudies5 from '../assets/Images/consultoria.webp';
 import CaseStudies6 from '../assets/Images/CaseStudies6.webp';
 import FlechaDiagonal from '../assets/Images/FlechaDiagonal.svg';
 import FlechaDerecha from '../assets/Images/FlechaLargaDerecha.svg';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export const CaseStudies = () => {
   const { t } = useTranslation();
@@ -36,11 +36,11 @@ export const CaseStudies = () => {
             <p className="text-black text-xl max-w-3xl box-content leading-normal">
               {t('cs_portadaDescripcion')}
             </p>
-            <Link to={'/contactUs'}>
+            <NavLink to={'/contactUs'}>
               <button className="hover:bg-black bg-green text-white mt-7 mb-0.5 w-fit h-9 px-3 rounded-[6px] cursor-pointer">
                 {t('cs_btnConsultation')}
               </button>
-            </Link>
+            </NavLink>
           </div>
         </section>
 
@@ -81,8 +81,7 @@ export const CaseStudies = () => {
                   {t('cs_card1Metrica')}
                 </div>
                 <NavLink
-                  to={'/crm'}
-                  target="_blank"
+                  to={'/Crm'}
                   className="flex items-center text-green font-medium hover:underline gap-2"
                 >
                   {t('cs_card1BtnLeerMas')}
@@ -105,7 +104,7 @@ export const CaseStudies = () => {
                 />
               </div>
               <div className="my-10 mx-6 flex flex-col flex-grow">
-                <div className="sm:flex sm:flex-row sm:gap-2 flex flex-col">
+                <div className="sm:flex sm:flex-row sm:gap-2 flex flex-col text-center">
                   <div className="size-fit inline-flex bg-cs-beige text-green text-sm font-medium px-3 py-1 rounded-full mb-4">
                     {t('cs_card2Categoria')}
                   </div>
@@ -133,7 +132,6 @@ export const CaseStudies = () => {
 
                 <NavLink
                   to={'/AppBrey'}
-                  target="_blank"
                   className="flex items-center text-green font-medium hover:underline gap-2"
                 >
                   {t('cs_card2BtnLeerMas')}
@@ -261,7 +259,6 @@ export const CaseStudies = () => {
 
                 <NavLink
                   to={'/TrainingAI'}
-                  target="_blank"
                   className="flex items-center text-green font-medium hover:underline gap-2"
                 >
                   {t('cs_card5BtnLeerMas')}
@@ -303,7 +300,6 @@ export const CaseStudies = () => {
 
                 <NavLink
                   to={'/ServicesO'}
-                  target="_blank"
                   className="flex items-center text-green font-medium hover:underline gap-2"
                 >
                   {t('cs_card6BtnLeerMas')}
