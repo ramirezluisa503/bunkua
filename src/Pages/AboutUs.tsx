@@ -31,7 +31,7 @@ export const AboutUs = () => {
         <section>
           <div className="sm:grid-cols-2 sm:gap-15 sm:py-20 gap-10 grid grid-cols-1 p-16 items-center place-items-center">
             <div className="sm:col-span-1 sm:text-left sm:pl-36 text-center box-content">
-              <h1 className="text-black text-7xl box-content mb-6 font-bold leading-none">
+              <h1 className="sm:text-4xl text-2xl  text-black box-content mb-6 font-bold leading-none">
                 {t('au_aboutUsTitulo')}
               </h1>
               <p className="text-grey text-balance text-xl box-content leading-relaxed">
